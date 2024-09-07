@@ -15,7 +15,9 @@
 <img src="https://github.com/sth-of-yidatsai/project_campmate-devYida/blob/main/ReadMeImg/CampMate_%E9%9C%B2%E7%87%9F%E5%9C%B0.png" />
 <img src="https://github.com/sth-of-yidatsai/project_campmate-devYida/blob/main/ReadMeImg/CampMate_%E9%9C%B2%E7%87%9F%E7%94%A8%E5%93%81.png" />
 <br/>
-此專案僅供資策會前端工程師就業養成班大專展示使用。
+
+<br/>
+※ 此專案僅供資策會前端工程師就業養成班大專展示使用。
 
 ---
 
