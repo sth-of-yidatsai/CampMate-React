@@ -1,0 +1,625 @@
+.pageTitle {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  font-size: 24px;
+  color: #8f8e93;
+  margin-bottom: 36px;
+}
+
+.h2 {
+  color: #2d2d2d;
+}
+
+.tabsStyle {
+  width: 255px;
+  margin-bottom: 16px !important;
+}
+
+.tabStyle {
+  width: 952px;
+  color: var(--main-color-dark) !important;
+}
+
+.customTab {
+  height: 32px;
+  color: var(--main-color-dark);
+  padding: 0 20px;
+}
+
+.customTab:active {
+  color: var(--hint-color);
+}
+
+.campContent {
+  width: 952px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  box-sizing: border-box;
+}
+
+.CardStyle {
+  border: none !important;
+  border-radius: 18px !important;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.CardImg {
+  width: 100%;
+  height: 248px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  z-index: 0;
+}
+
+.CardImg:hover {
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+.CardBodyStyle {
+  width: 100%;
+  height: 68px;
+  background-color: var(--main-color-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 18px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+.CardHStyle {
+  color: var(--main-color-bright);
+  font-size: 20px;
+  font-weight: 800;
+  height: 68px;
+  display: flex;
+  align-items: center;
+}
+
+.cardTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 68px;
+  padding: 6px 0;
+}
+
+.CardTitleStyle {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  max-width: 244px;
+}
+
+.CardTitle1Style {
+  min-width: 47px;
+  height: 19px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--hint-color);
+  color: var(--main-color-bright);
+  font-size: 12px;
+  margin-right: 10px;
+  padding: 0px 10px;
+}
+
+.CardTitle2Style {
+  min-width: 35px;
+  height: 19px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--sub-color);
+  color: var(--main-color-dark);
+  font-size: 12px;
+  padding: 0px 10px;
+}
+
+.CardBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.CardIcon {
+  color: var(--main-color-bright);
+  width: 40px;
+  height: 40px;
+}
+
+/* 露營用具card */
+.CardBody2Style {
+  width: 100%;
+  height: 68px;
+  background-color: var(--sub-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 18px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+.CardH2Style {
+  color: var(--main-color-dark);
+  font-size: 20px;
+  font-weight: 800;
+  height: 68px;
+  display: flex;
+  align-items: center;
+}
+
+.CardTitleH {
+  white-space: nowrap; /* 防止文字換行 */
+  overflow: hidden; /* 隱藏超出的部分 */
+  text-overflow: ellipsis; /* 顯示省略號 */
+  width: 204px;
+}
+
+.CardTitle3Style {
+  min-width: 35px;
+  height: 19px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--main-color-dark);
+  color: var(--main-color-bright);
+  font-size: 12px;
+  padding: 0px 10px;
+}
+
+.CardIcon2 {
+  color: var(--main-color-dark);
+  width: 40px;
+  height: 40px;
+}
+
+/* 彈出視窗 */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(45, 45, 45, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  padding: 20px;
+  border-radius: 18px;
+  width: 300px;
+  max-width: 90%;
+  background-color: var(--main-color-bright);
+}
+
+.form {
+  width: 300px;
+  /* max-width: 90%; */
+  /* background-color: var(--main-color-bright); */
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.cancelH {
+  /* width: 300px; */
+  margin-top: 32px;
+  font-size: 20px;
+}
+
+.cancelP {
+  width: 300px;
+  margin-left: 25px;
+  color: var(--hint-color);
+}
+
+.submitGroup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.submitDiv {
+  /* width: 250px; */
+  max-width: 98%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.backButton {
+  background-color: var(--sub-color);
+  color: var(--main-color-dark);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backIcon {
+  width: 24px;
+  height: 24px;
+  color: #f5f5f7;
+}
+
+.cancelButton {
+  background-color: var(--hint-color);
+  color: var(--main-color-bright);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.cancelButton:hover {
+  background-color: #ff5c5c;
+}
+
+/* 篩選input */
+.filterContainer {
+  width: 541px;
+  height: 48px;
+  gap: 16px;
+  padding: 12px 16px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  border: 1px solid var(--f-5-f-5-f-7-bg, var(--main-color-bright));
+  backdrop-filter: blur(40px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.filterRadio {
+  display: none;
+}
+
+/* 自定義單選按鈕標籤 */
+.filterLabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Noto Sans TC';
+  color: var(--main-color-dark);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+
+/* 自定義單選按鈕圓形 */
+.filterLabel::before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 0.5px solid var(--text-color); /* 未選中狀態圓形邊框顏色 */
+  background-color: transparent; /* 未選中狀態圓形背景顏色 */
+}
+
+/* 選中狀態下圓形顏色 */
+.filterRadio:checked + .filterLabel::before {
+  border-color: var(--text-color); /* 選中狀態圓形邊框顏色 */
+  background-color: transparent; /* 選中狀態圓形背景顏色 */
+}
+
+/* 選中狀態下圓形的內部圓點顏色 */
+.filterRadio:checked + .filterLabel::after {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--hint-color); /* 選中狀態內部圓點顏色 */
+}
+
+.loadMore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.loadMoreBtn {
+  background-color: var(--main-color-bright);
+  color: var(--hint-color);
+  border: 1px solid var(--hint-color);
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.noImageText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 16px;
+  color: #999;
+  background-color: #f0f0f0;
+  width: 100%;
+  text-align: center;
+}
+
+/* 收藏詳細頁 */
+.detailModal {
+  width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  background-color: var(--main-color-bright);
+}
+
+.detailContent {
+  display: flex;
+}
+
+.detailImg {
+  width: 250px;
+  height: 250px;
+}
+
+.detailContent1 {
+  margin-left: 18px;
+  height: 250px;
+  width: 100%;
+}
+
+.detailContentH {
+  width: 100px;
+  border-bottom: 1px solid var(--text-color2);
+  color: var(--text-color2);
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.detailContentP {
+  height: 170px;
+  font-size: 12px;
+  color: var(--text-color);
+  overflow: auto;
+  overflow-y: auto;
+}
+
+.detailContentBtnDiv {
+  height: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-top: 8px;
+}
+
+.detailContentBtn {
+  padding: 4px 8px;
+  background-color: var(--main-color-dark);
+  color: var(--main-color-bright);
+  font-size: 16px;
+  border-radius: 8px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  border: 3px solid transparent;
+}
+
+.detailContentBtn:hover {
+  background-color: transparent;
+  border: 3px solid var(--hint-color);
+  color: var(--hint-color);
+}
+
+.closeButton {
+  margin-top: 16px;
+}
+
+.closeButton:hover {
+  color: #ff5c5c;
+}
+
+.containerRWD {
+  display: none;
+}
+
+.filterRWDContainer{
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.filterRWDSelect{
+  width: 95%;
+  height: 36px;
+  background-color: transparent;
+  padding-left: 15px;
+}
+
+.RWDCardStyle {
+  border: none !important;
+  border-radius: 18px !important;
+  overflow: hidden;
+}
+
+.CardRWDList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0 16px;
+}
+
+.CardDiv {
+  width: 100%;
+  min-width: 361px;
+  height: 100px;
+  border: 1px solid var(--main-color-dark);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.CardRWDImgDiv {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  align-items: center; /* 垂直置中 */
+  /* margin-right: 16px; */
+}
+
+.CardRWDImg {
+  /* max-width: 100%; 確保圖片不會超出容器的寬度 */
+  max-height: 100%; /* 確保圖片不會超出容器的高度 */
+  /* object-fit: contain; 讓圖片按比例縮放並置中 */
+}
+
+.CardRWDTitle {
+  text-align: center;
+  height: 80px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* 按鈕之間平均分散高度 */
+  align-items: center; /* 將按鈕置中 */
+  padding: 0 10px;
+}
+
+.CardRWDTitleH {
+  white-space: nowrap; /* 防止文字換行 */
+  overflow: hidden; /* 隱藏超出的部分 */
+  text-overflow: ellipsis; /* 顯示省略號 */
+  width: 160px;
+  /* margin-left: 16px; */
+}
+
+.CardRWDPDiv{
+  display: flex;
+}
+
+.CardRWDP{
+  font-size: 12px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.CardRWDP div {
+  display: inline-block;
+  margin-left: 4px; /* 控制兩個內容之間的間距 */
+}
+
+.CardRWDBtn{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* 按鈕之間平均分散高度 */
+  align-items: center; /* 將按鈕置中 */
+}
+
+.CardRWDBtn1 {
+  width: 79px;
+  background-color: var(--main-color-dark);
+  color: var(--main-color-bright);
+  border-radius: 6px;
+  border: 1px solid var(--main-color-dark);
+  padding: 4px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.CardRWDBtn2 {
+  width: 79px;
+  background-color: var(--sub-color);
+  color: var(--main-color-dark);
+  border-radius: 6px;
+  border: 1px solid var(--main-color-dark);
+  padding: 4px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+
+  .containerRWD {
+    display: block;
+    width: 100%;
+  }
+
+  .tabRWD{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pageTitle {
+    width: 100%;
+    background-color: var(--main-color-dark);
+    height: 43px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .h2 {
+    color: var(--main-color-bright);
+    font-size: 16px;
+    margin-left: 16px;
+  }
+
+  .filterContainer {
+    width: 95%;
+  }
+
+  .campContent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 11px;
+  }
+
+  .detailImg{
+    
+  }
+}

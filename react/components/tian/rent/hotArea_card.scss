@@ -1,0 +1,171 @@
+.hotArea-tian {
+  flex: 0 1 65.5462185%;
+  @include flexRow;
+  justify-content: space-between;
+  .hotMain {
+    flex: 0 1 64.903846%;
+    @include childBigger-tian(img);
+    position: relative;
+    border-radius: 18px;
+    background-color: $primary-color;
+    overflow: hidden;
+    @include flexCol;
+    .areaImg {
+      width: 100%;
+      // height: 374px;
+      background-color: #fff;
+      overflow: hidden;
+      @include flexRow;
+      align-items: center;
+      img {
+        flex: 0 1 auto;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .hotInfo {
+      flex: 0 1 auto;
+      width: 100%;
+      height: 72px;
+      padding-inline: 20px;
+      padding-block: 12px;
+      border-inline-end: 18px;
+      gap: 5px;
+
+      .infoTag {
+        gap: 6px;
+        .tag {
+          border-radius: 16px;
+          padding-inline: 5px;
+          padding-block: 2px;
+        }
+      }
+    }
+  }
+  .hotDev {
+    flex: 0 1 29.967949%;
+    @include flexCol(32px);
+    .hotLink {
+      @include childBigger-tian('.linkBtn', top right, 1.5);
+      flex: 3 1 auto;
+      width: 100%;
+      padding: 10px;
+      border-radius: 18px;
+      background-color: $primary-color;
+      @include flexCol;
+      justify-content: space-between;
+      .linkBtn {
+        align-self: flex-end;
+        width: 56px;
+        height: 56px;
+        border-radius: 18px;
+        background-color: $success-color;
+        @include flexRow;
+        justify-content: center;
+        align-items: center;
+        a {
+          text-decoration: none;
+        }
+      }
+      .linkInfo {
+        padding-block: 8px;
+        padding-inline: 12px;
+      }
+    }
+    .hotTitle {
+      flex: 1 1 auto;
+      width: 100%;
+      border-radius: 18px;
+      background-color: $primary-color;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hotArea-tian {
+    flex: 0 1 100%;
+    @include flexRow;
+    justify-content: space-between;
+    .hotMain {
+      flex: 0 1 64%;
+      @include childBigger-tian(img);
+      position: relative;
+      border-radius: 18px;
+      background-color: $primary-color;
+      overflow: hidden;
+      @include flexCol;
+      .areaImg {
+        width: 100%;
+        // height: 374px;
+        background-color: #fff;
+        overflow: hidden;
+        @include flexRow;
+        align-items: center;
+        img {
+          flex: 0 1 auto;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+      .hotInfo {
+        flex: 0 1 auto;
+        width: 100%;
+        height: 72px;
+        padding-inline: 20px;
+        padding-block: 12px;
+        border-inline-end: 18px;
+        gap: 5px;
+
+        .infoTag {
+          gap: 6px;
+          .tag {
+            border-radius: 16px;
+            padding-inline: 5px;
+            padding-block: 2px;
+          }
+        }
+      }
+    }
+    .hotDev {
+      flex: 0 1 calc(100% - 64% - 16px);
+      @include flexCol(16px);
+      .hotLink {
+        @include childBigger-tian('.linkBtn', top right, 1.5);
+        flex: 0 1 75%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 18px;
+        background-color: $primary-color;
+        @include flexCol;
+        justify-content: space-between;
+        .linkBtn {
+          align-self: flex-end;
+          width: 56px;
+          height: 56px;
+          border-radius: 18px;
+          background-color: $success-color;
+          @include flexRow;
+          justify-content: center;
+          align-items: center;
+          a {
+            text-decoration: none;
+          }
+        }
+        .linkInfo {
+          padding-block: 8px;
+          padding-inline: 12px;
+        }
+      }
+      .hotTitle {
+        flex: 0 1 calc(100% - 75% - 16px);
+        width: 100%;
+        border-radius: 18px;
+        background-color: $primary-color;
+      }
+    }
+  }
+}

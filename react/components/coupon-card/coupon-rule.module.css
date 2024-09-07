@@ -1,0 +1,125 @@
+/* RULE */
+
+.ruleContainer {
+  cursor: pointer;
+}
+
+.ruleContainer:hover .rule > * {
+  color: #e49366;
+}
+
+.rule {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rule p {
+  margin: 0;
+  color: #2d2d2d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* DETAIL */
+.detailBtn {
+  display: flex;
+  width: 187px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  color: #f5f5f7;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background: #413c1c;
+}
+
+.detailBtn p {
+  margin: 0;
+  font-family: 'Noto Sans TC';
+  font-size: 14px;
+  font-weight: 600;
+  color: #f5f5f7;
+}
+
+.detailBtn:hover {
+  background: #e49366;
+}
+
+/* 彈出視窗 */
+
+.couponModal {
+  font-family: 'Montserrat', 'Noto Sans TC';
+}
+
+.modalHead {
+  display: flex;
+  padding: 12px 0px;
+  justify-content: center;
+  align-items: center;
+  background: #413c1c;
+  border-radius: 18px 18px 0 0;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  color: #f5f5f7;
+}
+
+.modalInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px 48px;
+  align-self: stretch;
+  background: #f5f5f7;
+  border-radius: 0 0 18px 18px;
+  overflow: hidden;
+}
+
+.modalInfo .col {
+  display: flex;
+  gap: 72px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  color: #2d2d2d;
+  text-wrap: wrap;
+}
+
+.modalInfo .col .th {
+  width: 100px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  color: #413c1c;
+}
+
+.modalInfo .line {
+  height: 0.5px;
+  background: #8f8e93;
+}
+
+.arrowIcon {
+  margin: 0 8px 2px 8px;
+}
+
+.br {
+  display: none;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .modalInfo .col {
+    gap: 10px;
+  }
+  .modalInfo .col .th {
+    width: 90px;
+  }
+  .br {
+    display: inline;
+  }
+}

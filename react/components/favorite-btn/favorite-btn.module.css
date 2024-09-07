@@ -1,0 +1,19 @@
+.favoriteBtn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .favoriteBtn:hover svg path {
+  fill: #e49366;
+} */
+
+.favoriteBtn svg path {
+  fill: #e49366;
+}
+
+.favoriteBtn svg path {
+  transition: fill 0.3s ease-in-out;
+}

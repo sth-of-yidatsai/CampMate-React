@@ -1,0 +1,77 @@
+.scrollbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(245, 245, 247, 0.8);
+  backdrop-filter: blur(2px);
+  border: 2px solid #fff;
+  border-radius: 180px;
+  padding: 12px 8px;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+}
+
+/* .vLine {
+  width: 1px;
+  height: 20px;
+  background-color: #413c1c;
+} */
+
+.scrollbarBtn {
+  position: relative;
+  width: 24px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background: none;
+  margin: 4px 0;
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: rgba(245, 245, 247, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid #413c1c;
+  border-radius: 50%;
+}
+
+.scrollbarBtn:hover .dot {
+  background-color: #e49366;
+}
+
+.outline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.active .dot {
+  background-color: #e49366;
+}
+
+.viewed .dot {
+  background-color: #413c1c;
+}
+
+.scrollspy {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .scrollbar {
+    display: none;
+  }
+}

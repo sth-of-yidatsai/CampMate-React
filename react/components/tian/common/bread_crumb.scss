@@ -1,0 +1,15 @@
+.bread-tian {
+  flex: 0 1 auto;
+  @include flexRow(2px);
+  align-items: center;
+  .material-symbols-outlined {
+    @include outline-tian;
+  }
+  ul {
+    @include flexRow(5px);
+    align-items: center;
+    li {
+      list-style: none;
+    }
+  }
+}

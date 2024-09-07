@@ -1,0 +1,19 @@
+.section {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg {
+  background-color: #e5e4cf;
+}
+
+.bg2 {
+  background-color: #413c1c;
+}

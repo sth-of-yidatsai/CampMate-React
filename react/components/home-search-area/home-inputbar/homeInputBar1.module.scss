@@ -1,0 +1,130 @@
+.container {
+  position: fixed;
+  top: calc(64px + 120px);
+  left: 50%; /* 將元素的左邊界移動到父元素的 50% 處 */
+  transform: translateX(-50%); /* 使用 translateX 使元素水平置中 */
+  width: 900px;
+  height: 64px;
+  background-color: #f5f5f78f;
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--main-color-bright);
+  border-radius: 180px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.inputGroup {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 40px;
+  padding-inline: 36px;
+}
+
+.center {
+  position: relative;
+  border-left: 2px solid var(--main-color-dark);
+  border-right: 2px solid var(--main-color-dark);
+  cursor: pointer;
+}
+
+.lableIcon {
+  height: 20px;
+  width: 20px;
+  color: var(--main-color-dark);
+}
+
+.entryArea {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 170px;
+  height: 30px;
+  color: var(--main-color-dark);
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.entryArea::placeholder {
+  color: var(--main-color-dark);
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.entryArea:focus::placeholder,
+.entryArea:not(:placeholder-shown)::placeholder {
+  opacity: 0; /* 聚焦或输入时隐藏 placeholder */
+}
+
+.searchBtn {
+  background-color: #ffffff4f;
+  backdrop-filter: blur(5px);
+  height: 64px;
+  width: 64px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.searchIcon {
+  height: 24px;
+  width: 24px;
+  color: var(--main-color-dark);
+}
+
+.calenderWrapper {
+  position: fixed;
+  top: calc(64px + 120px + 64px + 6px);
+  left: calc(50vw - 192px);
+  z-index: 999;
+}
+
+.calender {
+  display: none;
+}
+
+.calender.open {
+  display: block;
+}
+
+.calculateWrapper {
+  position: fixed;
+  top: calc(64px + 120px + 64px + 6px);
+  left: calc(50vw + 100px);
+  z-index: 999;
+  display: none;
+}
+
+.calculateWrapper.open {
+  display: block;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .container {
+    width: 361px;
+    top: calc(64px + 32px);
+  }
+
+  .wrapper {
+    display: none;
+  }
+  
+  .mobiShow {
+    display: flex;
+    gap: 20px;
+  }
+
+  .searchBtn {
+    width: 80px;
+  }
+}

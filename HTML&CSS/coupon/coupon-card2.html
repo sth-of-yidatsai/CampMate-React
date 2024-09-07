@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .coupon-card {
+        width: 842px;
+        height: 174px;
+        background-color: #e5e4cf;
+        position: relative;
+        clip-path: path(
+          'M842 0H0V6.05493C0.328334 6.01863 0.661991 6 1 6C5.97056 6 10 10.0294 10 15C10 19.9706 5.97056 24 1 24C0.661991 24 0.328334 23.9814 0 23.9451V30.0549C0.328334 30.0186 0.661991 30 1 30C5.97056 30 10 34.0294 10 39C10 43.9706 5.97056 48 1 48C0.661991 48 0.328334 47.9814 0 47.9451V54C0.219538 54 0.438575 54.0021 0.657091 54.0064C0.770867 54.0022 0.885182 54 1 54C1.36762 54 1.73009 54.022 2.08616 54.0649C19.3396 55.1412 33 69.4753 33 87C33 104.525 19.3396 118.859 2.08616 119.935C1.73009 119.978 1.36762 120 1 120C0.885193 120 0.770889 119.998 0.657125 119.994C0.438597 119.998 0.219549 120 0 120V126.055C0.328334 126.019 0.661991 126 1 126C5.97056 126 10 130.029 10 135C10 139.971 5.97056 144 1 144C0.661991 144 0.328334 143.981 0 143.945V150.055C0.328334 150.019 0.661991 150 1 150C5.97056 150 10 154.029 10 159C10 163.971 5.97056 168 1 168C0.661991 168 0.328334 167.981 0 167.945V174H842V168C837.029 168 833 163.971 833 159C833 154.029 837.029 150 842 150V144C837.029 144 833 139.971 833 135C833 130.029 837.029 126 842 126V120C837.029 120 833 115.971 833 111C833 106.029 837.029 102 842 102V96C837.029 96 833 91.9706 833 87C833 82.0294 837.029 78 842 78V72C837.029 72 833 67.9706 833 63C833 58.0294 837.029 54 842 54V48C837.029 48 833 43.9706 833 39C833 34.0294 837.029 30 842 30V24C837.029 24 833 19.9706 833 15C833 10.0294 837.029 6 842 6V0Z'
+        );
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        /* flex-shrink: 0; */
+      }
+
+      .coupon-card p {
+        margin: 0;
+        font-family: 'Montserrat', 'Noto Sans TC';
+      }
+
+      .coupon-type {
+        display: flex;
+        width: 196px;
+        height: 174px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        background: #413c1c;
+      }
+      .coupon-type p {
+        font-size: 14px;
+        color: #f5f5f7;
+      }
+
+      .coupon-info {
+        display: flex;
+        height: 174px;
+        width: calc(646px - 56px);
+        padding: 0 0 0 56px;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+      }
+      .coupon-text {
+        display: flex;
+        width: 106px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+        flex-shrink: 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .coupon-text .detail {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+      }
+      .coupon-text .detail .title {
+        font-size: 20px;
+        letter-spacing: 0.8px;
+        font-weight: 500;
+      }
+      .coupon-text .duration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+      }
+
+      .get-coupon {
+        padding: 0 56px 0 0;
+        display: flex;
+        height: 119px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="coupon-card">
+      <div class="coupon-type">
+        <img src="/assets/couponType1.svg" alt="" />
+        <p>Campmate 全站</p>
+      </div>
+      <div class="coupon-info">
+        <div class="coupon-text">
+          <div class="detail">
+            <p class="title">優惠券名稱</p>
+            <p class="discount">75折</p>
+          </div>
+          <div class="duration">
+            <p>有效期限</p>
+            <p>7.10</p>
+          </div>
+        </div>
+        <div class="get-coupon">
+          <div>aaa</div>
+          <div>bbb</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

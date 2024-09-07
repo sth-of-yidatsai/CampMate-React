@@ -1,0 +1,181 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary-color: #333;
+$secondary-color: #f4f4f4;
+$text-color: #333;
+$white-color: #fff;
+$link-hover-color: #ddd;
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: $secondary-color;
+  color: $text-color;
+}
+
+header {
+  background: $primary-color;
+  color: $white-color;
+  padding: 1rem 2rem;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .menu {
+    a {
+      color: $white-color;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+  }
+}
+
+.breadcrumb {
+  margin: 1rem 2rem;
+  font-size: 0.9rem;
+}
+
+.details-container {
+  display: flex;
+  margin: 1rem 2rem;
+
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+
+    .thumbnails {
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin: 0.5rem 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .main-image {
+    img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  .info {
+    margin-left: 2rem;
+    flex: 1;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    .dates {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+
+    .register-btn {
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+      background: $primary-color;
+      color: $white-color;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.description,
+.location {
+  margin: 2rem;
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.location {
+  #map {
+    width: 100%;
+    height: 400px;
+    background: #ddd;
+  }
+}
+
+footer {
+  background: $primary-color;
+  color: $white-color;
+  padding: 2rem;
+
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+
+    .column {
+      flex: 1;
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          margin-bottom: 0.5rem;
+
+          a {
+            color: $white-color;
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover {
+              color: $link-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .social-icons {
+    a {
+      img {
+        height: 24px;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+}
+
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}

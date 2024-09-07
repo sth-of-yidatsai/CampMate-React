@@ -1,0 +1,29 @@
+.lightBox-tian {
+  flex: 0 0 calc(50% - 16px);
+  // width: 624px;
+  // height: 442px;
+  // background-color: gray;
+  --yarl__thumbnails_thumbnail_background: #f5f5f7;
+  .yarl__root {
+    --yarl__color_backdrop: #f5f5f7;
+  }
+
+  .yarl__container {
+    background-color: #f5f5f7;
+  }
+
+  .yarl__thumbnails_thumbnail {
+    background-color: #f5f5f7;
+  }
+
+  .yarl_slide_image {
+    border-radius: 18px;
+  }
+
+  .yarl__thumbnails_thumbnail {
+    border-color: $light-color;
+    &.yarl__thumbnails_thumbnail_active {
+      border-color: $sub-color;
+    }
+  }
+}

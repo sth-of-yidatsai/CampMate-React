@@ -1,0 +1,299 @@
+.cardGroup {
+  position: relative;
+}
+
+.cardGroupWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.card {
+  width: 296px;
+  height: 254px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.cardBody {
+  text-decoration: none;
+  position: relative;
+  width: 296px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.cardImg {
+  transform: translateY(-8%);
+  transform-origin: bottom center;
+  transition: all 0.8s ease;
+}
+
+.cardBody:hover .cardImg {
+  transform: scale(1.1);
+}
+
+.icons {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(296px - 24px - 24px - 24px - 24px);
+}
+
+.icons > * {
+  cursor: pointer;
+}
+
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 20px;
+  border-radius: 18px;
+  background: #413c1c;
+  transform: translateY(calc(-56px - 12px + 16px + 4px));
+  transition: all 0.8s ease;
+  padding-bottom: 30px;
+}
+
+.cardFooter.active {
+  transform: translateY(calc(-168px + 56px - 16px));
+}
+
+.cardFooter.active .arrow {
+  transform: rotate(180deg);
+}
+
+.cardFooter:hover {
+  transform: translateY(calc(-168px + 56px - 16px));
+}
+
+.cardFooter:hover .arrow {
+  transform: rotate(180deg);
+}
+
+.showArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.cardTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+
+.cardTitle > p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  color: #f5f5f7;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.tag {
+  display: flex;
+  padding: 2px 8px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tagBg1 {
+  color: #2d2d2d;
+  background-color: #e5e4cf;
+}
+
+.tagBg2 {
+  color: #f5f5f7;
+  background-color: #e49366;
+}
+
+.arrowAndRating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.ratingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 12px;
+}
+
+.ratingStar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.rating {
+  width: 32px;
+  height: 32px;
+  background: var(--hint-color);
+  font-size: 14px;
+  color: var(--main-color-bright);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.commentCount {
+  color: #8f8e93;
+  font-size: 12px;
+  padding: 0 6px;
+}
+
+.middleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.middleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.distance {
+  color: #f5f5f7;
+  font-size: 12px;
+}
+
+.addressWrapper {
+  display: flex;
+  gap: 6px;
+}
+
+.addressWrapper > span {
+  color: #e5e4cf;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.locationLabel {
+  color: var(--hint-color);
+}
+
+.hr {
+  height: 1px;
+  background: #f5f5f7;
+}
+
+.arrow {
+  color: #f5f5f7;
+  transition: all 0.8s ease;
+}
+
+.arrWrap {
+  display: flex;
+  align-self: flex-end;
+}
+
+.arrow2 {
+  color: #413c1c;
+  background-color: #e5e4cf;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  transform-origin: top right; /* 將縮放基準點設置為右上角 */
+  transition: all 0.4s ease;
+}
+
+.cardSide1:hover .arrow2 {
+  transform: scale(1.2);
+}
+
+.cardSide {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardSide1 {
+  display: flex;
+  width: 187px;
+  height: 187px;
+  padding: 14px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #574426;
+}
+
+.cardSide2 {
+  display: flex;
+  width: 187px;
+  height: 51px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--box_radius-box_radius_S, 10px);
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #574426;
+  color: #e5e4cf;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.tdn {
+  text-decoration: none;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .cardFooter:hover {
+    transform: translateY(
+      calc(-56px - 12px + 16px + 4px)
+    ); /* 將 hover 效果禁用 */
+  }
+  .cardFooter.active {
+    transform: translateY(
+      calc(-168px + 56px - 16px)
+    ); /* 使用 active 狀態切換效果 */
+  }
+  .cardFooter:hover .arrow {
+    transform: rotate(0deg);
+  }
+  .cardFooter.active .arrow {
+    transform: rotate(180deg);
+  }
+}

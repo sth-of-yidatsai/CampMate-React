@@ -1,0 +1,72 @@
+// 導入個人設定的scss class集
+@import 'baseTian';
+
+// 導入通用組件scss
+@import '../components/tian/common/bread_crumb.scss';
+@import '../components/tian/common/search.scss';
+@import '../components/tian/common/top_btn.scss';
+@import '../components/tian/common/page_tab.scss';
+@import '../components/tian/common/page_title.scss';
+
+// 導入商品組件scss
+@import '../components/tian/rent/product_card.scss';
+@import '../components/tian/rent/hotArea_card.scss';
+@import '../components/tian/rent/product_title.scss';
+
+@import '../components/tian/rent/info_tab.scss';
+@import '../components/tian/rent/lightBox.scss';
+@import '../components/tian/rent/rank.scss';
+@import '../components/tian/rent/rank_chart.scss';
+@import '../components/tian/rent/comment_card.scss';
+@import '../components/tian/rent/product_banner.scss';
+@import '../components/tian/rent/sidebarAuroToggle.scss';
+
+@import '../components/tian/rent_cart/cart_process.scss';
+@import '../components/tian/rent_cart/list_card.scss';
+@import '../components/tian/rent_cart/payList_card.scss';
+
+@import '../components/tian/orderHistory/order_status_tab.scss';
+@import '../components/tian/orderHistory/orderHistory_list.scss';
+@import '../components/tian/orderHistory/orderHistory_listCard.scss';
+
+// 導入彈出式視窗
+@import '@/components/tian/rent_cart/coupon/couponModal.scss';
+@import '../components/tian/rent_cart/pickupModal.scss';
+@import '../components/tian/rent_cart/addpickupModal.scss';
+@import '../components/tian/orderHistory/commentModal.scss';
+@import '../components/tian/orderHistory/writeCommentModal.scss';
+
+// 導入頁面scss
+@import './rent/product_list.scss';
+@import './rent/product_home.scss';
+@import './rent/product_detail.scss';
+
+@import './rent_cart/cart_check.scss';
+@import './rent_cart/cart_pay.scss';
+
+@import './p-orderHistory/order_history.scss';
+
+// 通用樣式
+// 頁面容器
+.mainArea-tian {
+  position: relative;
+  max-width: 1440px;
+  padding-bottom: 80px;
+  padding-inline: 80px;
+  // margin-top: 64px;
+  margin-inline: auto;
+}
+
+// 側邊欄
+.sidebar-tian {
+  flex: 0 1 14.53125%;
+}
+
+@media screen and (max-width: 768px) {
+  .mainArea-tian {
+    position: relative;
+    max-width: 1440px;
+    padding-inline: 0px;
+    margin-inline: auto;
+  }
+}

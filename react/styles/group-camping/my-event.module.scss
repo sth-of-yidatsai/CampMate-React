@@ -1,0 +1,84 @@
+@forward './group-camping.scss';
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  /* gap: 142px; */
+  .pageContent {
+    display: flex;
+    width: 952px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .eventList {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      align-self: stretch;
+
+      .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-self: stretch;
+        .tags {
+          display: flex;
+          width: 361px;
+          padding: 0px 10px;
+          align-items: flex-end;
+          gap: 10px;
+
+          .tag {
+            display: flex;
+            height: 27px;
+            padding: 7px 29px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            align-self: stretch;
+            border-radius: 10px 10px 0px 0px;
+            border: 1px solid #413c1c;
+            color: #574426;
+            cursor: pointer;
+          }
+          .active {
+            color: #e49366;
+          }
+        }
+        .btnCreate {
+          display: flex;
+          width: 187px;
+          padding: 10px 0px;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          border-radius: 12px;
+          background: #e49366;
+          color: #f5f5f7;
+          border: 1px solid #f5f5f7;
+          text-align: center;
+          transition: 0.3s ease;
+          &:hover {
+            background: #f5f5f7;
+            color: #e49366;
+            border: 1px solid #e49366;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}

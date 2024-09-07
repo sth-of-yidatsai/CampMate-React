@@ -1,0 +1,125 @@
+@forward '/styles/group-camping/group-camping.scss';
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+  .eventCard {
+    display: flex;
+    width: 952px;
+    height: 190px;
+    padding: 16px;
+    align-items: center;
+    gap: 32px;
+    border-radius: 18px;
+    background: #e5e4cf;
+    .cardImage {
+      width: 250px;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+      align-self: stretch;
+      border-radius: 10px;
+    }
+    .cardContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex: 1 0 0;
+      align-self: stretch;
+      hr {
+        width: 100%;
+        height: 1px;
+        background: #8f8e93;
+        margin: 0;
+      }
+      .eventDate {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .cardBottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-self: stretch;
+
+        .tags {
+          display: flex;
+          gap: 10px;
+        }
+        .status {
+          display: flex;
+          // width: 65px;
+          padding: 4px 8px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 180px;
+          &.inProgress {
+            background: #e49366;
+            color: #f5f5f7;
+          }
+          &.ended {
+            background: #8f8e93;
+            color: #f5f5f7;
+          }
+          &.canceled {
+            background: #de3e3e;
+            color: #f5f5f7;
+          }
+          &.organizer {
+            background: #413c1c;
+            color: #f5f5f7;
+          }
+          &.participant {
+            background: #8f8e93;
+            color: #f5f5f7;
+          }
+        }
+
+        .btnMore {
+          display: flex;
+          // width: 64px;
+          // height: 64px;
+          // padding: 6px 0px;
+          padding: 10px 40px;
+          justify-content: center;
+          align-items: center;
+          // border-radius: 18px;
+          border-radius: 12px;
+          background: #413c1c;
+          color: #f5f5f7;
+          cursor: pointer;
+          transition: 0.3s ease;
+
+          &:hover {
+            background: #e49366;
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    .pages {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .goPage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

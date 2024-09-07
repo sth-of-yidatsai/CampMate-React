@@ -1,0 +1,36 @@
+.btn {
+  display: flex;
+  width: 187px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  font-family: 'Noto Sans TC';
+  font-size: 14px;
+  font-weight: 600;
+  color: #f5f5f7;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background: #413c1c;
+}
+
+.hoverBtn {
+  background: #e49366;
+}
+
+.claimedBtn {
+  background: #e49366;
+}
+
+.buttonContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animatedBtn {
+  animation: pulse 0.5s ease-in-out;
+}

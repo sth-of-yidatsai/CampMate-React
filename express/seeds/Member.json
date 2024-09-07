@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "account": "herry0713",
+    "password": "111111",
+    "username": "哈利",
+    "birthdate": "1980-07-13",
+    "phonenumber": "0906102808",
+    "idnumber": "A123456765",
+    "email": "herry@test.com",
+    "address": "桃園市桃園區劉南路377號18樓"
+  },
+  {
+    "id": 2,
+    "account": "ginny0811",
+    "password": "222222",
+    "username": "金妮",
+    "birthdate": "1981-08-11",
+    "phonenumber": "0946840920",
+    "idnumber": "T324958374",
+    "email": "ginny@test.com",
+    "address": "澎湖縣望安鄉高東路305號19樓"
+  },
+  {
+    "id": 3,
+    "account": "mione0919",
+    "password": "333333",
+    "username": "妙麗",
+    "birthdate": "1979-09-19",
+    "phonenumber": "0912541534",
+    "idnumber": "Q238495732",
+    "email": "mione@test.com",
+    "address": "彰化縣社頭鄉趙南路295號15樓"
+  }
+]

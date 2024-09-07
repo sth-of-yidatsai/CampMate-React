@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <linearGradient id="myGradient" gradientTransform="rotate(20)">
+      <stop offset="5%"  stop-color="#eee">
+        <animate attributeName="stop-color" values="#EEEEEE; #CCCCCC; #EEEEEE" dur="2s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset="95%" stop-color="#aaa">
+        <animate attributeName="stop-color" values="#EEEEEE; #DDDDDD; #EEEEEE" dur="3s" repeatCount="indefinite"></animate>
+      </stop>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#myGradient)"  width="100%" height="100%"/>
+</svg>

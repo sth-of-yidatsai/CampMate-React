@@ -1,0 +1,264 @@
+@import "base-tian";
+
+body {
+  background-color: $light-color;
+}
+
+// ## 全頁面容器
+.container-fluid {
+  padding: 0px;
+}
+
+// ** header部分
+header {
+  height: 64px;
+  width: 100vw;
+  background-color: gray;
+}
+// ** footer
+footer {
+  width: 100vw;
+  height: 436.07px;
+  background-color: $primary-color;
+}
+
+// ** 內容部分
+// ## 容器
+.mainArea-tian {
+  position: relative;
+  max-width: 1440px;
+  padding-top: 24px;
+  padding-bottom: 80px;
+  padding-inline: 80px;
+  margin: auto;
+}
+
+// ?? 側邊欄
+.sidebar {
+  flex: 0 0 186px;
+  width: 186px;
+  height: 1023px;
+  background-color: gray;
+}
+// ******************************
+// ** -----product_home scss-----
+
+// ## 主要內容
+.mainArea-tian {
+  @include flexRow;
+  justify-content: space-between;
+}
+.main-tian {
+  flex: 0 1 952px;
+  width: 100%;
+  @include flexCol(32px);
+  align-items: start;
+  .bread {
+    flex: 0 1 auto;
+    &:first-child {
+      @include outline-tian;
+    }
+  }
+  .search {
+    width: 514px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: gray;
+    flex: 0 1 auto;
+  }
+  .ad {
+    width: 100%;
+    height: 248px;
+    border-radius: 18px;
+    background-color: gray;
+    object-fit: cover;
+    flex: 0 1 auto;
+  }
+}
+
+// ** 商品列表
+.productList-tian {
+  width: 100%;
+  flex: 0 1 auto;
+  @include flexCol(32px);
+  // ** 商品列表header
+  .listHeader {
+    flex: 0 1 auto;
+    .pageTitle {
+      gap: 15px;
+    }
+  }
+  // ** 商品列表body
+  .listBody {
+    flex: 0 1 auto;
+    width: 100%;
+    @include flexRow(32px, wrap);
+    .hotArea {
+      width: 623px;
+      flex: 0 1 auto;
+
+      @include flexRow(32px);
+      .hotMain {
+        @include childBigger-tian(img);
+        position: relative;
+        width: 405px;
+        border-radius: 18px;
+        background-color: $primary-color;
+        overflow: hidden;
+        flex: 0 1 auto;
+        @include flexCol;
+        .areaImg {
+          width: 100%;
+          height: 374px;
+          background-color: #fff;
+          overflow: hidden;
+          @include flexRow;
+          align-items: center;
+          img {
+            flex: 0 1 auto;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+        .hotInfo {
+          flex: 0 1 auto;
+          width: 100%;
+          height: 72px;
+          padding-inline: 20px;
+          padding-block: 12px;
+          border-inline-end: 18px;
+          gap: 5px;
+
+          .infoTag {
+            gap: 6px;
+            .tag {
+              border-radius: 16px;
+              padding-inline: 5px;
+              padding-block: 2px;
+            }
+          }
+        }
+      }
+      .hotDev {
+        width: 187px;
+        @include flexCol(32px);
+        .hotLink {
+          @include childBigger-tian(".linkBtn", top right, 1.5);
+          flex: 3 1 auto;
+          width: 100%;
+          padding: 10px;
+          border-radius: 18px;
+          background-color: $primary-color;
+          @include flexCol;
+          justify-content: space-between;
+          .linkBtn {
+            align-self: flex-end;
+            width: 56px;
+            height: 56px;
+            border-radius: 18px;
+            background-color: $success-color;
+            @include flexRow;
+            justify-content: center;
+            align-items: center;
+            a {
+              text-decoration: none;
+            }
+          }
+          .linkInfo {
+            padding-block: 8px;
+            padding-inline: 12px;
+          }
+        }
+        .hotTitle {
+          flex: 1 1 auto;
+          width: 100%;
+          border-radius: 18px;
+          background-color: $primary-color;
+        }
+      }
+    }
+    .productCard {
+      @include childBigger-tian(img);
+      position: relative;
+      width: 296px;
+      border-radius: 18px;
+      background-color: $success-color;
+      overflow: hidden;
+      flex: 0 1 auto;
+      @include flexCol;
+      .addLike {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 99;
+        @include hoverColor-tian($dark-color, $prompt-color);
+        @include outline-tian;
+      }
+      .productImg {
+        width: 100%;
+        height: 296px;
+        background-color: #fff;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        img {
+          flex: 0 1 auto;
+          width: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+
+      .info {
+        flex: 1 1 auto;
+        width: 100%;
+        height: 150px;
+        padding-inline: 20px;
+        padding-block: 12px;
+        border-inline-end: 18px;
+        @include flexCol;
+        justify-content: space-between;
+
+        .infoHeader {
+          gap: 5px;
+        }
+        .infoTag {
+          gap: 6px;
+          .tag {
+            border-radius: 16px;
+            padding-inline: 5px;
+            padding-block: 2px;
+          }
+        }
+
+        .addCart {
+          @include hoverColor-tian($dark-color, $prompt-color);
+          @include outline-tian;
+        }
+      }
+    }
+  }
+  .pageTab {
+    align-self: flex-end;
+    width: 297px;
+    height: 48px;
+    background-color: gray;
+  }
+}
+.topBtn-tian {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+  @include btn-color($primary-color, $light-color);
+  &:hover {
+    @include btn-color($secondary-color, $light-color);
+  }
+  // border: 0px solid transparent;
+  // background-color: $primary-color;
+  // color: $light-color;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}

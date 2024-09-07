@@ -1,0 +1,454 @@
+[
+  {
+    "price_id": 77,
+    "product_id": 65,
+    "product_price": 50
+  },
+  {
+    "price_id": 24,
+    "product_id": 23,
+    "product_price": 60
+  },
+  {
+    "price_id": 80,
+    "product_id": 68,
+    "product_price": 70
+  },
+  {
+    "price_id": 23,
+    "product_id": 22,
+    "product_price": 80
+  },
+  {
+    "price_id": 83,
+    "product_id": 71,
+    "product_price": 90
+  },
+  {
+    "price_id": 84,
+    "product_id": 72,
+    "product_price": 90
+  },
+  {
+    "price_id": 27,
+    "product_id": 25,
+    "product_price": 100
+  },
+  {
+    "price_id": 35,
+    "product_id": 29,
+    "product_price": 100
+  },
+  {
+    "price_id": 49,
+    "product_id": 38,
+    "product_price": 100
+  },
+  {
+    "price_id": 17,
+    "product_id": 17,
+    "style_name": "海黑色",
+    "product_price": 110
+  },
+  {
+    "price_id": 18,
+    "product_id": 17,
+    "style_name": "咖啡棕色",
+    "product_price": 110
+  },
+  {
+    "price_id": 71,
+    "product_id": 59,
+    "product_price": 110
+  },
+  {
+    "price_id": 14,
+    "product_id": 14,
+    "product_price": 120
+  },
+  {
+    "price_id": 16,
+    "product_id": 16,
+    "product_price": 120
+  },
+  {
+    "price_id": 41,
+    "product_id": 33,
+    "product_price": 120
+  },
+  {
+    "price_id": 50,
+    "product_id": 39,
+    "product_price": 120
+  },
+  {
+    "price_id": 79,
+    "product_id": 67,
+    "product_price": 120
+  },
+  {
+    "price_id": 81,
+    "product_id": 69,
+    "product_price": 120
+  },
+  {
+    "price_id": 21,
+    "product_id": 20,
+    "product_price": 130
+  },
+  {
+    "price_id": 40,
+    "product_id": 32,
+    "product_price": 130
+  },
+  {
+    "price_id": 54,
+    "product_id": 43,
+    "product_price": 130
+  },
+  {
+    "price_id": 82,
+    "product_id": 70,
+    "product_price": 130
+  },
+  {
+    "price_id": 86,
+    "product_id": 74,
+    "product_price": 130
+  },
+  {
+    "price_id": 52,
+    "product_id": 41,
+    "product_price": 140
+  },
+  {
+    "price_id": 57,
+    "product_id": 46,
+    "product_price": 140
+  },
+  {
+    "price_id": 55,
+    "product_id": 44,
+    "product_price": 150
+  },
+  {
+    "price_id": 62,
+    "product_id": 51,
+    "product_price": 150
+  },
+  {
+    "price_id": 66,
+    "product_id": 55,
+    "style_name": "黑色",
+    "product_price": 150
+  },
+  {
+    "price_id": 67,
+    "product_id": 55,
+    "style_name": "米色",
+    "product_price": 150
+  },
+  {
+    "price_id": 85,
+    "product_id": 73,
+    "product_price": 150
+  },
+  {
+    "price_id": 19,
+    "product_id": 18,
+    "product_price": 160
+  },
+  {
+    "price_id": 20,
+    "product_id": 19,
+    "product_price": 160
+  },
+  {
+    "price_id": 56,
+    "product_id": 45,
+    "product_price": 160
+  },
+  {
+    "price_id": 58,
+    "product_id": 47,
+    "product_price": 170
+  },
+  {
+    "price_id": 68,
+    "product_id": 56,
+    "product_price": 180
+  },
+  {
+    "price_id": 22,
+    "product_id": 21,
+    "product_price": 190
+  },
+  {
+    "price_id": 28,
+    "product_id": 26,
+    "style_name": "北歐灰",
+    "product_price": 200
+  },
+  {
+    "price_id": 29,
+    "product_id": 26,
+    "style_name": "輕米色",
+    "product_price": 200
+  },
+  {
+    "price_id": 30,
+    "product_id": 26,
+    "style_name": "276噴砂古銅Bronze",
+    "product_price": 200
+  },
+  {
+    "price_id": 31,
+    "product_id": 26,
+    "style_name": "噴砂鋼鐵灰",
+    "product_price": 200
+  },
+  {
+    "price_id": 36,
+    "product_id": 30,
+    "style_name": "黑",
+    "product_price": 200
+  },
+  {
+    "price_id": 37,
+    "product_id": 30,
+    "style_name": "沙漠色",
+    "product_price": 200
+  },
+  {
+    "price_id": 38,
+    "product_id": 30,
+    "style_name": "軍綠色",
+    "product_price": 200
+  },
+  {
+    "price_id": 61,
+    "product_id": 50,
+    "product_price": 200
+  },
+  {
+    "price_id": 63,
+    "product_id": 52,
+    "product_price": 200
+  },
+  {
+    "price_id": 74,
+    "product_id": 62,
+    "product_price": 200
+  },
+  {
+    "price_id": 73,
+    "product_id": 61,
+    "product_price": 220
+  },
+  {
+    "price_id": 60,
+    "product_id": 49,
+    "product_price": 230
+  },
+  {
+    "price_id": 15,
+    "product_id": 15,
+    "product_price": 240
+  },
+  {
+    "price_id": 32,
+    "product_id": 27,
+    "style_name": "橄欖綠#UK-4070",
+    "product_price": 240
+  },
+  {
+    "price_id": 33,
+    "product_id": 27,
+    "style_name": "卡其#UK-4071",
+    "product_price": 240
+  },
+  {
+    "price_id": 39,
+    "product_id": 31,
+    "product_price": 240
+  },
+  {
+    "price_id": 59,
+    "product_id": 48,
+    "product_price": 240
+  },
+  {
+    "price_id": 64,
+    "product_id": 53,
+    "product_price": 240
+  },
+  {
+    "price_id": 51,
+    "product_id": 40,
+    "style_name": "黑色,\n沙色,\n軍綠色,",
+    "product_price": 250
+  },
+  {
+    "price_id": 78,
+    "product_id": 66,
+    "product_price": 250
+  },
+  {
+    "price_id": 72,
+    "product_id": 60,
+    "product_price": 260
+  },
+  {
+    "price_id": 34,
+    "product_id": 28,
+    "product_price": 270
+  },
+  {
+    "price_id": 76,
+    "product_id": 64,
+    "product_price": 270
+  },
+  {
+    "price_id": 12,
+    "product_id": 12,
+    "product_price": 400
+  },
+  {
+    "price_id": 6,
+    "product_id": 6,
+    "product_price": 460
+  },
+  {
+    "price_id": 10,
+    "product_id": 10,
+    "product_price": 460
+  },
+  {
+    "price_id": 5,
+    "product_id": 5,
+    "product_price": 480
+  },
+  {
+    "price_id": 45,
+    "product_id": 35,
+    "size_name": "45L",
+    "product_price": 480
+  },
+  {
+    "price_id": 25,
+    "product_id": 24,
+    "style_name": "軍綠色RR-GER25G",
+    "product_price": 510
+  },
+  {
+    "price_id": 26,
+    "product_id": 24,
+    "style_name": "沙色RR-GER25T",
+    "product_price": 510
+  },
+  {
+    "price_id": 65,
+    "product_id": 54,
+    "product_price": 510
+  },
+  {
+    "price_id": 46,
+    "product_id": 35,
+    "size_name": "55L",
+    "product_price": 520
+  },
+  {
+    "price_id": 75,
+    "product_id": 63,
+    "product_price": 540
+  },
+  {
+    "price_id": 53,
+    "product_id": 42,
+    "style_name": "灰色,\n白色",
+    "product_price": 550
+  },
+  {
+    "price_id": 69,
+    "product_id": 57,
+    "product_price": 660
+  },
+  {
+    "price_id": 70,
+    "product_id": 58,
+    "product_price": 660
+  },
+  {
+    "price_id": 42,
+    "product_id": 34,
+    "size_name": "45L",
+    "product_price": 700
+  },
+  {
+    "price_id": 7,
+    "product_id": 7,
+    "product_price": 720
+  },
+  {
+    "price_id": 43,
+    "product_id": 34,
+    "size_name": "55L",
+    "product_price": 740
+  },
+  {
+    "price_id": 44,
+    "product_id": 34,
+    "size_name": "65L",
+    "product_price": 780
+  },
+  {
+    "price_id": 2,
+    "product_id": 2,
+    "product_price": 960
+  },
+  {
+    "price_id": 13,
+    "product_id": 13,
+    "product_price": 1030
+  },
+  {
+    "price_id": 1,
+    "product_id": 1,
+    "product_price": 1120
+  },
+  {
+    "price_id": 48,
+    "product_id": 37,
+    "product_price": 1160
+  },
+  {
+    "price_id": 47,
+    "product_id": 36,
+    "product_price": 1320
+  },
+  {
+    "price_id": 9,
+    "product_id": 9,
+    "product_price": 1490
+  },
+  {
+    "price_id": 3,
+    "product_id": 3,
+    "product_price": 1760
+  },
+  {
+    "price_id": 11,
+    "product_id": 11,
+    "product_price": 1830
+  },
+  {
+    "price_id": 8,
+    "product_id": 8,
+    "product_price": 2090
+  },
+  {
+    "price_id": 4,
+    "product_id": 4,
+    "product_price": 2160
+  }
+]

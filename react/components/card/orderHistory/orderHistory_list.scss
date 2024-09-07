@@ -1,0 +1,196 @@
+.orderHistory-list-tian {
+  @include flexCol;
+  @include formRadius-tian(20px);
+  width: 100%;
+  border: 1px solid $success-color;
+  .listHeader {
+    @include flexRow;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding-inline: 20px;
+    background-color: $success-color;
+    & :nth-child(1) {
+      @include flexRow(15px);
+      .status {
+        text-align: center;
+        padding-inline: 10px;
+        padding-block: 3px;
+        border-radius: 50px;
+        background-color: $prompt-color;
+      }
+    }
+    .orderNum {
+      @include flexRow(10px);
+    }
+  }
+  .listBody.show {
+    width: 100%;
+    background-color: $light-color;
+    .cardHeader {
+      @include flexRow;
+      justify-content: space-between;
+      align-items: center;
+      height: 30px;
+      margin-inline: 20px;
+      border-bottom: 0.5px solid $sub-color;
+      background-color: $light-color;
+      .image {
+        flex: 0 1 auto;
+        width: 130px;
+        height: 100%;
+      }
+      .product {
+        flex: 1 1 auto;
+      }
+      .date {
+        display: none;
+      }
+      .day {
+        flex: 0 1 auto;
+        width: 70px;
+      }
+      .count,
+      .amount {
+        flex: 0 1 auto;
+        width: 70px;
+      }
+    }
+  }
+  .listBody {
+    width: 100%;
+    background-color: $light-color;
+    .cardHeader {
+      @include flexRow;
+      justify-content: space-between;
+      align-items: center;
+      height: 30px;
+      margin-inline: 20px;
+      border-bottom: 0.5px solid $sub-color;
+      background-color: $light-color;
+      .image {
+        flex: 0 1 auto;
+        width: 66px;
+        height: 100%;
+      }
+      .product {
+        flex: 1 1 auto;
+      }
+      .date {
+        flex: 0 1 auto;
+        width: 215px;
+      }
+      .day {
+        flex: 0 1 auto;
+        width: 70px;
+      }
+      .count {
+        flex: 0 1 auto;
+        width: 70px;
+      }
+      .amount {
+        flex: 0 1 auto;
+        width: 70px;
+      }
+    }
+  }
+  .orderProcess {
+    @include flexRow;
+    align-items: flex-start;
+    padding-block: 20px;
+    padding-left: 35px;
+    padding-right: 145px;
+    margin-inline: 20px;
+    height: 115px;
+    background-color: $light-color;
+    border-top: 0.5px solid $sub-color;
+    div {
+      @include flexRow;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      .processItem {
+        position: relative;
+        flex: 0 1 auto;
+        width: fit-content;
+        .processCircle {
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          background-color: $prompt-color;
+        }
+        &.active .processCircle {
+          @include flexRow;
+          justify-content: center;
+          align-items: cen;
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          border: 1px solid $prompt-color;
+          background-color: $light-color;
+          .insideCircle {
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background-color: $prompt-color;
+          }
+        }
+
+        .processContent {
+          position: absolute;
+          @include flexCol;
+          width: 110px;
+          top: 20px;
+          .processTitle {
+            color: $sub-color;
+          }
+          .processDatetime {
+            @include flexRow(10px);
+            color: $sub-color;
+          }
+        }
+        &.active .processContent {
+          top: 25px;
+          .processTitle {
+            color: $dark-color;
+          }
+        }
+      }
+      .processLine {
+        flex: 1 1 auto;
+        height: 1px;
+        background-color: $prompt-color;
+      }
+    }
+  }
+  .listFooter {
+    @include flexRow;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    height: 50px;
+    background-color: $success-color;
+    .openList {
+      background-color: transparent;
+      span {
+        font-size: 30px;
+        @include outline-tian;
+      }
+    }
+    & > div {
+      @include flexRow(16px);
+      justify-content: flex-start;
+      align-items: center;
+      button {
+        border-width: 2px;
+        border-radius: 40px;
+        padding-inline: 20px;
+        padding-block: 5px;
+      }
+    }
+    .total {
+      @include flexRow(10px);
+    }
+  }
+}

@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+:root {
+  --main-color-dark: #413c1c;
+  --main-color-bright: #f5f5f7;
+  --sub-color: #e5e4cf;
+  --hint-color: #e49366;
+  --text-color: #8f8e93;
+  --text-color2: #2d2d2d;
+}
+
+.body {
+  background-color: var(--main-color-bright);
+}
+
+/* Modules */
+.hidden-btn {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity visibility;
+  transition-duration: 0.3s;
+}
+
+.open-menu {
+  transform: translateX(-374px);
+}
+
+/* bread-crumb */
+.bread-crumb {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #8f8e93;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/* header */
+
+.header {
+  background-color: var(--main-color-bright);
+  width: 100%;
+  padding-inline: 80px;
+  position: fixed;
+  height: 64px;
+  z-index: 999;
+}
+
+.header-logo {
+  width: 160px;
+  height: 15px;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-right-group {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.icon-btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 104px;
+}
+
+.icon-btn-opened-group {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 480px;
+}
+
+.icon-btn-opened {
+  width: 160px;
+  height: 37px;
+  border-radius: 12px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+  &:hover {
+    transition: 0.5s ease;
+    background-color: var(--main-color-dark);
+    p {
+      transition: 0.5s ease;
+      color: var(--main-color-bright);
+    }
+  }
+  p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--main-color-dark);
+  }
+}
+
+.icon-btn-closed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 104px;
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.menu-btn svg path {
+  fill: var(--main-color-dark);
+  transition: fill 0.2s e;
+}
+
+.menu-btn:hover svg path {
+  fill: var(--hint-color);
+}
+
+.icon-btn :hover {
+  cursor: pointer;
+}
+
+.icon-btn:hover svg path {
+  fill: var(--hint-color);
+}
+
+.header-space {
+  width: 100%;
+  height: 64px;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  background-color: var(--main-color-dark);
+}
+.footer-wrapper {
+  width: 100%;
+  padding-block: 50px;
+  padding-inline: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-links-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.titles {
+  flex: 0 1 248px;
+}
+
+.titles p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  /* 阿田調整 */
+  font-weight: 400;
+  color: var(--main-color-bright);
+  margin-bottom: 32px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  a {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+    /* 阿田調整 */
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--main-color-bright);
+    margin-bottom: 18px;
+  }
+}
+.white-line {
+  background-color: var(--main-color-bright);
+  height: 1px;
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 32px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    color: var(--main-color-bright);
+  }
+}
+
+.footer-bottom-icon-group {
+  width: 187px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Aside */
+
+aside {
+  border: none !important;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 600;
+  /* 阿田調整 */
+  margin-inline: 0px;
+  /* margin-inline: 80px; */
+  margin-block: 24px;
+}
+
+.ps-menuitem-root:nth-child(1) {
+  margin-top: 8px;
+}
+
+.ps-submenu-content {
+  background-color: transparent !important;
+}
+
+.ps-sidebar-container {
+  background-color: transparent !important;
+  width: 186px !important;
+}
+
+.sidebar {
+  color: var(--main-color-dark);
+  font-size: 14px;
+  width: 186px !important;
+  h2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+
+  /* 阿田調整 */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}
+
+.ps-submenu-content .ps-menu-button {
+  height: 32px !important;
+  width: 140px !important;
+  margin-bottom: 4px;
+}
+
+.ps-menu-button:hover {
+  background-color: var(--sub-color) !important;
+}
+
+.ps-menu-icon {
+  margin-right: 12px !important;
+}
+
+.level1 a {
+  padding-left: 0 !important;
+  border-radius: 10px;
+  svg {
+    font-size: 22px;
+  }
+}
+
+.level1 > a > span {
+  /* 阿田調整 */
+  font-weight: 700;
+  /* font-weight: 900; */
+}
+
+.level1 > a:hover {
+  background-color: transparent !important;
+}
+
+.level2 a {
+  margin-left: 16px !important;
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+  color: #2d2d2d !important;
+  border-radius: 10px;
+  position: relative;
+  left: 10px;
+}
+
+/* 阿田調整 */
+.level2 > a > span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ps-submenu-expand-icon > span {
+  width: 8px;
+  height: 8px;
+}
+
+.css-honxw6 {
+  transform: rotate(45deg) !important;
+}
+
+.css-jn69v9 {
+  transform: rotate(-135deg) !important;
+}
+
+/* campground-sidebar */
+.horizontal-slider {
+  width: 90%;
+  height: 30px;
+  /* border: 1px solid grey; */
+  /* background-color: black; */
+}
+.example-track {
+  top: 8px;
+  height: 2px;
+}
+.example-track-0 {
+  background: var(--main-color-dark);
+}
+
+.example-track-1 {
+  background: var(--main-color-dark);
+}
+.example-track.example-track-2 {
+  background: var(--main-color-dark);
+}
+
+.example-thumb-0 {
+  background: var(--main-color-dark);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.example-thumb-0:focus-visible {
+  background: var(--main-color-dark);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  outline: none;
+}
+
+.example-thumb-1 {
+  background: var(--main-color-dark);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.example-thumb-1:focus-visible {
+  background: var(--main-color-dark);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  outline: none;
+}
+
+/*  */
+.yarl__button {
+  color: #413c1c !important;
+  fill: #413c1c;
+  filter: drop-shadow(0 0 0 var(--main-color-bright)) !important;
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}

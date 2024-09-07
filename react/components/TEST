@@ -1,0 +1,363 @@
+import React, { useState, useEffect } from 'react'
+import styles from '@/styles/tickets.module.css'
+import UserChat from '@/components/chatbox/user-chat'
+import Pagination from '../group-camping/event-list/pagination/pagination'
+import { IoEyeOutline, IoIosCloseCircleOutline } from 'react-icons/io5'
+import {
+  MdOutlinePostAdd,
+  MdOutlineFactCheck,
+  MdOutlineLowPriority,
+} from 'react-icons/md'
+import { FaCalendarCheck } from 'react-icons/fa'
+import { IoChatboxEllipsesOutline } from 'react-icons/io5'
+import {
+  getChatsByUserId,
+  useTicketsByUserId,
+  register,
+  getFavs,
+  addFav,
+  removeFav,
+  updateProfile,
+  updateProfileAvatar,
+  updatePassword,
+} from '@/api/your-api-module' // Adjust the import based on your file structure
+
+export default function Tickets() {
+  const [newMessageCount, setNewMessageCount] = useState(0)
+  const [chatVisible, setChatVisible] = useState(false)
+  const [error, setError] = useState(null)
+  const [currentPage, setCurrentPage] = useState(1)
+  const [totalPages, setTotalPages] = useState(1)
+  const itemsPerPage = 10
+  const [tickets, setTickets] = useState([])
+  const [filteredTickets, setFilteredTickets] = useState([])
+  const [showModal, setShowModal] = useState(false)
+  const [showNestedModal, setShowNestedModal] = useState(false)
+  const [showDetailModal, setShowDetailModal] = useState(false)
+  const [selectedTicket, setSelectedTicket] = useState(null)
+  const [showChatModal, setShowChatModal] = useState(false)
+  const [selectedOrderNumber, setSelectedOrderNumber] = useState('')
+  const [orderNumbers, setOrderNumbers] = useState([]) // To store order numbers for selection
+
+  useEffect(() => {
+    // Load tickets from API
+    const fetchTickets = async () => {
+      try {
+        const response = await axiosInstance.get('/tickets') // Adjust API endpoint as needed
+        const allTickets = response.data.data.tickets
+        setTickets(allTickets)
+        setFilteredTickets(allTickets)
+        setTotalPages(Math.ceil(allTickets.length / itemsPerPage))
+      } catch (error) {
+        console.error('Error fetching tickets:', error)
+        setError(error.message)
+      }
+    }
+
+    fetchTickets()
+  }, [])
+
+  const startIndex = (currentPage - 1) * itemsPerPage
+  const currentTickets = filteredTickets.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  )
+
+  const handleChatModalOpen = () => {
+    setShowChatModal(true)
+    setNewMessageCount(0)
+  }
+
+  const handleNewMessage = () => {
+    setNewMessageCount((prev) => prev + 1)
+  }
+
+  const toggleChatVisibility = () => {
+    setChatVisible((prevVisible) => !prevVisible)
+    if (!chatVisible) {
+      setNewMessageCount(0)
+    }
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    const formData = new FormData(event.target)
+    const email = formData.get('ticketEmail')
+    const phone = formData.get('ticketPhone')
+    const orderNumber = formData.get('ticketOrderNum')
+    const category = formData.get('ticketCategory')
+    const description = formData.get('description')
+
+    try {
+      await axiosInstance.post('/tickets', {
+        email,
+        phone,
+        orderNumber,
+        category,
+        description,
+      })
+      setShowModal(false)
+    } catch (error) {
+      console.error('Error submitting ticket:', error)
+    }
+  }
+
+  const handleDetailClick = (ticket) => {
+    setSelectedTicket(ticket)
+    setShowDetailModal(true)
+  }
+
+  const handleNestedModalClick = () => {
+    // Fetch order numbers for selection
+    const fetchOrderNumbers = async () => {
+      try {
+        const response = await axiosInstance.get('/orders') // Adjust API endpoint as needed
+        setOrderNumbers(response.data.orders)
+        setShowNestedModal(true)
+      } catch (error) {
+        console.error('Error fetching order numbers:', error)
+      }
+    }
+
+    fetchOrderNumbers()
+  }
+
+  const handleNestedModalClose = () => {
+    setShowNestedModal(false)
+  }
+
+  const handleOrderNumberSelect = (orderNumber) => {
+    setSelectedOrderNumber(orderNumber)
+    setShowNestedModal(false)
+  }
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page)
+    window.scrollTo({
+      top: document.querySelector(`.${styles.pageTitle}`).offsetTop - 20,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }
+
+  const formatDateTime = (dateTimeString) => {
+    const date = new Date(dateTimeString)
+    return date.toLocaleString('zh-TW', {
+      timeZone: 'Asia/Taipei',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+    })
+  }
+
+  return (
+    <>
+      <div className={styles.containerStyle}>
+        <div className={styles.titleStyle}>
+          <button
+            href="#"
+            className={styles.addTicket}
+            onClick={(e) => {
+              e.preventDefault()
+              setShowModal(true)
+            }}
+          >
+            <MdOutlinePostAdd className={styles.addTicketIcon} />
+          </button>
+          <button
+            className={styles.chatBtn}
+            onClick={() => handleChatModalOpen()}
+          >
+            <IoChatboxEllipsesOutline className={styles.chatIcon} />
+            {newMessageCount > 0 && (
+              <span className={styles.badge}>{newMessageCount}</span>
+            )}
+          </button>
+        </div>
+
+        <div>
+          <div>
+            <table className={styles.tableStyle}>
+              <thead className={styles.theadStyle}>
+                <tr className={styles.thStyle}>
+                  <th>客服單編號</th>
+                  <th>訂單編號</th>
+                  <th>問題分類</th>
+                  <th>問題說明</th>
+                  <th>建立時間</th>
+                  <th>檢視狀態</th>
+                  <th>查看詳細</th>
+                </tr>
+              </thead>
+              <tbody>
+                {currentTickets.map((ticket) => (
+                  <tr key={ticket.id} className={styles.tdStyle}>
+                    <td>{ticket.id}</td>
+                    <td>{ticket.order_id}</td>
+                    <td>{ticket.category}</td>
+                    <td className={styles.CsDescription}>
+                      {ticket.description}
+                    </td>
+                    <td>{formatDateTime(ticket.createtime)}</td>
+                    <td className={styles.CsState}>
+                      <div
+                        className={
+                          ticket.status === '尚未回覆'
+                            ? styles.CsState1
+                            : ticket.status === '處理中'
+                            ? styles.CsState2
+                            : styles.CsState3
+                        }
+                      >
+                        {ticket.status}
+                      </div>
+                    </td>
+                    <td>
+                      <button
+                        href=""
+                        className={styles.checkBg}
+                        onClick={() => handleDetailClick(ticket)}
+                      >
+                        <IoEyeOutline className={styles.checkIcon} />
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className={styles.pagination}>
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+          />
+        </div>
+      </div>
+
+      {/* 新增客服單 */}
+      {showModal && (
+        <div className={styles.modalBackdrop}>
+          <div className={styles.modalContent}>
+            <div className={styles.modalClose}>
+              <button
+                className={styles.closeButton}
+                onClick={() => setShowModal(false)}
+              >
+                <IoIosCloseCircleOutline />
+              </button>
+            </div>
+            <form className={styles.form} onSubmit={handleSubmit}>
+              <div className={styles.formTitle}>聯絡我們</div>
+              <label className={styles.formLabel}>聯絡信箱</label>
+              <input
+                className={styles.formInput}
+                type="email"
+                name="ticketEmail"
+                required
+              />
+              <label className={styles.formLabel}>聯絡電話</label>
+              <input
+                className={styles.formInput}
+                type="tel"
+                name="ticketPhone"
+                required
+              />
+              <label className={styles.formLabel}>訂單編號</label>
+              <button
+                type="button"
+                className={styles.selectButton}
+                onClick={handleNestedModalClick}
+              >
+                {selectedOrderNumber || '選擇訂單編號'}
+              </button>
+              <label className={styles.formLabel}>問題分類</label>
+              <select
+                name="ticketCategory"
+                className={styles.formSelect}
+                required
+              >
+                <option value="category1">類別 1</option>
+                <option value="category2">類別 2</option>
+                <option value="category3">類別 3</option>
+              </select>
+              <label className={styles.formLabel}>問題說明</label>
+              <textarea
+                className={styles.formTextarea}
+                name="description"
+                required
+              />
+              <button className={styles.submitButton} type="submit">
+                提交
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* 顯示訂單編號選擇 */}
+      {showNestedModal && (
+        <div className={styles.modalBackdrop}>
+          <div className={styles.modalContent}>
+            <div className={styles.modalClose}>
+              <button
+                className={styles.closeButton}
+                onClick={handleNestedModalClose}
+              >
+                <IoIosCloseCircleOutline />
+              </button>
+            </div>
+            <div className={styles.modalTitle}>選擇訂單編號</div>
+            <ul className={styles.orderNumberList}>
+              {orderNumbers.map((order) => (
+                <li
+                  key={order.id}
+                  className={styles.orderNumberItem}
+                  onClick={() => handleOrderNumberSelect(order.number)}
+                >
+                  {order.number}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
+
+      {/* 詳細資訊模態 */}
+      {selectedTicket && showDetailModal && (
+        <div className={styles.modalBackdrop}>
+          <div className={styles.modalContent}>
+            <div className={styles.modalClose}>
+              <button
+                className={styles.closeButton}
+                onClick={() => setShowDetailModal(false)}
+              >
+                <IoIosCloseCircleOutline />
+              </button>
+            </div>
+            <div className={styles.modalTitle}>客服單詳細資訊</div>
+            <p>客服單編號: {selectedTicket.id}</p>
+            <p>訂單編號: {selectedTicket.order_id}</p>
+            <p>問題分類: {selectedTicket.category}</p>
+            <p>問題說明: {selectedTicket.description}</p>
+            <p>建立時間: {formatDateTime(selectedTicket.createtime)}</p>
+            <p>狀態: {selectedTicket.status}</p>
+          </div>
+        </div>
+      )}
+
+      {/* 聊天框 */}
+      {showChatModal && (
+        <div className={styles.modalBackdrop}>
+          <div className={styles.modalContent}>
+            <UserChat onNewMessage={handleNewMessage} />
+          </div>
+        </div>
+      )}
+    </>
+  )
+}

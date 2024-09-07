@@ -1,0 +1,10 @@
+.rankChart-tian {
+  width: 304px;
+  height: 130px;
+  @include flexCol(5px);
+  justify-content: space-between;
+  div {
+    @include flexRow(5px);
+    align-items: center;
+  }
+}

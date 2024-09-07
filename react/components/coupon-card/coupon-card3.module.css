@@ -1,0 +1,122 @@
+.couponCard {
+  width: 952px;
+  height: 174px;
+  background-color: #e5e4cf;
+  position: relative;
+  clip-path: path(
+    'M952 0H0V6.05493C0.328334 6.01863 0.661991 6 1 6C5.97056 6 10 10.0294 10 15C10 19.9706 5.97056 24 1 24C0.661991 24 0.328334 23.9814 0 23.9451V30.0549C0.328334 30.0186 0.661991 30 1 30C5.97056 30 10 34.0294 10 39C10 43.9706 5.97056 48 1 48C0.661991 48 0.328334 47.9814 0 47.9451V54C0.219538 54 0.438575 54.0021 0.657091 54.0064C0.770867 54.0022 0.885182 54 1 54C1.36762 54 1.73009 54.022 2.08616 54.0649C19.3396 55.1412 33 69.4753 33 87C33 104.525 19.3396 118.859 2.08616 119.935C1.73009 119.978 1.36762 120 1 120C0.885193 120 0.770889 119.998 0.657125 119.994C0.438597 119.998 0.219549 120 0 120V126.055C0.328334 126.019 0.661991 126 1 126C5.97056 126 10 130.029 10 135C10 139.971 5.97056 144 1 144C0.661991 144 0.328334 143.981 0 143.945V150.055C0.328334 150.019 0.661991 150 1 150C5.97056 150 10 154.029 10 159C10 163.971 5.97056 168 1 168C0.661991 168 0.328334 167.981 0 167.945V174H952V168C947.029 168 943 163.971 943 159C943 154.029 947.029 150 952 150V144C947.029 144 943 139.971 943 135C943 130.029 947.029 126 952 126V120C947.029 120 943 115.971 943 111C943 106.029 947.029 102 952 102V96C947.029 96 943 91.9706 943 87C943 82.0294 947.029 78 952 78V72C947.029 72 943 67.9706 943 63C943 58.0294 947.029 54 952 54V48C947.029 48 943 43.9706 943 39C943 34.0294 947.029 30 952 30V24C947.029 24 943 19.9706 943 15C943 10.0294 947.029 6 952 6V0Z'
+  );
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+  transform-origin: center;
+}
+
+.couponCard:hover{
+  transform: scale(1.02);
+}
+
+.couponCard p {
+  margin: 0;
+  font-family: 'Montserrat', 'Noto Sans TC';
+}
+
+.couponType {
+  display: flex;
+  width: calc(952px - 842px + 196px);
+  height: 174px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #413c1c;
+}
+
+.couponType p {
+  font-size: 14px;
+  color: #f5f5f7;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+.couponInfo {
+  display: flex;
+  height: 174px;
+  width: 646px;
+  padding-left: 56px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.couponText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.couponText .detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.couponText .detail .title {
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  color: #413c1c;
+}
+
+.couponText .discountStatus {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+}
+
+.couponText .detail .discount,
+.couponText .detail .status {
+  border-radius: 180px;
+  padding: 4px 12px;
+  color: #f5f5f7;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+}
+
+.couponText .detail .discount{
+  background-color: #413c1c;
+}
+
+
+.TagBgColor1 {
+  background-color: #8f8e93;
+}
+
+.TagBgColor2 {
+  background-color: #e49366;
+}
+
+.couponText .duration {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+  font-size: 14px;
+}
+
+.getCoupon {
+  padding-right: 56px;
+  display: flex;
+  height: 119px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}

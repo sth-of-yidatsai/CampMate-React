@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <title>order history</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- ** googleFont -->
+    <!-- google font CDN 字型要搭配這個 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google icon CDN icon要搭配這個-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- ** bootstrap CDN & SCSS -->
+    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- bootstrap & 修改bootstrap變數 -->
+    <link rel="stylesheet" href="./styles/custom.css" />
+
+    <!-- ** 引入頁面對應的SCSS -->
+    <link rel="stylesheet" href="./styles/order_history.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <header id="header">Header</header>
+      <section class="mainArea-tian">
+        <!--## ↓↓↓↓ 側邊欄 ↓↓↓↓ -->
+        <aside class="h6-tc-tian sidebar">我是側邊欄</aside>
+
+        <main class="main-tian">
+          <!--## ↓↓↓↓ 麵包屑導覽 ↓↓↓↓ -->
+          <div class="bread d-flex justify-content-center">
+            <span class="material-symbols-outlined sub-text-tian">
+              home_pin
+            </span>
+            <span
+              ><span class="p2-en-tian sub-text-tian">HOME</span
+              ><span class="p2-en-tian sub-text-tian"> \ </span>
+              <span class="p2-en-tian sub-text-tian">RENT</span
+              ><span class="p2-en-tian sub-text-tian"> \ </span>
+              <span class="p2-tc-tian sub-text-tian">帳篷</span
+              ><span class="p2-en-tian sub-text-tian"> \ </span>
+              <span class="p2-tc-tian sub-text-tian">家庭</span>
+            </span>
+          </div>
+
+          <!--## ↓↓↓↓ 頁面標題 ↓↓↓↓ -->
+          <div class="pageTitle d-flex align-items-center">
+            <span class="h5-tc-tian dark-text-tian">訂單記錄。</span>
+            <span class="p1-tc-tian sub-text-tian">租賃露營用品。</span>
+          </div>
+
+          <!--## ↓↓↓↓ 購物車訂單列表 ↓↓↓↓ -->
+          <section class="orderList">
+            <div class="listTab">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <div class="left"></div>
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >全部</a
+                  >
+                  <div class="right"></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">待取貨</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">已完成</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-disabled="true">已取消</a>
+                </li>
+              </ul>
+            </div>
+
+            <!--## ↓↓↓↓ 訂單(店為單位) ↓↓↓↓ -->
+            <div class="list">
+              <!--## ↓↓↓↓ 訂單標題(店名) ↓↓↓↓ -->
+              <div class="listHeader">
+                <div>
+                  <div class="shopName p1-tc-tian dark-text-tian">
+                    台北忠孝店
+                  </div>
+                  <div class="status p3-tc-tian light-text-tian">收到訂單</div>
+                </div>
+                <div class="orderNum">
+                  <span class="p1-tc-tian">訂單編號:</span>
+                  <span class="p1-en-tian">123456789</span>
+                </div>
+              </div>
+              <div class="listBody">
+                <div class="cardHeader">
+                  <div class="image"></div>
+                  <div class="product p3-tc-tian sub-text-tian">商品</div>
+                  <div class="date p3-tc-tian sub-text-tian">租賃時段</div>
+                  <div class="day p3-tc-tian sub-text-tian">天數</div>
+                  <div class="count p3-tc-tian sub-text-tian">數量</div>
+                  <div class="amount p3-tc-tian sub-text-tian">價格</div>
+                </div>
+                <!--## ↓↓↓↓ 訂單商品卡片 ↓↓↓↓ -->
+                <div class="listCard">
+                  <div class="image">
+                    <div class="imgBox">
+                      <img src="./images/tent_08-2.avif" alt="" />
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="productTitle">
+                      <p class="p2-tc-tian dark-text-tian m-0 productName">
+                        LOGOS-Tradcanvas抗光黑膠基地帳Decagon 500-BA
+                      </p>
+                      <p class="p2-en-tian dark-text-tian m-0">
+                        2024/01/01 ~ 2024/01/05
+                      </p>
+                    </div>
+                    <div class="productStyle">
+                      <span class="p2-tc-tian sub-text-tian">規格名稱</span>
+                    </div>
+                  </div>
+                  <div class="date">
+                    <span class="p2-en-tian dark-text-tian"
+                      >2024/01/01 ~ 2024/01/05</span
+                    >
+                  </div>
+                  <div class="day">
+                    <span class="p2-en-tian dark-text-tian">3</span>
+                  </div>
+                  <div class="count">
+                    <div class="countNum p2-en-tian">1</div>
+                  </div>
+                  <div class="amount p2-en-tian error-text-tian">
+                    <span>$</span><span>1500</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="orderProcess d-none">
+                <div>
+                  <div class="processItem">
+                    <div class="processCircle">
+                      <div class="insideCircle"></div>
+                    </div>
+                    <div class="processContent">
+                      <div class="processTitle p2-tc-tian">收到訂單</div>
+                      <div class="processDatetime">
+                        <span class="date p3-en-tian">2023-12-30</span>
+                        <span class="time p3-en-tian">21:30</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="processLine"></div>
+                  <div class="processItem">
+                    <div class="processCircle">
+                      <div class="insideCircle"></div>
+                    </div>
+                    <div class="processContent">
+                      <div class="processTitle p2-tc-tian">收到訂單</div>
+                      <div class="processDatetime">
+                        <span class="date p3-en-tian">2023-12-30</span>
+                        <span class="time p3-en-tian">21:30</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="processLine"></div>
+                  <div class="processItem">
+                    <div class="processCircle">
+                      <div class="insideCircle"></div>
+                    </div>
+                    <div class="processContent">
+                      <div class="processTitle p2-tc-tian">收到訂單</div>
+                      <div class="processDatetime">
+                        <span class="date p3-en-tian">2023-12-30</span>
+                        <span class="time p3-en-tian">21:30</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="processLine"></div>
+                  <div class="processItem">
+                    <div class="processCircle">
+                      <div class="insideCircle"></div>
+                    </div>
+                    <div class="processContent">
+                      <div class="processTitle p2-tc-tian">收到訂單</div>
+                      <div class="processDatetime">
+                        <span class="date p3-en-tian">2023-12-30</span>
+                        <span class="time p3-en-tian">21:30</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="processLine"></div>
+                  <div class="processItem active">
+                    <div class="processCircle">
+                      <div class="insideCircle"></div>
+                    </div>
+                    <div class="processContent">
+                      <div class="processTitle p2-tc-tian">收到訂單</div>
+                      <div class="processDatetime">
+                        <span class="date p3-en-tian">2023-12-30</span>
+                        <span class="time p3-en-tian">21:30</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="listFooter">
+                <button class="none-btn-tian openList">
+                  <span class="down material-symbols-outlined dark-text-tian"
+                    >keyboard_arrow_down</span
+                  >
+                  <span
+                    class="up material-symbols-outlined dark-text-tian d-none"
+                    >keyboard_arrow_up</span
+                  >
+                </button>
+                <div>
+                  <div class="total">
+                    <span class="dark-text-tian p2-tc-tian">訂單金額：</span>
+                    <div class="totalPrice p1-en-tian error-text-tian">
+                      <span>$ 13000</span>
+                    </div>
+                  </div>
+                  <button
+                    class="contact p1-tc-tian btn primary2-outline-btn-tian"
+                  >
+                    聯絡我們
+                  </button>
+                  <button class="comment p1-tc-tian btn primary2-btn-tian">
+                    評價
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ↓↓↓↓ 分頁標籤（用易達做的組件） ↓↓↓↓ -->
+          <div class="pageTab h6-en-tian">page tab</div>
+          <!-- ↑↑↑↑ 分頁標籤 ↑↑↑↑ -->
+        </main>
+      </section>
+      <footer>Footer</footer>
+    </div>
+
+    <!--## ↓↓↓↓ 商品評價 彈出式 ↓↓↓↓ -->
+    <section class="commentModal-tian d-none">
+      <div class="header">
+        <div class="title light-text-tian h6-tc-tian">商品評價</div>
+        <div class="close">
+          <span class="material-symbols-outlined light-text-tian"> close </span>
+        </div>
+      </div>
+      <div class="body">
+        <div class="bodyHeader">
+          <div class="bodyTitle h6-tc-tian dark-text-tian">
+            選擇要評價的商品
+          </div>
+        </div>
+        <div class="content">
+          <div class="commentCard">
+            <div class="productInfo">
+              <div class="image">
+                <div class="imgBox">
+                  <img src="./images/tent_08-2.avif" alt="" />
+                </div>
+              </div>
+              <div class="product">
+                <div class="titleCount">
+                  <div class="productTitle">
+                    <div class="productName p2-tc-tian dark-text-tian m-0">
+                      LOGOS-Tradcanvas抗光黑膠基地帳Decagon 500-BA
+                    </div>
+                    <span class="date p2-en-tian dark-text-tian"
+                      >2024/01/01 ~ 2024/01/05</span
+                    >
+                  </div>
+                  <div class="count">
+                    <span class="material-symbols-outlined">close</span>
+                    <div class="countNum p1-en-tian">1</div>
+                  </div>
+                </div>
+                <div class="styleComment">
+                  <div class="productStyle">
+                    <span class="p2-en-tian sub-text-tian">規格名稱</span>
+                  </div>
+                  <div class="commentBtn">
+                    <button>
+                      <div class="fix">修改評價</div>
+                      <div class="comment">評價</div>
+                      <span class="fix material-symbols-outlined"
+                        >border_color</span
+                      >
+                      <span class="comment material-symbols-outlined"
+                        >arrow_outward</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="commentBlock">
+              <div class="star"></div>
+              <div class="commentText p2-tc-tian dark-text-tian">
+                帳篷的品質不錯，配件都相當實用，雖然價格偏高，但是整體來說是值得的。
+              </div>
+            </div>
+            <div class="cardLine"></div>
+          </div>
+          <div class="commentCard">
+            <div class="productInfo">
+              <div class="image">
+                <div class="imgBox">
+                  <img src="./images/tent_08-2.avif" alt="" />
+                </div>
+              </div>
+              <div class="product">
+                <div class="titleCount">
+                  <div class="productTitle">
+                    <div class="productName p2-tc-tian dark-text-tian m-0">
+                      LOGOS-Tradcanvas抗光黑膠基地帳Decagon 500-BA
+                    </div>
+                    <span class="date p2-en-tian dark-text-tian"
+                      >2024/01/01 ~ 2024/01/05</span
+                    >
+                  </div>
+                  <div class="count">
+                    <span class="material-symbols-outlined">close</span>
+                    <div class="countNum p1-en-tian">1</div>
+                  </div>
+                </div>
+                <div class="styleComment">
+                  <div class="productStyle">
+                    <span class="p2-en-tian sub-text-tian">規格名稱</span>
+                  </div>
+                  <div class="commentBtn">
+                    <button>
+                      <div class="fix">修改評價</div>
+                      <div class="comment">評價</div>
+                      <span class="fix material-symbols-outlined"
+                        >border_color</span
+                      >
+                      <span class="comment material-symbols-outlined"
+                        >arrow_outward</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="commentBlock">
+              <div class="star"></div>
+              <div class="commentText p2-tc-tian dark-text-tian">
+                帳篷的品質不錯，配件都相當實用，雖然價格偏高，但是整體來說是值得的。
+              </div>
+            </div>
+            <div class="cardLine"></div>
+          </div>
+          <div class="commentCard">
+            <div class="productInfo">
+              <div class="image">
+                <div class="imgBox">
+                  <img src="./images/tent_08-2.avif" alt="" />
+                </div>
+              </div>
+              <div class="product">
+                <div class="titleCount">
+                  <div class="productTitle">
+                    <div class="productName p2-tc-tian dark-text-tian m-0">
+                      LOGOS-Tradcanvas抗光黑膠基地帳Decagon 500-BA
+                    </div>
+                    <span class="date p2-en-tian dark-text-tian"
+                      >2024/01/01 ~ 2024/01/05</span
+                    >
+                  </div>
+                  <div class="count">
+                    <span class="material-symbols-outlined">close</span>
+                    <div class="countNum p1-en-tian">1</div>
+                  </div>
+                </div>
+                <div class="styleComment">
+                  <div class="productStyle">
+                    <span class="p2-en-tian sub-text-tian">規格名稱</span>
+                  </div>
+                  <div class="commentBtn">
+                    <button>
+                      <div class="fix">修改評價</div>
+                      <div class="comment">評價</div>
+                      <span class="fix material-symbols-outlined"
+                        >border_color</span
+                      >
+                      <span class="comment material-symbols-outlined"
+                        >arrow_outward</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="commentBlock">
+              <div class="star"></div>
+              <div class="commentText p2-tc-tian dark-text-tian">
+                帳篷的品質不錯，配件都相當實用，雖然價格偏高，但是整體來說是值得的。
+              </div>
+            </div>
+            <div class="cardLine"></div>
+          </div>
+          <div class="commentCard">
+            <div class="productInfo">
+              <div class="image">
+                <div class="imgBox">
+                  <img src="./images/tent_08-2.avif" alt="" />
+                </div>
+              </div>
+              <div class="product">
+                <div class="titleCount">
+                  <div class="productTitle">
+                    <div class="productName p2-tc-tian dark-text-tian m-0">
+                      LOGOS-Tradcanvas抗光黑膠基地帳Decagon 500-BA
+                    </div>
+                    <span class="date p2-en-tian dark-text-tian"
+                      >2024/01/01 ~ 2024/01/05</span
+                    >
+                  </div>
+                  <div class="count">
+                    <span class="material-symbols-outlined">close</span>
+                    <div class="countNum p1-en-tian">1</div>
+                  </div>
+                </div>
+                <div class="styleComment">
+                  <div class="productStyle">
+                    <span class="p2-en-tian sub-text-tian">規格名稱</span>
+                  </div>
+                  <div class="commentBtn">
+                    <button>
+                      <div class="fix">修改評價</div>
+                      <div class="comment">評價</div>
+                      <span class="fix material-symbols-outlined"
+                        >border_color</span
+                      >
+                      <span class="comment material-symbols-outlined"
+                        >arrow_outward</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="commentBlock">
+              <div class="star"></div>
+              <div class="commentText p2-tc-tian dark-text-tian">
+                帳篷的品質不錯，配件都相當實用，雖然價格偏高，但是整體來說是值得的。
+              </div>
+            </div>
+            <div class="cardLine"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <button class="cancel btn primary2-outline-btn-tian p1-tc-tian">
+            取消
+          </button>
+          <button class="confirm btn primary2-btn-tian p1-tc-tian">確認</button>
+        </div>
+      </div>
+    </section>
+
+    <!--## ↓↓↓↓ 撰寫評價 彈出式 ↓↓↓↓ -->
+    <section class="writeCommentModal-tian d-none">
+      <div class="header">
+        <div class="title light-text-tian h6-tc-tian">撰寫評價</div>
+        <div class="close">
+          <span class="material-symbols-outlined light-text-tian"> close </span>
+        </div>
+      </div>
+      <div class="body">
+        <div class="bodyHeader">
+          <div class="bodyTitle h6-tc-tian dark-text-tian">評價此商品</div>
+        </div>
+        <div class="content">
+          <div class="commentCard">
+            <div class="productInfo">
+              <div class="image">
+                <div class="imgBox">
+                  <img src="./images/tent_08-2.avif" alt="" />
+                </div>
+              </div>
+              <div class="product">
+                <div class="titleCount">
+                  <div class="productTitle">
+                    <div class="productName p2-tc-tian dark-text-tian m-0">
+                      LOGOS-Tradcanvas抗光黑膠基地帳Decagon 500-BA
+                    </div>
+                    <span class="date p2-en-tian dark-text-tian"
+                      >2024/01/01 ~ 2024/01/05</span
+                    >
+                  </div>
+                  <div class="count">
+                    <span class="material-symbols-outlined">close</span>
+                    <div class="countNum p1-en-tian">1</div>
+                  </div>
+                </div>
+                <div class="productStyle">
+                  <span class="p2-en-tian sub-text-tian">規格名稱</span>
+                </div>
+              </div>
+            </div>
+            <div class="commentBlock">
+              <div class="star"></div>
+              <textarea
+                class="commentText"
+                placeholder="請填寫您對此商品的真實評價"
+                name=""
+                id=""
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <button class="cancel btn primary2-outline-btn-tian p1-tc-tian">
+            取消
+          </button>
+          <button class="confirm btn primary2-btn-tian p1-tc-tian">確認</button>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const listOpen = document.querySelector(".listFooter button");
+      const up = document.querySelector(".up");
+      const down = document.querySelector(".down");
+      const listBody = document.querySelector(".listBody");
+      const process = document.querySelector(".orderProcess");
+      const navLink = document.querySelectorAll(".nav-link");
+
+      const closeCommentModal = document.querySelector(
+        ".commentModal-tian .close"
+      );
+      const commentModal = document.querySelector(".commentModal-tian");
+      const openCommentModal = document.querySelector(".listFooter .comment");
+
+      const closeWriteComment = document.querySelector(
+        ".writeCommentModal-tian .close"
+      );
+      const openWriteComment = document.querySelectorAll(
+        ".commentModal-tian .comment"
+      );
+      const writeCommentModal = document.querySelector(
+        ".writeCommentModal-tian"
+      );
+
+      listOpen.addEventListener("click", e => {
+        listBody.classList.toggle("show");
+        up.classList.toggle("d-none");
+        down.classList.toggle("d-none");
+        process.classList.toggle("d-none");
+      });
+      for (let i = 0; i < navLink.length; i++) {
+        navLink[i].addEventListener("click", e => {
+          for (let j = 0; j < navLink.length; j++) {
+            navLink[j].classList.remove("active");
+          }
+          navLink[i].classList.toggle("active");
+        });
+      }
+
+      closeCommentModal.addEventListener("click", e => {
+        commentModal.classList.add("d-none");
+      });
+      openCommentModal.addEventListener("click", e => {
+        commentModal.classList.remove("d-none");
+      });
+
+      closeWriteComment.addEventListener("click", e => {
+        writeCommentModal.classList.add("d-none");
+        commentModal.classList.remove("d-none");
+      });
+
+      for (let i = 0; i < openWriteComment.length; i++) {
+        openWriteComment[i].addEventListener("click", e => {
+          writeCommentModal.classList.remove("d-none");
+          commentModal.classList.add("d-none");
+        });
+      }
+    </script>
+  </body>
+</html>

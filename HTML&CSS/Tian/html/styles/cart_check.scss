@@ -1,0 +1,541 @@
+@import "base-tian";
+body {
+  background-color: $light-color;
+}
+
+// ## 全頁面容器
+.container-fluid {
+  // position: relative;
+  padding: 0px;
+}
+
+// ** header部分
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: 64px;
+  width: 100vw;
+  background-color: gray;
+}
+// ** footer
+footer {
+  width: 100vw;
+  height: 436.07px;
+  background-color: $primary-color;
+}
+
+// ** 內容部分
+// ## 容器
+.mainArea-tian {
+  position: relative;
+  max-width: 1440px;
+  padding-top: 24px;
+  padding-bottom: 80px;
+  padding-inline: 80px;
+  margin: auto;
+  @include flexCol(32px);
+}
+
+// ******************************
+// ** -----cart_check scss-----
+.mainArea-tian {
+  .cartTitle {
+    @include flexCol(16px);
+    align-items: flex-start;
+  }
+  .cartProcess {
+    margin: auto;
+    width: 85%;
+    @include flexRow;
+    justify-content: space-between;
+    align-items: center;
+    .processItem {
+      @include flexRow(11px);
+      padding-right: 15px;
+      justify-content: flex-start;
+      align-items: center;
+      & .processIcon {
+        @include flexRow;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        width: 43px;
+        height: 43px;
+        @include p1-en-tian;
+        color: $light-color;
+        background-color: $prompt-color;
+        .material-symbols-outlined {
+          display: none;
+        }
+      }
+      &.active .processIcon {
+        width: 50px;
+        height: 50px;
+        border: 3px solid $prompt-color;
+        @include h6-en-tian;
+        color: $prompt-color;
+        background-color: $success-color;
+      }
+      &:has(~ .active) {
+        .processIcon {
+          & :first-child {
+            display: none;
+          }
+          .material-symbols-outlined {
+            display: block;
+          }
+        }
+      }
+      & .processTitle {
+        @include p1-tc-tian;
+        color: $sub-color;
+      }
+      &.active .processTitle {
+        color: $dark-color;
+      }
+    }
+    .processLine {
+      flex: 1 0 auto;
+      height: 1px;
+      background-color: $prompt-color;
+    }
+  }
+  .cartList {
+    @include flexCol(16px);
+    .listTitle {
+      @include flexRow;
+      justify-content: flex-start;
+      align-items: center;
+      padding-inline: 35px;
+      width: 100%;
+      height: 64px;
+      border-radius: 35px;
+      background-color: $primary-color;
+    }
+    .list {
+      @include flexCol;
+      border: 1px solid $success-color;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 100%;
+      .listHeader {
+        @include flexRow;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: $success-color;
+        .checkBox {
+          @include flexRow;
+          justify-content: center;
+          align-items: center;
+          width: 17px;
+          height: 17px;
+          margin: 9px;
+          border: 1px solid $prompt-color;
+          border-radius: 4px;
+          background-color: $light-color;
+          cursor: pointer;
+          span {
+            @include outline-tian;
+          }
+        }
+        &:has(.active) {
+          .checkBox {
+            background-color: $prompt-color;
+          }
+        }
+      }
+      .listBody {
+        width: 100%;
+        background-color: $light-color;
+        .cardHeader {
+          @include flexRow;
+          justify-content: space-between;
+          align-items: center;
+          height: 30px;
+          margin-inline: 35px;
+          border-bottom: 0.5px solid $sub-color;
+          background-color: $light-color;
+          .image {
+            flex: 0 1 auto;
+            width: 130px;
+            height: 100%;
+          }
+          .product {
+            flex: 1 1 auto;
+          }
+          .day {
+            flex: 0 1 auto;
+            width: 70px;
+          }
+          .count,
+          .amount {
+            flex: 0 1 auto;
+            width: 110px;
+          }
+          .operation {
+            flex: 0 1 auto;
+            width: 80px;
+          }
+        }
+        .listCard {
+          @include flexRow;
+          justify-content: space-between;
+          align-items: center;
+          height: 147px;
+          padding-right: 35px;
+          background-color: $light-color;
+          .checkBox {
+            @include flexRow;
+            justify-content: center;
+            align-items: center;
+            width: 17px;
+            height: 17px;
+            margin: 9px;
+            border: 1px solid $prompt-color;
+            border-radius: 4px;
+            background-color: $light-color;
+            cursor: pointer;
+            span {
+              @include outline-tian;
+            }
+          }
+          &:has(.active) {
+            .checkBox {
+              background-color: $prompt-color;
+            }
+          }
+          .image {
+            flex: 0 1 auto;
+            width: 130px;
+            height: 100%;
+            @include flexRow;
+            justify-content: flex-start;
+            align-items: center;
+            .imgBox {
+              width: 110px;
+              height: 110px;
+              img {
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+              }
+            }
+          }
+          .product {
+            flex: 1 1 auto;
+            height: 100%;
+            padding-block: 19px;
+            @include flexCol;
+            justify-content: space-between;
+            .productTitle {
+              @include flexCol(10px);
+            }
+            .productStyle select {
+              @include flexRow;
+              width: fit-content;
+              justify-content: center;
+              align-items: center;
+              color: $sub-color;
+              background-color: $light-color;
+              border-color: $sub-color;
+            }
+          }
+          .day {
+            flex: 0 1 auto;
+            width: 70px;
+            height: 100%;
+            @include flexRow;
+            justify-content: flex-start;
+            align-items: center;
+          }
+          .count,
+          .amount {
+            flex: 0 1 auto;
+            width: 110px;
+            height: 100%;
+            @include flexRow;
+            justify-content: flex-start;
+            align-items: center;
+          }
+          .operation {
+            flex: 0 1 auto;
+            width: 80px;
+            height: 100%;
+            @include flexCol;
+            justify-content: center;
+            align-items: flex-start;
+            .addLike span {
+              color: $dark-color;
+              cursor: pointer;
+              &:hover {
+                color: $prompt-color;
+              }
+            }
+            .remove span {
+              color: $dark-color;
+              cursor: pointer;
+              &:hover {
+                color: $error-color;
+              }
+            }
+          }
+          .count {
+            .counter {
+              width: 76px;
+              height: 21px;
+              @include flexRow;
+              justify-content: space-between;
+              align-items: center;
+              button {
+                @include flexRow;
+                justify-content: center;
+                align-items: center;
+                width: 21px;
+                height: 21px;
+                border: 1px solid $sub-color;
+                color: $sub-color;
+                background-color: $light-color;
+                span {
+                  font-size: 18px;
+                  font-weight: 100;
+                }
+              }
+              .countNum {
+                flex: 1 1 auto;
+                @include flexRow;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                border-block: 1px solid $sub-color;
+              }
+            }
+          }
+        }
+      }
+      .listFooter {
+        @include flexRow;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 35px;
+        width: 100%;
+        height: 50px;
+        background-color: $success-color;
+        .openList {
+          background-color: transparent;
+          span {
+            font-size: 30px;
+            @include outline-tian;
+          }
+        }
+        & > div {
+          @include flexRow(16px);
+          justify-content: flex-start;
+          align-items: center;
+          button {
+            border-width: 2px;
+            border-radius: 40px;
+            padding-inline: 20px;
+            padding-block: 5px;
+          }
+        }
+        .total {
+          @include flexRow(10px);
+        }
+      }
+    }
+  }
+  .cartCheck {
+    @include flexCol;
+    border-radius: 20px;
+    overflow: hidden;
+    .checkHeader {
+      @include flexRow;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 35px;
+      width: 100%;
+      height: 50px;
+      background-color: $primary-color;
+      .addCoupon {
+        @include flexRow(10px);
+        align-items: center;
+        color: $prompt-color;
+        background-color: transparent;
+        &:hover {
+          color: $success-color;
+        }
+        .material-symbols-outlined {
+          @include outline-tian;
+        }
+      }
+    }
+    .checkBody {
+      @include flexRow;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: $success-color;
+      padding-block: 20px;
+      padding-inline: 35px;
+      .checkAll {
+        @include flexRow(12px);
+        align-items: center;
+        .checkBox {
+          @include flexRow;
+          justify-content: center;
+          align-items: center;
+          width: 17px;
+          height: 17px;
+          border: 1px solid $prompt-color;
+          border-radius: 4px;
+          background-color: $light-color;
+          cursor: pointer;
+          span {
+            @include outline-tian;
+          }
+        }
+        &:has(.active) {
+          .checkBox {
+            background-color: $prompt-color;
+          }
+        }
+      }
+      .pay {
+        @include flexRow(32px);
+        align-items: flex-end;
+        .clac {
+          @include flexCol(5px);
+          .originPrice,
+          .coupon,
+          .total {
+            width: 156px;
+            @include flexRow;
+            justify-content: space-between;
+          }
+          .couponTitle {
+            @include flexRow(5px);
+            align-items: center;
+          }
+          .clacLine {
+            width: 100%;
+            height: 1px;
+            background-color: $dark-color;
+          }
+        }
+        button {
+          padding-block: 6px;
+          padding-inline: 47px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+.couponModal-tian {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  @include formRadius-tian;
+  @include flexCol;
+  justify-content: space-between;
+  width: 620px;
+  height: 620px;
+  transform: translate(-50%, -50%);
+  border: 1px solid $secondary-color;
+  .header {
+    @include flexRow;
+    justify-content: center;
+    align-items: center;
+    @include formHeader-tian;
+    height: 45px;
+    background-color: $secondary-color;
+    .close span {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  .body {
+    height: 100%;
+    @include flexCol(16px);
+    padding-block: 16px;
+    padding-inline: 45px;
+    overflow-y: auto;
+    background-color: $light-color;
+    .content {
+      @include flexCol(16px);
+      .couponCard {
+        @include flexRow;
+        justify-content: space-between;
+        width: 450px;
+        height: 106px;
+        padding: 12px;
+        margin: auto;
+        background-size: cover;
+        background-image: url(../images/checked=uncheck.svg);
+        cursor: pointer;
+        &.active {
+          background-image: url(../images/checked=checked.svg);
+          .info .right .circleCheck {
+            background-color: $primary-color;
+          }
+        }
+        .cate {
+          flex: 0 1 25%;
+          @include flexCol;
+          justify-content: center;
+          align-items: center;
+          .material-symbols-outlined {
+            font-size: 40px;
+            @include outline-tian;
+          }
+        }
+        .info {
+          flex: 0 1 70%;
+          @include flexRow;
+          justify-content: space-between;
+          .left {
+            @include flexCol;
+            justify-content: space-between;
+          }
+          .right {
+            @include flexCol;
+            justify-content: space-between;
+            .rule {
+              @include flexRow(5px);
+              align-items: center;
+              .material-symbols-outlined {
+                font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0,
+                  "opsz" 24;
+              }
+            }
+            .circleCheck {
+              @include flexRow;
+              justify-content: center;
+              align-items: center;
+              align-self: flex-end;
+              width: 35px;
+              height: 35px;
+              border-radius: 100%;
+              border: 2px solid $primary-color;
+              background-color: $light-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    @include flexRow;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    padding-inline: 35px;
+    background-color: $success-color;
+    div button {
+      padding-inline: 48px;
+      border-radius: 30px;
+    }
+  }
+}

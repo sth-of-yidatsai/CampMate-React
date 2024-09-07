@@ -1,0 +1,53 @@
+.topBtn-tian {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+  border: 0.5px solid $light-color;
+  @include flexRow;
+  justify-content: center;
+  align-items: center;
+  color: $light-color;
+  background-color: $primary-color;
+  border: 1px solid $light-color;
+  &:hover {
+    @include btn-color($secondary-color, $light-color);
+    .material-symbols-outlined {
+      animation: moveUpTwice 0.5s ease-in-out;
+    }
+  }
+  // border: 0px solid transparent;
+  // background-color: $primary-color;
+  // color: $light-color;
+  .material-symbols-outlined {
+    // transition: transform 0.5s ease-in-out;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  @keyframes moveUpTwice {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .topBtn-tian {
+    right: 10px;
+    bottom: 10px;
+  }
+}

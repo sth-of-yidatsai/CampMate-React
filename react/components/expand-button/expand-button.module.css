@@ -1,0 +1,192 @@
+@keyframes scaleUpDown1 {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleUpDown2 {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes expandBackground {
+  0% {
+    width: 60px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+
+@keyframes collapseBackground {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+
+@keyframes slideInText {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutText {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.circle {
+  position: fixed;
+  right: 32px;
+  top: calc(64px + 20px);
+  z-index: 995;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smallCircle {
+  width: 40px;
+  height: 40px;
+  /* background-color: rgba(245, 245, 247, 0.6); */
+  background-color: rgb(228, 147, 102, 0.6);
+  border-radius: 50%;
+  /* border: 1px solid #fff; */
+  animation: scaleUpDown2 0.8s ease-in-out forwards;
+}
+
+.bigCircle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  /* background-color: rgba(245, 245, 247, 0.6); */
+  background-color: rgb(228, 147, 102, 0.6);
+  border-radius: 50%;
+  /* border: 1px solid #fff; */
+  animation: scaleUpDown2 0.8s ease-in-out forwards;
+}
+
+.expandButton {
+  position: fixed;
+  right: 22px;
+  top: calc(64px + 12px);
+  /* background: rgba(245, 245, 247, 0.6); */
+  background-color: rgb(228, 147, 102, 0.6);
+  backdrop-filter: blur(6px);
+  border-radius: 180px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  z-index: 990;
+  opacity: 0;
+  visibility: hidden;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out,
+    transform 0.5s ease;
+}
+
+.expandButton .icon {
+  min-width: 40px;
+  min-height: 40px;
+  display: grid;
+  place-items: center;
+  color: #2d2d2d;
+  font-size: 24px;
+  background: rgba(245, 245, 247, 0.8);
+  backdrop-filter: blur(6px);
+  border: 1px solid #fff;
+  border-radius: 180px;
+  animation: scaleUpDown1 1s ease-in-out forwards;
+}
+
+.expandButton.expanded {
+  opacity: 1;
+  visibility: visible;
+}
+
+.expandButton.expanded .icon {
+  animation: scaleUpDown1 1s ease-in-out forwards;
+}
+
+.expandButton.expandedBackground {
+  animation: expandBackground 0.6s ease-in-out forwards;
+}
+
+.expandButton .text {
+  display: none;
+  margin-left: 10px;
+  opacity: 0;
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.expandButton.expandedText .text {
+  display: block;
+  animation: slideInText 0.5s ease-in-out 0.6s forwards;
+}
+
+.expandButton.collapsedText .text {
+  animation: slideOutText 0.3s ease-in-out forwards;
+}
+
+.expandButton.collapsedBackground {
+  animation: collapseBackground 0.5s ease-in-out forwards;
+}
+
+.textW {
+  color: #f5f5f7 !important;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .circle {
+    right: 16px;
+    top: calc(100vh - 64px);
+  }
+  .expandButton {
+    right: 6px;
+    top: calc(100vh - 72px);
+  }
+}

@@ -1,0 +1,45 @@
+// Custom.scss
+// Option B: Include parts of bootstrap-5.3.3
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../bootstrap-5.3.3/scss/functions";
+
+// 2. Include any default variable overrides here
+$nav-link-color: #8f8e93;
+$nav-link-hover-color: #413c1c;
+$nav-pills-border-radius: null;
+$nav-pills-link-active-color: #413c1c;
+$nav-pills-link-active-bg: transparent;
+
+// $nav-tabs-border-width ;
+$nav-tabs-border-color: #413c1c;
+$nav-tabs-link-hover-border-color: #413c1c;
+$nav-tabs-link-active-color: #e49366;
+$nav-tabs-link-active-bg: #f5f5f7;
+$nav-tabs-link-active-border-color: #413c1c;
+$nav-link-color: #413c1c;
+
+// 3. Include remainder of required bootstrap-5.3.3 stylesheets (including any separate color mode stylesheets)
+@import "../bootstrap-5.3.3/scss/variables";
+@import "../bootstrap-5.3.3/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../bootstrap-5.3.3/scss/maps";
+@import "../bootstrap-5.3.3/scss/mixins";
+@import "../bootstrap-5.3.3/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../bootstrap-5.3.3/scss/utilities";
+@import "../bootstrap-5.3.3/scss/reboot";
+@import "../bootstrap-5.3.3/scss/type";
+@import "../bootstrap-5.3.3/scss/images";
+@import "../bootstrap-5.3.3/scss/containers";
+@import "../bootstrap-5.3.3/scss/grid";
+@import "../bootstrap-5.3.3/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../bootstrap-5.3.3/scss/utilities/api";
+@import "../bootstrap-5.3.3/scss/bootstrap.scss";
+// 8. Add additional custom code here

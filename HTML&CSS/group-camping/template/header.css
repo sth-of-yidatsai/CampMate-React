@@ -1,0 +1,21 @@
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}

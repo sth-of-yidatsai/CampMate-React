@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "shop_order_id": null,
+    "shop_cart_id": "1",
+    "price_id": "12",
+    "count": "1",
+    "created_at": "2024-08-29 17:11:06",
+    "updated_at": "2024-08-29 17:11:06"
+  },
+  {
+    "id": "2",
+    "shop_order_id": null,
+    "shop_cart_id": "1",
+    "price_id": "10",
+    "count": "2",
+    "created_at": "2024-08-29 17:11:06",
+    "updated_at": "2024-08-29 17:11:06"
+  },
+  {
+    "id": "3",
+    "shop_order_id": null,
+    "shop_cart_id": "1",
+    "price_id": "30",
+    "count": "2",
+    "created_at": "2024-08-29 17:11:06",
+    "updated_at": "2024-08-29 17:11:06"
+  },
+  {
+    "id": "4",
+    "shop_order_id": "3daaf9ad-1163-4f06-95a8-7cb705fd12e9",
+    "shop_cart_id": null,
+    "price_id": "1",
+    "count": "1",
+    "created_at": "2024-08-29 17:12:14",
+    "updated_at": "2024-08-29 17:12:14"
+  },
+  {
+    "id": "5",
+    "shop_order_id": "3e910fae-f5ac-401d-95a5-d8258d163ebc",
+    "shop_cart_id": null,
+    "price_id": "56",
+    "count": "1",
+    "created_at": "2024-08-29 17:14:42",
+    "updated_at": "2024-08-29 17:14:42"
+  },
+  {
+    "id": "6",
+    "shop_order_id": "3e910fae-f5ac-401d-95a5-d8258d163ebc",
+    "shop_cart_id": null,
+    "price_id": "1",
+    "count": "1",
+    "created_at": "2024-08-29 17:14:42",
+    "updated_at": "2024-08-29 17:14:42"
+  },
+  {
+    "id": "7",
+    "shop_order_id": "1b1c3fad-e9a5-49ec-b286-10b0d0414950",
+    "shop_cart_id": null,
+    "price_id": "37",
+    "count": "1",
+    "created_at": "2024-08-29 17:37:06",
+    "updated_at": "2024-08-29 17:37:06"
+  },
+  {
+    "id": "8",
+    "shop_order_id": "1b1c3fad-e9a5-49ec-b286-10b0d0414950",
+    "shop_cart_id": null,
+    "price_id": "10",
+    "count": "5",
+    "created_at": "2024-08-29 17:37:06",
+    "updated_at": "2024-08-29 17:37:06"
+  },
+  {
+    "id": "9",
+    "shop_order_id": "63e7f6ae-e31f-4167-8a53-2cd289e82e89",
+    "shop_cart_id": null,
+    "price_id": "37",
+    "count": "1",
+    "created_at": "2024-08-29 17:38:18",
+    "updated_at": "2024-08-29 17:38:18"
+  },
+  {
+    "id": "10",
+    "shop_order_id": "63e7f6ae-e31f-4167-8a53-2cd289e82e89",
+    "shop_cart_id": null,
+    "price_id": "10",
+    "count": "5",
+    "created_at": "2024-08-29 17:38:18",
+    "updated_at": "2024-08-29 17:38:18"
+  },
+  {
+    "id": "11",
+    "shop_order_id": "085b9042-6304-44c6-ba8c-4b572a6510b1",
+    "shop_cart_id": null,
+    "price_id": "76",
+    "count": "1",
+    "created_at": "2024-08-29 17:43:05",
+    "updated_at": "2024-08-29 17:43:05"
+  },
+  {
+    "id": "12",
+    "shop_order_id": "085b9042-6304-44c6-ba8c-4b572a6510b1",
+    "shop_cart_id": null,
+    "price_id": "39",
+    "count": "1",
+    "created_at": "2024-08-29 17:43:05",
+    "updated_at": "2024-08-29 17:43:05"
+  },
+  {
+    "id": "13",
+    "shop_order_id": "085b9042-6304-44c6-ba8c-4b572a6510b1",
+    "shop_cart_id": null,
+    "price_id": "23",
+    "count": "1",
+    "created_at": "2024-08-29 17:43:05",
+    "updated_at": "2024-08-29 17:43:05"
+  },
+  {
+    "id": "14",
+    "shop_order_id": "1da733b7-5dfe-4051-9bdf-6a3114e6574b",
+    "shop_cart_id": null,
+    "price_id": "1",
+    "count": "1",
+    "created_at": "2024-08-29 17:46:06",
+    "updated_at": "2024-08-29 17:46:06"
+  },
+  {
+    "id": "15",
+    "shop_order_id": "1da733b7-5dfe-4051-9bdf-6a3114e6574b",
+    "shop_cart_id": null,
+    "price_id": "76",
+    "count": "1",
+    "created_at": "2024-08-29 17:46:06",
+    "updated_at": "2024-08-29 17:46:06"
+  },
+  {
+    "id": "16",
+    "shop_order_id": "1da733b7-5dfe-4051-9bdf-6a3114e6574b",
+    "shop_cart_id": null,
+    "price_id": "39",
+    "count": "1",
+    "created_at": "2024-08-29 17:46:06",
+    "updated_at": "2024-08-29 17:46:06"
+  },
+  {
+    "id": "17",
+    "shop_order_id": "1da733b7-5dfe-4051-9bdf-6a3114e6574b",
+    "shop_cart_id": null,
+    "price_id": "23",
+    "count": "1",
+    "created_at": "2024-08-29 17:46:06",
+    "updated_at": "2024-08-29 17:46:06"
+  },
+  {
+    "id": "18",
+    "shop_order_id": "15263ac8-cd0b-4705-8d9b-a949e76e184f",
+    "shop_cart_id": null,
+    "price_id": "6",
+    "count": "1",
+    "created_at": "2024-08-29 17:50:01",
+    "updated_at": "2024-08-29 17:50:01"
+  },
+  {
+    "id": "19",
+    "shop_order_id": "15263ac8-cd0b-4705-8d9b-a949e76e184f",
+    "shop_cart_id": null,
+    "price_id": "3",
+    "count": "1",
+    "created_at": "2024-08-29 17:50:01",
+    "updated_at": "2024-08-29 17:50:01"
+  },
+  {
+    "id": "20",
+    "shop_order_id": "15263ac8-cd0b-4705-8d9b-a949e76e184f",
+    "shop_cart_id": null,
+    "price_id": "4",
+    "count": "1",
+    "created_at": "2024-08-29 17:50:01",
+    "updated_at": "2024-08-29 17:50:01"
+  }
+]

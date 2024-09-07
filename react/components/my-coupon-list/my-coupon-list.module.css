@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumbAndTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Montserrat', 'Noto Sans TC';
+  font-size: 14px;
+  font-weight: 500;
+  color: #8f8e93;
+}
+
+.wrapArea {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.couponList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+}
+
+.pageTitle {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  font-size: 24px;
+  color: #8f8e93;
+}
+
+.pageTitle .h2 {
+  color: #2d2d2d;
+}

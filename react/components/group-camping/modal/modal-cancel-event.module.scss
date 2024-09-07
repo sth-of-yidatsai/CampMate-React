@@ -1,0 +1,96 @@
+@forward '/styles/group-camping/group-camping.scss';
+
+.modalCancel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(51, 51, 51, 0.8);
+  z-index: 1000;
+  // opacity: 0;
+  // visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modalContent {
+    width: 450px;
+    border-radius: 18px;
+    background: #f5f5f7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .head {
+      padding: 8px 16px;
+      background: #413c1c;
+      border-radius: 18px 18px 0 0;
+      color: #f5f5f7;
+      width: 100%;
+    }
+
+    .content {
+      margin: 40px 0;
+    }
+
+    .btns {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-bottom: 16px;
+
+      .btnConfirm {
+        padding: 8px 40px;
+        border-radius: 30px;
+        color: #f5f5f7;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .btnCancelYes {
+        background: #de3e3e;
+
+        &:hover {
+          background: #de3e3ebb;
+        }
+      }
+
+      .btnCancelNo {
+        background: #8f8e93;
+
+        &:hover {
+          background: #8f8e93bb;
+        }
+      }
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 230px;
+    right: 485px;
+    width: 38px;
+    height: 38px;
+    border: 3px solid #f5f5f7;
+    color: #f5f5f7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #413c1c;
+    }
+  }
+}

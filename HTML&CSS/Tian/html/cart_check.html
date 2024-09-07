@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <title>cart check</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- ** googleFont -->
+    <!-- google font CDN 字型要搭配這個 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google icon CDN icon要搭配這個-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- ** bootstrap CDN & SCSS -->
+    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- bootstrap & 修改bootstrap變數 -->
+    <link rel="stylesheet" href="./styles/custom.css" />
+
+    <!-- ** 引入頁面對應的SCSS -->
+    <link rel="stylesheet" href="./styles/cart_check.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <header id="header">Header</header>
+      <main class="mainArea-tian">
+        <section class="cartTitle">
+          <!--## ↓↓↓↓ 麵包屑導覽 ↓↓↓↓ -->
+          <div class="bread d-flex justify-content-center">
+            <span class="material-symbols-outlined sub-text-tian">
+              home_pin
+            </span>
+            <span
+              ><span class="p2-en-tian sub-text-tian">HOME</span
+              ><span class="p2-en-tian sub-text-tian"> \ </span>
+              <span class="p2-en-tian sub-text-tian">RENT</span
+              ><span class="p2-en-tian sub-text-tian"> \ </span>
+              <span class="p2-tc-tian sub-text-tian">帳篷</span
+              ><span class="p2-en-tian sub-text-tian"> \ </span>
+              <span class="p2-tc-tian sub-text-tian">家庭</span>
+            </span>
+          </div>
+
+          <!--## ↓↓↓↓ 頁面標題 ↓↓↓↓ -->
+          <div class="pageTitle d-flex align-items-center">
+            <span class="h5-tc-tian dark-text-tian">購物車。</span>
+          </div>
+        </section>
+
+        <!--## ↓↓↓↓ 購物車流程圖示 ↓↓↓↓ -->
+        <section class="cartProcess">
+          <div class="processItem active">
+            <div class="processIcon">
+              <span>1</span><span class="material-symbols-outlined">check</span>
+            </div>
+            <div class="processTitle">訂單明細確認</div>
+          </div>
+          <div class="processLine"></div>
+          <div class="processItem">
+            <div class="processIcon">
+              <span>2</span><span class="material-symbols-outlined">check</span>
+            </div>
+            <div class="processTitle">填寫付款資訊</div>
+          </div>
+          <div class="processLine"></div>
+          <div class="processItem">
+            <div class="processIcon">
+              <span>3</span><span class="material-symbols-outlined">check</span>
+            </div>
+            <div class="processTitle">購買完成</div>
+          </div>
+        </section>
+
+        <!--## ↓↓↓↓ 購物車訂單列表 ↓↓↓↓ -->
+        <section class="cartList">
+          <div class="listTitle">
+            <h1 class="h6-tc-tian light-text-tian m-0">租賃露營用品</h1>
+          </div>
+
+          <!--## ↓↓↓↓ 訂單(店為單位) ↓↓↓↓ -->
+          <div class="list">
+            <!--## ↓↓↓↓ 訂單標題(店名) ↓↓↓↓ -->
+            <div class="listHeader">
+              <div class="checkBox">
+                <span class="material-symbols-outlined light-text-tian"
+                  >check</span
+                >
+              </div>
+              <div class="shopName p1-tc-tian dark-text-tian">台北忠孝店</div>
+            </div>
+            <div class="listBody">
+              <div class="cardHeader">
+                <div class="image"></div>
+                <div class="product p3-tc-tian sub-text-tian">商品</div>
+                <div class="day p3-tc-tian sub-text-tian">天數</div>
+                <div class="count p3-tc-tian sub-text-tian">數量</div>
+                <div class="amount p3-tc-tian sub-text-tian">價格</div>
+                <div class="operation p3-tc-tian sub-text-tian">操作</div>
+              </div>
+              <!--## ↓↓↓↓ 訂單商品卡片 ↓↓↓↓ -->
+              <div class="listCard">
+                <div class="checkBox active">
+                  <span class="material-symbols-outlined light-text-tian"
+                    >check</span
+                  >
+                </div>
+                <div class="image">
+                  <div class="imgBox">
+                    <img src="./images/tent_08-2.avif" alt="" />
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="productTitle">
+                    <p class="p1-tc-tian dark-text-tian m-0">
+                      LOGOS-Tradcanvas抗光黑膠基地帳Decagon 500-BA
+                    </p>
+                    <p class="p2-en-tian dark-text-tian m-0">
+                      2024/01/01 ~ 2024/01/05
+                    </p>
+                  </div>
+                  <div class="productStyle">
+                    <select
+                      class="form-select p1-tc-tian sub-text-tian"
+                      name=""
+                      id=""
+                    >
+                      <option value="">規格名稱</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="day">
+                  <span class="p2-en-tian dark-text-tian">3</span>
+                </div>
+                <div class="count">
+                  <div class="counter">
+                    <button>
+                      <span class="reduce">-</span>
+                    </button>
+                    <div class="countNum p2-en-tian">1</div>
+                    <button>
+                      <span class="add">+</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="amount p2-en-tian error-text-tian">
+                  <span>$</span><span>1500</span>
+                </div>
+                <div class="operation">
+                  <div class="addLike">
+                    <span class="material-symbols-outlined">favorite</span>
+                  </div>
+                  <div class="remove">
+                    <span class="material-symbols-outlined">delete</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listFooter">
+              <button class="none-btn-tian openList">
+                <span class="down material-symbols-outlined dark-text-tian"
+                  >keyboard_arrow_down</span
+                >
+                <span class="up material-symbols-outlined dark-text-tian d-none"
+                  >keyboard_arrow_up</span
+                >
+              </button>
+              <div class="total">
+                <span class="dark-text-tian h6-tc-tian">訂單金額：</span>
+                <div class="totalPrice h6-en-tian error-text-tian">
+                  <span>$</span><span>13000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--## ↓↓↓↓ 購物車結帳確認 ↓↓↓↓ -->
+        <section class="cartCheck">
+          <div class="checkHeader">
+            <h1 class="checkTitle h6-tc-tian light-text-tian m-0">結帳明細</h1>
+            <button class="none-btn-tian addCoupon">
+              <span class="material-symbols-outlined">confirmation_number</span>
+              <span class="p2-tc-tian">選擇優惠券</span>
+            </button>
+          </div>
+          <div class="checkBody">
+            <div class="checkAll">
+              <div class="checkBox active">
+                <span class="material-symbols-outlined light-text-tian"
+                  >check</span
+                >
+              </div>
+              <div class="h6-tc-tian dark-text-tian">全選</div>
+            </div>
+            <div class="pay">
+              <div class="clac">
+                <div class="originPrice dark-text-tian">
+                  <div class="originTitle p1-tc-tian">商品原價</div>
+                  <div class="originNum p1-en-tian">1412</div>
+                </div>
+                <div class="coupon">
+                  <div class="couponTitle dark-text-tian">
+                    <span class="material-symbols-outlined"
+                      >confirmation_number</span
+                    ><span class="p1-tc-tian">15% off</span>
+                  </div>
+                  <div class="couponNum dark-text-tian p1-en-tian">
+                    <span>-</span><span>212</span>
+                  </div>
+                </div>
+                <div class="clacLine"></div>
+                <div class="total dark-text-tian">
+                  <span class="h6-tc-tian">總金額:</span>
+                  <div class="error-text-tian h6-en-tian">
+                    <span>$</span>1500<span></span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn error2-btn-tian">結帳</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>Footer</footer>
+    </div>
+
+    <!--## ↓↓↓↓ 選擇優惠券 彈出式 ↓↓↓↓ -->
+    <section class="couponModal-tian d-none">
+      <div class="header">
+        <div class="title light-text-tian h6-tc-tian">露營用品優惠券</div>
+        <div class="close">
+          <span class="material-symbols-outlined light-text-tian"> close </span>
+        </div>
+      </div>
+      <div class="body">
+        <div class="bodyTitle h6-tc-tian">選擇優惠券</div>
+        <div class="content">
+          <div class="couponCard active">
+            <div class="cate">
+              <span class="material-symbols-outlined light-text-tian">
+                local_mall
+              </span>
+              <div class="p2-tc-tian light-text-tian">全站</div>
+            </div>
+            <div class="info">
+              <div class="left">
+                <div>
+                  <p class="m-0">優惠券名稱</p>
+                  <p class="m-0">15% off</p>
+                </div>
+                <p class="m-0">有效期限 7.10</p>
+              </div>
+              <div class="right">
+                <div class="rule">
+                  <span class="material-symbols-outlined dark-text-tian"
+                    >trending_flat</span
+                  >
+                  <span> 使用規則 </span>
+                </div>
+                <div class="circleCheck">
+                  <span class="material-symbols-outlined light-text-tian"
+                    >check</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="couponCard">
+            <div class="cate">
+              <span class="material-symbols-outlined light-text-tian">
+                local_mall
+              </span>
+              <div class="p2-tc-tian light-text-tian">全站</div>
+            </div>
+            <div class="info">
+              <div class="left">
+                <div>
+                  <p class="m-0">優惠券名稱</p>
+                  <p class="m-0">15% off</p>
+                </div>
+                <p class="m-0">有效期限 7.10</p>
+              </div>
+              <div class="right">
+                <div class="rule">
+                  <span class="material-symbols-outlined dark-text-tian"
+                    >trending_flat</span
+                  >
+                  <span> 使用規則 </span>
+                </div>
+                <div class="circleCheck">
+                  <span class="material-symbols-outlined light-text-tian"
+                    >check</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="couponCard">
+            <div class="cate">
+              <span class="material-symbols-outlined light-text-tian">
+                local_mall
+              </span>
+              <div class="p2-tc-tian light-text-tian">全站</div>
+            </div>
+            <div class="info">
+              <div class="left">
+                <div>
+                  <p class="m-0">優惠券名稱</p>
+                  <p class="m-0">15% off</p>
+                </div>
+                <p class="m-0">有效期限 7.10</p>
+              </div>
+              <div class="right">
+                <div class="rule">
+                  <span class="material-symbols-outlined dark-text-tian"
+                    >trending_flat</span
+                  >
+                  <span> 使用規則 </span>
+                </div>
+                <div class="circleCheck">
+                  <span class="material-symbols-outlined light-text-tian"
+                    >check</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="couponCard">
+            <div class="cate">
+              <span class="material-symbols-outlined light-text-tian">
+                local_mall
+              </span>
+              <div class="p2-tc-tian light-text-tian">全站</div>
+            </div>
+            <div class="info">
+              <div class="left">
+                <div>
+                  <p class="m-0">優惠券名稱</p>
+                  <p class="m-0">15% off</p>
+                </div>
+                <p class="m-0">有效期限 7.10</p>
+              </div>
+              <div class="right">
+                <div class="rule">
+                  <span class="material-symbols-outlined dark-text-tian"
+                    >trending_flat</span
+                  >
+                  <span> 使用規則 </span>
+                </div>
+                <div class="circleCheck">
+                  <span class="material-symbols-outlined light-text-tian"
+                    >check</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="couponCard">
+            <div class="cate">
+              <span class="material-symbols-outlined light-text-tian">
+                local_mall
+              </span>
+              <div class="p2-tc-tian light-text-tian">全站</div>
+            </div>
+            <div class="info">
+              <div class="left">
+                <div>
+                  <p class="m-0">優惠券名稱</p>
+                  <p class="m-0">15% off</p>
+                </div>
+                <p class="m-0">有效期限 7.10</p>
+              </div>
+              <div class="right">
+                <div class="rule">
+                  <span class="material-symbols-outlined dark-text-tian"
+                    >trending_flat</span
+                  >
+                  <span> 使用規則 </span>
+                </div>
+                <div class="circleCheck">
+                  <span class="material-symbols-outlined light-text-tian"
+                    >check</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="couponCard">
+            <div class="cate">
+              <span class="material-symbols-outlined light-text-tian">
+                local_mall
+              </span>
+              <div class="p2-tc-tian light-text-tian">全站</div>
+            </div>
+            <div class="info">
+              <div class="left">
+                <div>
+                  <p class="m-0">優惠券名稱</p>
+                  <p class="m-0">15% off</p>
+                </div>
+                <p class="m-0">有效期限 7.10</p>
+              </div>
+              <div class="right">
+                <div class="rule">
+                  <span class="material-symbols-outlined dark-text-tian"
+                    >trending_flat</span
+                  >
+                  <span> 使用規則 </span>
+                </div>
+                <div class="circleCheck">
+                  <span class="material-symbols-outlined light-text-tian"
+                    >check</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="couponCard">
+            <div class="cate">
+              <span class="material-symbols-outlined light-text-tian">
+                local_mall
+              </span>
+              <div class="p2-tc-tian light-text-tian">全站</div>
+            </div>
+            <div class="info">
+              <div class="left">
+                <div>
+                  <p class="m-0">優惠券名稱</p>
+                  <p class="m-0">15% off</p>
+                </div>
+                <p class="m-0">有效期限 7.10</p>
+              </div>
+              <div class="right">
+                <div class="rule">
+                  <span class="material-symbols-outlined dark-text-tian"
+                    >trending_flat</span
+                  >
+                  <span> 使用規則 </span>
+                </div>
+                <div class="circleCheck">
+                  <span class="material-symbols-outlined light-text-tian"
+                    >check</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="couponCard">
+            <div class="cate">
+              <span class="material-symbols-outlined light-text-tian">
+                local_mall
+              </span>
+              <div class="p2-tc-tian light-text-tian">全站</div>
+            </div>
+            <div class="info">
+              <div class="left">
+                <div>
+                  <p class="m-0">優惠券名稱</p>
+                  <p class="m-0">15% off</p>
+                </div>
+                <p class="m-0">有效期限 7.10</p>
+              </div>
+              <div class="right">
+                <div class="rule">
+                  <span class="material-symbols-outlined dark-text-tian"
+                    >trending_flat</span
+                  >
+                  <span> 使用規則 </span>
+                </div>
+                <div class="circleCheck">
+                  <span class="material-symbols-outlined light-text-tian"
+                    >check</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="couponCard">
+            <div class="cate">
+              <span class="material-symbols-outlined light-text-tian">
+                local_mall
+              </span>
+              <div class="p2-tc-tian light-text-tian">全站</div>
+            </div>
+            <div class="info">
+              <div class="left">
+                <div>
+                  <p class="m-0">優惠券名稱</p>
+                  <p class="m-0">15% off</p>
+                </div>
+                <p class="m-0">有效期限 7.10</p>
+              </div>
+              <div class="right">
+                <div class="rule">
+                  <span class="material-symbols-outlined dark-text-tian"
+                    >trending_flat</span
+                  >
+                  <span> 使用規則 </span>
+                </div>
+                <div class="circleCheck">
+                  <span class="material-symbols-outlined light-text-tian"
+                    >check</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <button class="cancel btn primary2-outline-btn-tian p1-tc-tian">
+            取消
+          </button>
+          <button class="confirm btn primary2-btn-tian p1-tc-tian">確認</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const listOpen = document.querySelector(".listFooter button");
+      const up = document.querySelector(".up");
+      const down = document.querySelector(".down");
+      const checkBox = document.querySelectorAll(".checkBox");
+      const addCoupon = document.querySelector(".addCoupon");
+      const couponModal = document.querySelector(".couponModal-tian");
+      const closeCoupon = document.querySelector(".couponModal-tian .close");
+      const couponCard = document.querySelectorAll(
+        ".couponModal-tian .couponCard"
+      );
+
+      listOpen.addEventListener("click", e => {
+        up.classList.toggle("d-none");
+        down.classList.toggle("d-none");
+      });
+
+      for (let i = 0; i < checkBox.length; i++) {
+        checkBox[i].addEventListener("click", e => {
+          checkBox[i].classList.toggle("active");
+        });
+      }
+
+      addCoupon.addEventListener("click", e => {
+        couponModal.classList.remove("d-none");
+      });
+
+      closeCoupon.addEventListener("click", e => {
+        couponModal.classList.add("d-none");
+      });
+
+      for (let i = 0; i < couponCard.length; i++) {
+        couponCard[i].addEventListener("click", e => {
+          couponCard[i].classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>

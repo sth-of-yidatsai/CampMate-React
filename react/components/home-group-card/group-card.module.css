@@ -1,0 +1,162 @@
+.card > * {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+.card {
+  position: relative;
+  height: 540px;
+  overflow: hidden;
+}
+
+.cardBody {
+  position: relative;
+  width: 187px;
+  height: 540px;
+  overflow: hidden;
+  border-radius: 18px;
+  transition: all 0.8s ease;
+}
+
+.cardBody.expanded {
+  width: 515px;
+}
+
+.cardImg {
+  transition: all 0.8s ease;
+}
+
+.cardBody:hover .cardImg {
+  transform: scale(1.1);
+}
+
+
+.cardTitle > p.expanded {
+  width: 450px;
+}
+
+.topWrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  z-index: 2;
+  left: 16px;
+  top: 16px;
+}
+
+.topCard {
+  width: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 18px;
+  padding: 8px;
+  gap: 16px;
+  background: #574426;
+  font-size: 12px;
+  color: #f5f5f7;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
+.topCard + .topCard {
+  transform: translateX(-150%);
+}
+
+.cardBody.expanded .topCard + .topCard {
+  transform: translateX(0);
+}
+
+.topCard .dateWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 8px;
+}
+
+.topCard .dateWrap .date {
+  display: flex;
+  align-items: end;
+  gap: 4px;
+  margin-left: 5px;
+}
+.topCard .dateWrap .date > span {
+  font-size: 14px;
+}
+
+.topCard .verticalText {
+  writing-mode: vertical-rl; /* 垂直書寫模式，從右到左 */
+  text-orientation: upright; /* 讓每個字元保持直立 */
+  letter-spacing: 3px;
+}
+
+.topCard .dLine {
+  width: 1px;
+  height: 36px;
+  background: #f5f5f7;
+}
+
+.cardFooter {
+  position: relative;
+  bottom: 78px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 18px;
+  background: #413c1c;
+}
+
+.cardTitle > p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  color: #f5f5f7;
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.8s ease;
+}
+
+.infoWrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+}
+
+.info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 12px;
+  color: #f5f5f7;
+}
+
+.cardIcon {
+  margin-right: 4px;
+}
+
+.cardIcon2 {
+  margin-right: 8px;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .cardBody.expanded {
+    width: 361px;
+  }
+  .topWrap{
+    flex-direction: column;
+  }
+
+  .cardTitle > p.expanded {
+    width: 280px;
+  }
+}

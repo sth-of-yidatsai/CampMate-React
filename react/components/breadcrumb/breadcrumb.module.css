@@ -1,0 +1,22 @@
+.wrap {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Montserrat', 'Noto Sans TC';
+    font-size: 14px;
+    font-weight: 500;
+    color: #8F8E93;
+}
+
+.link {
+    font-family: 'Montserrat', 'Noto Sans TC';
+    font-size: 14px;
+    font-weight: 500;
+    color: #8F8E93;
+    text-decoration: none;
+}
+
+.link:hover {
+color: #e49366;
+}

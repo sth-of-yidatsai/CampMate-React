@@ -1,0 +1,108 @@
+.total {
+    width: 1440px;
+    height: 930px;
+    background: var(--f-5-f-5-f-7-bg, #F5F5F7);
+}
+
+header {
+    width: 1440px;
+    height: 64px;
+    background-color: #afa9a9;
+}
+
+.col-2 {
+    background-color: #fff;
+}
+
+.card1h {
+    width: 952px;
+    height: 45px;
+    color: #ffff;
+    border-radius: 45px 45px 0 0;
+    background: var(--413-c-1-c, #413C1C);
+}
+
+.card1h p {
+    font-size: 24px;
+    text-align: left;
+    width: 250px;
+    margin-left: 55px;
+    padding-top: 3px;
+}
+
+.card1b {
+    width: 952px;
+    height: 550px;
+    border: 2px solid #413C1C;
+    border-radius: 0 0 45px 45px;
+    display: flex;
+
+    form {
+        width: 532px;
+        height: 456px;
+        margin: 45px 80px;
+
+    }
+
+    .card2 {
+        width: 187px;
+        height: 396px;
+        background-color: #E5E4CF;
+        margin-top: 80px;
+        border-radius: 18px;
+        font-size: medium;
+
+        .card2h {
+            width: 187px;
+            height: 290px;
+            background-image: url(/images/Rectangle\ 27.png);
+            border-radius: 18px 18px 0 0;
+            position: static;
+        }
+
+        .card2b {
+            width: 109px;
+            height: 109px;
+            margin: -50px 0 0 40px;
+            border-radius: 60px;
+            background-image: url(/images/胖達.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+    }
+}
+.from{
+    width: 532px;
+        height: 456px;
+        margin: 45px 80px;
+}
+
+.space {
+    border-bottom: 1px solid #413C1C;
+    width: 532px;
+    height: 36px;
+    text-align: left;
+    justify-content: space-between;
+
+    .btn-link {
+        color: #e49366;
+    }
+}
+
+.input1 {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 232px;
+    padding: 0;
+    color: var(--413-c-1-c, var(--413-c-1-c, #413C1C));
+}
+.card2 {
+    width: 187px;
+    height: 396px;
+    background-color: #E5E4CF;
+    margin-top: 80px;
+    border-radius: 18px;
+    font-size: medium;
+}

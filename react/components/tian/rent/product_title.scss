@@ -1,0 +1,16 @@
+.optionHeader-tian {
+  @include flexCol(8px);
+
+  .addLike {
+    font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 36;
+    font-size: 36px;
+    line-height: 38px;
+    @include hoverColor-tian($dark-color, $prompt-color);
+    @include outline-tian;
+    cursor: pointer;
+    &.active {
+      @include fill-tian;
+      @include hoverColor-tian($prompt-color, $success-color);
+    }
+  }
+}

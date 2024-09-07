@@ -1,0 +1,39 @@
+.ps-sidebar-container {
+  overflow: visible;
+}
+div.budgetWrapper.tian {
+  margin-top: 24px;
+  @include flexCol;
+  .range {
+    @include flexRow;
+    justify-content: space-between;
+  }
+}
+.tagSelect.tian {
+  margin-top: 24px;
+  @include flexCol;
+  .tagSelectHeader {
+    @include flexRow;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .clean {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .MuiFormControlLabel-label {
+    @include p2-tc-tian;
+    color: $secondary-color;
+  }
+  .MuiFormControlLabel-label p {
+    margin: 0px;
+  }
+}
+.filterBtn-tian {
+  width: 100%;
+  margin-top: 24px;
+  border-radius: 10px;
+  padding-block: 5px;
+}

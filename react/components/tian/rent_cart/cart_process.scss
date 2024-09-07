@@ -1,0 +1,57 @@
+.cartProcess-tian {
+  margin: auto;
+  width: 85%;
+  @include flexRow;
+  justify-content: space-between;
+  align-items: center;
+  .processItem {
+    @include flexRow(11px);
+    padding-right: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    & .processIcon {
+      @include flexRow;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      width: 43px;
+      height: 43px;
+      @include p1-en-tian;
+      color: $light-color;
+      background-color: $prompt-color;
+      .material-symbols-outlined {
+        display: none;
+      }
+    }
+    &.active .processIcon {
+      width: 50px;
+      height: 50px;
+      border: 3px solid $prompt-color;
+      @include h6-en-tian;
+      color: $prompt-color;
+      background-color: $success-color;
+    }
+    &:has(~ .active) {
+      .processIcon {
+        & :first-child {
+          display: none;
+        }
+        .material-symbols-outlined {
+          display: block;
+        }
+      }
+    }
+    & .processTitle {
+      @include p1-tc-tian;
+      color: $sub-color;
+    }
+    &.active .processTitle {
+      color: $dark-color;
+    }
+  }
+  .processLine {
+    flex: 1 0 auto;
+    height: 1px;
+    background-color: $prompt-color;
+  }
+}

@@ -1,0 +1,123 @@
+.container {
+  width: 1440px;
+  padding: 0 80px;
+  font-family: 'Montserrat', 'Noto Sans TC';
+}
+
+.containerW100 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.containerFluid {
+  padding: 0 80px;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mask {
+  overflow: hidden;
+  width: 100%;
+}
+
+.cardList {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.cardList::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.cards {
+  gap: 32px;
+  display: flex;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 48px;
+  color: #413c1c;
+  z-index: 1;
+  background: rgba(245, 245, 247, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 50%;
+  padding: 5px;
+  display: none; /* 初始隱藏 */
+}
+
+.wrapper:hover .arrow {
+  display: block; /* 滑鼠懸停時顯示 */
+}
+
+.arrow.left {
+  left: calc((100vw - 1440px) / 2 + 20px); /* 位置調整 */
+}
+
+.arrow.right {
+  right: calc((100vw - 1440px) / 2 + 20px); /* 位置調整 */
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  color: #e49366;
+}
+
+.firstCard {
+  padding-left: calc((100vw - 1440px) / 2 + 80px);
+}
+
+.lastCard {
+  padding-right: calc((100vw - 1440px) / 2 + 80px);
+}
+
+.pageTitle {
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  font-size: 24px;
+  color: #8f8e93;
+  margin-bottom: 64px;
+}
+
+.pageTitle .h2 {
+  color: #2d2d2d;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .container {
+    width: 393px;
+    padding: 0 16px;
+  }
+  
+  .firstCard {
+    padding-left: calc((100vw - 393px) / 2 + 16px);
+  }
+  
+  .lastCard {
+    padding-right: calc((100vw - 393px) / 2 + 16px);
+  }
+
+  .pageTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}

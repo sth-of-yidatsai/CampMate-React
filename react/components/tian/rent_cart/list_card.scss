@@ -1,0 +1,147 @@
+.listCard-tian {
+  @include flexRow;
+  justify-content: space-between;
+  align-items: center;
+  height: 147px;
+  padding-right: 35px;
+  background-color: $light-color;
+  .checkBox {
+    @include flexRow;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    margin: 9px;
+    border: 1px solid $prompt-color;
+    border-radius: 4px;
+    background-color: $light-color;
+    cursor: pointer;
+    span {
+      @include outline-tian;
+    }
+    &.active {
+      background-color: $prompt-color;
+    }
+  }
+
+  .image {
+    flex: 0 1 auto;
+    width: 130px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+    .imgBox {
+      width: 110px;
+      height: 110px;
+      aspect-ratio: 1/1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+  .product {
+    flex: 1 1 auto;
+    height: 100%;
+    padding-block: 19px;
+    @include flexCol;
+    justify-content: space-between;
+    .productTitle {
+      @include flexCol(10px);
+      & .product_title {
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .productStyle select {
+      @include flexRow;
+      width: fit-content;
+      justify-content: center;
+      align-items: center;
+      color: $sub-color;
+      background-color: $light-color;
+      border-color: $sub-color;
+    }
+  }
+  .day {
+    flex: 0 1 auto;
+    width: 70px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .count,
+  .amount {
+    flex: 0 1 auto;
+    width: 110px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .operation {
+    flex: 0 1 auto;
+    width: 80px;
+    height: 100%;
+    @include flexCol;
+    justify-content: center;
+    align-items: flex-start;
+    .addLike {
+      @include hoverColor-tian($dark-color, $prompt-color);
+      @include outline-tian;
+      cursor: pointer;
+      &.active {
+        @include fill-tian;
+        @include hoverColor-tian($prompt-color, $success-color);
+      }
+    }
+    .remove span {
+      color: $dark-color;
+      cursor: pointer;
+      &:hover {
+        color: $error-color;
+      }
+    }
+  }
+  .count {
+    .counter {
+      // width: 76px;
+      height: 21px;
+      @include flexRow;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid $sub-color;
+      overflow: hidden;
+      button {
+        @include flexRow;
+        justify-content: center;
+        align-items: center;
+        width: 21px;
+        height: 21px;
+        color: $sub-color;
+        background-color: $light-color;
+        span {
+          font-size: 18px;
+          font-weight: 100;
+        }
+      }
+      .countNum {
+        flex: 0 1 auto;
+        width: 40px;
+        @include flexRow;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        border-inline: 1px solid $sub-color;
+        border-block: 0px;
+      }
+    }
+  }
+}

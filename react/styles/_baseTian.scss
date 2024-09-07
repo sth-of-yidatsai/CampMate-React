@@ -1,0 +1,634 @@
+// ** 定義顏色
+$primary-color: #413c1c;
+$secondary-color: #574426;
+$success-color: #e5e4cf;
+$prompt-color: #e49366;
+$error-color: #de3e3e;
+$light-color: #f5f5f7;
+$dark-color: #2d2d2d;
+$sub-color: #8f8e93;
+
+// ** 文字顏色
+.primary-text-tian {
+  color: $primary-color;
+}
+.secondary-text-tian {
+  color: $secondary-color;
+}
+.success-text-tian {
+  color: $success-color;
+}
+.prompt-text-tian {
+  color: $prompt-color;
+}
+.error-text-tian {
+  color: $error-color;
+}
+.light-text-tian {
+  color: $light-color;
+}
+.dark-text-tian {
+  color: $dark-color;
+}
+.sub-text-tian {
+  color: $sub-color;
+}
+
+// ** 背景顏色
+.primary-bg-tian {
+  background-color: $primary-color;
+}
+.secondary-bg-tian {
+  background-color: $secondary-color;
+}
+.success-bg-tian {
+  background-color: $success-color;
+}
+.prompt-bg-tian {
+  background-color: $prompt-color;
+}
+.error-bg-tian {
+  background-color: $error-color;
+}
+.light-bg-tian {
+  background-color: $light-color;
+}
+.dark-bg-tian {
+  background-color: $dark-color;
+}
+.sub-bg-tian {
+  background-color: $sub-color;
+}
+
+// ** 外框顏色
+.primary-border-tian {
+  border-color: $primary-color !important;
+}
+.secondary-border-tian {
+  border-color: $secondary-color !important;
+}
+.success-border-tian {
+  border-color: $success-color !important;
+}
+.prompt-border-tian {
+  border-color: $prompt-color !important;
+}
+.error-border-tian {
+  border-color: $error-color !important;
+}
+.light-border-tian {
+  border-color: $light-color !important;
+}
+.dark-border-tian {
+  border-color: $dark-color !important;
+}
+.sub-border-tian {
+  border-color: $sub-color !important;
+}
+
+// ** 按鈕顏色
+// ## 按鈕顏色函式
+@mixin btn-color($main, $sub, $border: 1px) {
+  color: $sub;
+  background-color: $main;
+  border: $border solid $main;
+}
+@mixin btn-outline-color($main, $sub, $border: 1px) {
+  color: $main;
+  background-color: $sub;
+  border: $border solid $main;
+}
+// ## 按鈕消除樣式
+.none-btn-tian {
+  border: 0px solid transparent;
+}
+
+// ## 按鈕
+.primary-btn-tian {
+  @include btn-color($primary-color, $light-color);
+  &:hover {
+    @include btn-outline-color($primary-color, $light-color);
+  }
+}
+.primary2-btn-tian {
+  @include btn-color($primary-color, $success-color);
+  &:hover {
+    @include btn-outline-color($primary-color, $success-color);
+  }
+}
+.secondary-btn-tian {
+  @include btn-color($secondary-color, $light-color);
+  &:hover {
+    @include btn-outline-color($secondary-color, $light-color);
+  }
+}
+.secondary-btn-tian {
+  @include btn-color($secondary-color, $success-color);
+  &:hover {
+    @include btn-outline-color($secondary-color, $success-color);
+  }
+}
+.success-btn-tian {
+  @include btn-color($success-color, $secondary-color);
+  &:hover {
+    @include btn-outline-color($success-color, $secondary-color);
+  }
+}
+.success2-btn-tian {
+  @include btn-color($success-color, $primary-color);
+  &:hover {
+    @include btn-outline-color($success-color, $primary-color);
+  }
+}
+.prompt-btn-tian {
+  @include btn-color($prompt-color, $light-color);
+  &:hover {
+    @include btn-outline-color($prompt-color, $light-color);
+  }
+}
+.prompt2-btn-tian {
+  @include btn-color($prompt-color, $success-color);
+  &:hover {
+    @include btn-outline-color($prompt-color, $success-color);
+  }
+}
+.error-btn-tian {
+  @include btn-color($error-color, $light-color);
+  &:hover {
+    @include btn-outline-color($error-color, $light-color);
+  }
+}
+.error2-btn-tian {
+  @include btn-color($error-color, $light-color);
+  &:hover {
+    @include btn-color($error-color, $prompt-color);
+  }
+}
+.dark-btn-tian {
+  @include btn-color($dark-color, $light-color);
+  &:hover {
+    @include btn-outline-color($dark-color, $light-color);
+  }
+}
+.sub-btn-tian {
+  @include btn-color($sub-color, $light-color);
+  &:hover {
+    @include btn-outline-color($sub-color, $light-color);
+  }
+}
+
+// ## 按鈕反白
+.primary-outline-btn-tian {
+  @include btn-outline-color($primary-color, $light-color);
+  &:hover {
+    @include btn-color($primary-color, $light-color);
+  }
+}
+.primary2-outline-btn-tian {
+  @include btn-outline-color($primary-color, $success-color);
+  &:hover {
+    @include btn-color($primary-color, $success-color);
+  }
+}
+.secondary-outline-btn-tian {
+  @include btn-outline-color($secondary-color, $light-color);
+  &:hover {
+    @include btn-color($secondary-color, $light-color);
+  }
+}
+.secondary2-outline-btn-tian {
+  @include btn-outline-color($secondary-color, $success-color);
+  &:hover {
+    @include btn-color($secondary-color, $success-color);
+  }
+}
+.success-outline-btn-tian {
+  @include btn-outline-color($success-color, $secondary-color);
+  &:hover {
+    @include btn-color($success-color, $secondary-color);
+  }
+}
+.success2-outline-btn-tian {
+  @include btn-outline-color($success-color, $primary-color);
+  &:hover {
+    @include btn-color($success-color, $primary-color);
+  }
+}
+.prompt-outline-btn-tian {
+  @include btn-outline-color($prompt-color, $light-color);
+  &:hover {
+    @include btn-color($prompt-color, $light-color);
+  }
+}
+.prompt2-outline-btn-tian {
+  @include btn-outline-color($prompt-color, $success-color);
+  &:hover {
+    @include btn-color($prompt-color, $success-color);
+  }
+}
+.error-outline-btn-tian {
+  @include btn-outline-color($error-color, $light-color);
+  &:hover {
+    @include btn-color($error-color, $light-color);
+  }
+}
+.dark-outline-btn-tian {
+  @include btn-outline-color($dark-color, $light-color);
+  &:hover {
+    @include btn-color($dark-color, $light-color);
+  }
+}
+.sub-outline-btn-tian {
+  @include btn-outline-color($sub-color, $light-color);
+  &:hover {
+    @include btn-color($sub-color, $light-color);
+  }
+}
+
+// ** 字型大小
+// ## 變數
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$black: 900;
+
+// ## 函式
+@mixin NotoSansTC {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+@mixin Montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+@mixin MontserratAl {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-style: normal;
+}
+
+.title-ds-tian {
+  @include MontserratAl;
+  font-weight: $regular;
+  font-size: 64px;
+  letter-spacing: 64 * 0.06 px;
+}
+// ## 中文字型大小
+.aside-main-tc-tian {
+  @include NotoSansTC;
+  font-weight: $bold;
+  font-size: 14px;
+  letter-spacing: 14 * 0.04 px;
+}
+@mixin aside-main-tc-tian {
+  @include NotoSansTC;
+  font-weight: $bold;
+  font-size: 14px;
+  letter-spacing: 14 * 0.04 px;
+}
+.h1-tc-tian {
+  @include NotoSansTC;
+  font-weight: $black;
+  font-size: 64px;
+  letter-spacing: 64 * 0.04 px;
+}
+@mixin h1-tc-tian {
+  @include NotoSansTC;
+  font-weight: $black;
+  font-size: 64px;
+  letter-spacing: 64 * 0.04 px;
+}
+.h2-tc-tian {
+  @include NotoSansTC;
+  font-weight: $bold;
+  font-size: 52px;
+  letter-spacing: 52 * 0.04 px;
+}
+@mixin h2-tc-tian {
+  @include NotoSansTC;
+  font-weight: $bold;
+  font-size: 52px;
+  letter-spacing: 52 * 0.04 px;
+}
+.h3-tc-tian {
+  @include NotoSansTC;
+  font-weight: $bold;
+  font-size: 42px;
+  letter-spacing: 42 * 0.04 px;
+}
+@mixin h3-tc-tian {
+  @include NotoSansTC;
+  font-weight: $bold;
+  font-size: 42px;
+  letter-spacing: 42 * 0.04 px;
+}
+.h4-tc-tian {
+  @include NotoSansTC;
+  font-weight: $bold;
+  font-size: 36px;
+  letter-spacing: 36 * 0.04 px;
+}
+@mixin h4-tc-tian {
+  @include NotoSansTC;
+  font-weight: $bold;
+  font-size: 36px;
+  letter-spacing: 36 * 0.04 px;
+}
+.h5-tc-tian {
+  @include NotoSansTC;
+  font-weight: $bold;
+  font-size: 24px;
+  letter-spacing: 24 * 0.04 px;
+}
+@mixin h5-tc-tian {
+  @include NotoSansTC;
+  font-weight: $bold;
+  font-size: 24px;
+  letter-spacing: 24 * 0.04 px;
+}
+.h6-tc-tian {
+  @include NotoSansTC;
+  font-weight: $medium;
+  font-size: 20px;
+  letter-spacing: 20 * 0.04 px;
+}
+@mixin h6-tc-tian {
+  @include NotoSansTC;
+  font-weight: $medium;
+  font-size: 20px;
+  letter-spacing: 20 * 0.04 px;
+}
+.p1-tc-tian {
+  @include NotoSansTC;
+  font-weight: $medium;
+  font-size: 16px;
+  letter-spacing: 16 * 0.02 px;
+}
+@mixin p1-tc-tian {
+  @include NotoSansTC;
+  font-weight: $medium;
+  font-size: 16px;
+  letter-spacing: 16 * 0.02 px;
+}
+.p2-tc-tian {
+  @include NotoSansTC;
+  font-weight: $medium;
+  font-size: 14px;
+  letter-spacing: 14 * 0.02 px;
+}
+@mixin p2-tc-tian {
+  @include NotoSansTC;
+  font-weight: $medium;
+  font-size: 14px;
+  letter-spacing: 14 * 0.02 px;
+}
+.p3-tc-tian {
+  @include NotoSansTC;
+  font-weight: $medium;
+  font-size: 12px;
+  letter-spacing: 12 * 0.02 px;
+}
+@mixin p3-tc-tian {
+  @include NotoSansTC;
+  font-weight: $medium;
+  font-size: 12px;
+  letter-spacing: 12 * 0.02 px;
+}
+
+// ## 英文字型大小
+
+.header-en-tian {
+  @include Montserrat;
+  font-weight: $semiBold;
+  font-size: 14px;
+  letter-spacing: 14 * 0.05 px;
+}
+@mixin header-en-tian {
+  @include Montserrat;
+  font-weight: $semiBold;
+  font-size: 14px;
+  letter-spacing: 14 * 0.05 px;
+}
+.h1-en-tian {
+  @include Montserrat;
+  font-weight: $bold;
+  font-size: 66px;
+}
+@mixin h1-en-tian {
+  @include Montserrat;
+  font-weight: $bold;
+  font-size: 66px;
+}
+.h2-en-tian {
+  @include Montserrat;
+  font-weight: $semiBold;
+  font-size: 54px;
+}
+@mixin h2-en-tian {
+  @include Montserrat;
+  font-weight: $semiBold;
+  font-size: 54px;
+}
+.h3-en-tian {
+  @include Montserrat;
+  font-weight: $semiBold;
+  font-size: 44px;
+}
+@mixin h3-en-tian {
+  @include Montserrat;
+  font-weight: $semiBold;
+  font-size: 44px;
+}
+.h4-en-tian {
+  @include Montserrat;
+  font-weight: $semiBold;
+  font-size: 38px;
+}
+@mixin h4-en-tian {
+  @include Montserrat;
+  font-weight: $semiBold;
+  font-size: 38px;
+}
+.h5-en-tian {
+  @include Montserrat;
+  font-weight: $semiBold;
+  font-size: 25px;
+}
+@mixin h5-en-tian {
+  @include Montserrat;
+  font-weight: $semiBold;
+  font-size: 25px;
+}
+.h6-en-tian {
+  @include Montserrat;
+  font-weight: $medium;
+  font-size: 20px;
+}
+@mixin h6-en-tian {
+  @include Montserrat;
+  font-weight: $medium;
+  font-size: 20px;
+}
+.p1-en-tian {
+  @include Montserrat;
+  font-weight: $medium;
+  font-size: 16px;
+}
+@mixin p1-en-tian {
+  @include Montserrat;
+  font-weight: $medium;
+  font-size: 16px;
+}
+.p2-en-tian {
+  @include Montserrat;
+  font-weight: $medium;
+  font-size: 14px;
+}
+@mixin p2-en-tian {
+  @include Montserrat;
+  font-weight: $medium;
+  font-size: 14px;
+}
+.p3-en-tian {
+  @include Montserrat;
+  font-weight: $medium;
+  font-size: 12px;
+}
+@mixin p3-en-tian {
+  @include Montserrat;
+  font-weight: $medium;
+  font-size: 12px;
+}
+
+// ** google icon設定
+@mixin fill-tian($wght: 300, $opsz: 24) {
+  font-variation-settings: 'FILL' 1, 'wght' $wght, 'GRAD' 0, 'opsz' $opsz;
+}
+@mixin outline-tian($wght: 300, $opsz: 24) {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+// !! 動態函式
+// ## hover變icon填入方式效果（給填滿的使用）
+@mixin hoverFill-tian {
+  & {
+    @include outline-tian;
+  }
+  &:hover {
+    @include fill-tian;
+  }
+}
+
+// ## hover變icon填入方式效果（給反白的使用）
+@mixin hoverOutline-tian {
+  & {
+    @include fill-tian;
+  }
+  &:hover {
+    @include outline-tian;
+  }
+}
+
+// ## hover變字體顏色效果
+@mixin hoverColor-tian($color, $hoverColor) {
+  & {
+    color: $color;
+  }
+  &:hover {
+    color: $hoverColor;
+  }
+}
+
+// ## 放大效果 可定義要放大的className tag, 放大的基準點, 放大的倍率
+@mixin childBigger-tian($tagName, $origin: center, $scale: 1.05) {
+  & {
+    #{$tagName} {
+      transition: transform 0.4s;
+      transform-origin: $origin;
+    }
+  }
+  &:hover {
+    #{$tagName} {
+      transform: scale($scale);
+    }
+  }
+}
+@mixin Bigger-tian($origin: center, $scale: 1.05) {
+  & {
+    transition: transform 0.4s;
+    transform-origin: $origin;
+  }
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
+// ## flex
+@mixin flexRow($gap: 0, $wrap: nowrap) {
+  display: flex;
+  flex-direction: row;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+@mixin flexCol($gap: 0, $wrap: nowrap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+// ## 省略字串的效果
+@mixin hideText-tian($line: 1) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+
+// ## 表單外型定義函式
+// ** 函式
+@mixin formHeader-tian {
+  @include flexRow;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 35px;
+  width: 100%;
+  height: 45px;
+}
+@mixin formRadius-tian($radius: 35px) {
+  overflow: hidden;
+  border-radius: $radius;
+}
+@mixin checkBox-tian {
+  @include flexRow;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 4px;
+  border: 1px solid $prompt-color;
+  background-color: $light-color;
+  span {
+    @include outline-tian;
+  }
+}
+
+// ##
+.none-decor-tian {
+  text-decoration: none;
+}
+@mixin none-decor-tian {
+  text-decoration: none;
+}
+.none-style-tian {
+  list-style: none;
+}
+@mixin none-style-tian {
+  list-style: none;
+}

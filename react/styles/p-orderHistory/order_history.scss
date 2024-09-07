@@ -1,0 +1,31 @@
+// ******************************
+// ** -----order history scss-----
+.mainArea-orderHistory-tian {
+  @include flexRow(32px);
+  justify-content: space-between;
+  padding-top: 24px;
+  .main-tian {
+    flex: 0 1 74.375%;
+    width: 100%;
+    @include flexCol(32px);
+    margin-top: 24px;
+    align-items: flex-start;
+    .pageTab {
+      align-self: flex-end;
+      width: 297px;
+      height: 48px;
+      background-color: gray;
+    }
+    .bread {
+      flex: 0 1 auto;
+      &:first-child {
+        @include outline-tian;
+      }
+    }
+    .orderList {
+      @include flexCol(16px);
+      align-items: center;
+      width: 100%;
+    }
+  }
+}

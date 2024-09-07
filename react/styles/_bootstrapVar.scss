@@ -1,0 +1,57 @@
+// Custom.scss
+// Option B: Include parts of bootstrap-5.3.3
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../node_modules/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+// 老師原本改動的變數
+$primary: #023047;
+$secondary: rgba(41, 41, 40, 0.5);
+$success: #7eb4e6;
+$danger: #ff4136;
+
+$border-radius: 0.2em;
+$border-radius-sm: 0.2em;
+$border-radius-lg: 0.2em;
+
+$card-height: 100%;
+
+// 阿田改動的變數
+$nav-link-color: #8f8e93;
+$nav-link-hover-color: #413c1c;
+$nav-pills-border-radius: null;
+$nav-pills-link-active-color: #413c1c;
+$nav-pills-link-active-bg: transparent;
+// $nav-tabs-border-width ;
+$nav-tabs-border-color: #413c1c;
+$nav-tabs-link-hover-border-color: #413c1c;
+$nav-tabs-link-active-color: #e49366;
+$nav-tabs-link-active-bg: #f5f5f7;
+$nav-tabs-link-active-border-color: #413c1c;
+$nav-link-color: #413c1c;
+
+// 3. Include remainder of required bootstrap-5.3.3 stylesheets (including any separate color mode stylesheets)
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/variables-dark';
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/root';
+
+// 6. Optionally include any other parts as needed
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/images';
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/helpers';
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import '../node_modules/bootstrap/scss/utilities/api';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+// 8. Add additional custom code here

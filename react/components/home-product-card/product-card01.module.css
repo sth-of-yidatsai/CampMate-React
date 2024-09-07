@@ -1,0 +1,234 @@
+.card > * {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+.card {
+  width: 296px;
+  height: 254px;
+  overflow: hidden;
+  border-radius: 18px;
+  position: relative;
+}
+
+.cardBody {
+  position: relative;
+  width: 296px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.cardImg {
+  transform: translateY(-8%);
+  transform-origin: bottom center;
+  transition: all 0.8s ease;
+}
+
+.cardBody:hover .cardImg {
+  transform: scale(1.1);
+}
+
+.icons {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(296px - 24px - 24px - 24px - 24px);
+}
+
+.icons > * {
+  cursor: pointer;
+}
+
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 20px;
+  border-radius: 18px;
+  background: #e5e4cf;
+  transform: translateY(calc(-56px - 12px + 16px + 4px));
+  transition: all 0.8s ease;
+  padding-bottom: 30px;
+}
+
+.cardFooter:hover {
+  transform: translateY(calc(-168px + 56px - 16px - 6px));
+}
+
+.cardFooter:hover .arrow {
+  transform: rotate(180deg);
+}
+
+.showArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.cardTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+
+.cardTitle > p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  color: #2d2d2d;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.tag {
+  display: flex;
+  padding: 2px 8px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tagBg1 {
+  color: #f5f5f7;
+  background-color: #413c1c;
+}
+
+.tagBg2 {
+  color: #f5f5f7;
+  background-color: #e49366;
+}
+
+
+.arrowAndRating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.ratingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating {
+  width: 32px;
+  height: 32px;
+  background: var(--hint-color);
+  font-size: 14px;
+  color: var(--main-color-bright);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.commentCount {
+  color: #8f8e93;
+  font-size: 12px;
+}
+
+.middleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middleInfo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* flex-direction: column; */
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+.middleInfo .money {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.addToCart {
+  color: #f5f5f7;
+  background-color: #413c1c;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.inCart {
+  color: #2d2d2d;
+  background-color: #e49366;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.hr {
+  height: 1px;
+  background: #2d2d2d;
+}
+
+.arrow {
+  color: #2d2d2d;
+  transition: all 0.8s ease;
+}
+
+.arrow2 {
+  color: #f5f5f7;
+  background-color: #413c1c;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .cardFooter:hover {
+    transform: translateY(
+      calc(-56px - 12px + 16px + 4px)
+    ); /* 將 hover 效果禁用 */
+  }
+  .cardFooter.active {
+    transform: translateY(
+      calc(-168px + 56px - 16px)
+    ); /* 使用 active 狀態切換效果 */
+  }
+  .cardFooter:hover .arrow {
+    transform: rotate(0deg);
+  }
+  .cardFooter.active .arrow {
+    transform: rotate(180deg);
+  }
+}

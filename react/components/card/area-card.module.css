@@ -1,0 +1,108 @@
+.cardWrapper {
+  /* width: 1280px; */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.topWrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 624px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.imageWrapper:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imageWrapper:hover .topImage {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+
+
+
+.imageWrapperButtom {
+  position: relative;
+  width: 405px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.imageWrapperButtom:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imageWrapperButtom:hover .topImage {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+
+.topImage {
+  object-fit: cover;
+  transform: scale(1, 1);
+  transition: all 0.5s ease-out;
+}
+
+
+
+.titleWrapper {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: var(--main-color-bright);
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.titleWrapper > h1 {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 64px;
+  font-weight: 200;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+}
+.titleWrapper > p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.bottomWrapper {
+  display: flex;
+  gap: 32px;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .container {
+    width: 393px;
+    padding: 0 16px;
+  }
+
+  .firstCard {
+    padding-left: calc((100vw - 393px) / 2 + 16px);
+  }
+  
+  .lastCard {
+    padding-right: calc((100vw - 393px) / 2 + 16px);
+  }
+
+  .pageTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,66 @@
+.ad-tian {
+  width: 952px;
+  // width: 100%;
+  // height: 248px;
+  aspect-ratio: 952/248;
+  flex: 0 1 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  // position: relative;
+  .swiper {
+    width: 100%;
+    box-sizing: border-box;
+    // width: 952px;
+    // aspect-ratio: 952/248;
+    // flex: 0 1 auto;
+    // border-radius: 18px;
+    // overflow: hidden;
+    img {
+      width: 100%;
+    }
+    .swiper-button-next {
+      color: $success-color;
+    }
+    .swiper-button-prev {
+      color: $success-color;
+    }
+    .swiper-pagination-bullet {
+      background-color: $success-color;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $prompt-color;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .ad-tian {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ad-tian {
+    align-self: center;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .ad-tian {
+    align-self: center;
+    width: 430px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ad-tian {
+    align-self: center;
+    width: 650px;
+    // aspect-ratio: 16/9;
+  }
+}
+@media screen and (max-width: 460px) {
+  .ad-tian {
+    align-self: center;
+    width: 353px;
+    // aspect-ratio: 16/9;
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "shop_id": 1,
+    "shop_name": "彰化中正店",
+    "shop_phone": "0924430333",
+    "shop_email": "loqwmhxps6@gmail.com",
+    "shop_location": "彰化縣",
+    "shop_adress": "彰化縣彰化市中正路50號"
+  },
+  {
+    "shop_id": 2,
+    "shop_name": "中壢中山店",
+    "shop_phone": "0948714820",
+    "shop_email": "ke6gkvtng4@gmail.com",
+    "shop_location": "桃園市",
+    "shop_adress": "桃園市中壢區中山路3號"
+  },
+  {
+    "shop_id": 3,
+    "shop_name": "西屯政北店",
+    "shop_phone": "0986675961",
+    "shop_email": "v8ie7jyc6n@gmail.com",
+    "shop_location": "台中市",
+    "shop_adress": "台中市西屯區市政北二路168號"
+  },
+  {
+    "shop_id": 4,
+    "shop_name": "花蓮中正店",
+    "shop_phone": "0927061575",
+    "shop_email": "md2p8l7oge@gmail.com",
+    "shop_location": "花蓮縣",
+    "shop_adress": "花蓮縣花蓮市中正路300號"
+  },
+  {
+    "shop_id": 5,
+    "shop_name": "中西華西店",
+    "shop_phone": "0926917733",
+    "shop_email": "7qdzllhh33@gmail.com",
+    "shop_location": "台南市",
+    "shop_adress": "台南市中西區中華西路100號"
+  },
+  {
+    "shop_id": 6,
+    "shop_name": "宜蘭中山店",
+    "shop_phone": "0971040188",
+    "shop_email": "zvyu7ipvfi@gmail.com",
+    "shop_location": "宜蘭縣",
+    "shop_adress": "宜蘭縣宜蘭市中山路100號"
+  },
+  {
+    "shop_id": 7,
+    "shop_name": "基隆仁愛店",
+    "shop_phone": "0922668498",
+    "shop_email": "2t85crga1u@gmail.com",
+    "shop_location": "基隆市",
+    "shop_adress": "基隆市仁愛區忠一路2號"
+  },
+  {
+    "shop_id": 8,
+    "shop_name": "高雄前鎮店",
+    "shop_phone": "0916258373",
+    "shop_email": "9clyzx48wi@gmail.com",
+    "shop_location": "高雄市",
+    "shop_adress": "高雄市前鎮區中華五路789號"
+  },
+  {
+    "shop_id": 9,
+    "shop_name": "苗栗中正店",
+    "shop_phone": "0939914961",
+    "shop_email": "ey6i3x5noa@gmail.com",
+    "shop_location": "苗栗縣",
+    "shop_adress": "苗栗縣苗栗市中正路200號"
+  },
+  {
+    "shop_id": 10,
+    "shop_name": "嘉義文化店",
+    "shop_phone": "0963205601",
+    "shop_email": "3mo4td2wvo@gmail.com",
+    "shop_location": "嘉義市",
+    "shop_adress": "嘉義市西區文化路200號"
+  }
+]

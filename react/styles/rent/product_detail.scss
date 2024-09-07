@@ -1,0 +1,214 @@
+// ******************************
+// ** -----product_detail scss-----
+
+.mainArea-detail-tian {
+  @include flexCol(24px);
+  align-items: flex-start;
+  padding-top: 24px;
+  div.main-tian {
+    width: 100%;
+    @include flexCol(72px);
+    .mainHeader {
+      @include flexRow(32px);
+
+      .option {
+        flex: 0 1 calc(50% - 16px);
+        // width: 625px;
+        @include flexCol(32px);
+        .brief {
+          padding-left: 12px;
+          border-left: 2px solid $primary-color;
+          white-space: pre-line;
+          // @include hideText-tian(5);
+        }
+        .style {
+          @include flexRow(32px);
+          align-items: center;
+          .styleOption {
+            @include flexRow;
+          }
+        }
+        .size {
+          @include flexRow(32px);
+          align-items: center;
+        }
+        .count {
+          @include flexRow(32px);
+          align-items: center;
+          .countOption {
+            @include flexRow;
+            .countNum {
+              @include flexRow;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              width: 36px;
+              height: 36px;
+              border: 2px solid $primary-color;
+              border-radius: 12px;
+            }
+            .reduce,
+            .plus {
+              @include outline-tian;
+            }
+          }
+        }
+        .time_shop {
+          @include flexRow(32px);
+          .time {
+            position: relative;
+            .calenderWrapper {
+              position: absolute;
+              top: 80px;
+              left: 0;
+              z-index: 999;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            .calender {
+              display: none;
+            }
+
+            .calender.open {
+              display: block;
+            }
+          }
+          .timeOption {
+            cursor: pointer;
+            width: fit-content;
+            height: 40px;
+            padding: 0px;
+            overflow: hidden;
+            color: $primary-color;
+            background-color: $light-color;
+            border: 2px solid $primary-color;
+            border-radius: 12px;
+            @include flexRow;
+            justify-content: flex-start;
+            align-items: center;
+            &:hover {
+              border-color: $prompt-color;
+            }
+            .timeIcon {
+              flex: 0 1 auto;
+              width: 40px;
+              height: 40px;
+              background-color: $primary-color;
+              @include flexRow;
+              justify-content: center;
+              align-items: center;
+              .material-symbols-outlined {
+                @include outline-tian;
+              }
+            }
+            .timeLabel {
+              padding: 12px;
+              flex: 1 1 auto;
+              // text-align: center;
+            }
+          }
+          .time {
+            @include flexCol(12px);
+          }
+          .shop {
+            @include flexCol(12px);
+            .shopOption {
+              width: 186px;
+              color: $primary-color;
+              background-color: $light-color;
+              border: 2px solid $primary-color;
+              border-radius: 12px;
+            }
+          }
+        }
+        .optionBtn {
+          @include flexRow(32px);
+          justify-content: flex-start;
+          button {
+            flex: 0 0 32%;
+            @include flexRow(12px);
+            justify-content: center;
+            align-items: center;
+            // width: 187px;
+            padding-block: 10px;
+            border-radius: 12px;
+            &.book {
+              @include outline-tian;
+              @include btn-outline-color($primary-color, $light-color, 2px);
+              &:hover {
+                @include btn-color($prompt-color, $light-color, 2px);
+              }
+            }
+            &.addCart,
+            &.getCoupon {
+              @include outline-tian;
+              @include btn-color($primary-color, $light-color, 2px);
+              &:hover {
+                @include btn-color($prompt-color, $light-color, 2px);
+              }
+            }
+          }
+        }
+      }
+    }
+    .mainInfo {
+      width: 100%;
+      @include flexCol(32px);
+      .infoBody {
+        @include flexCol(40px);
+        margin: auto;
+        width: 900px;
+        #des,
+        #spec,
+        #comment {
+          scroll-margin-top: 120px;
+        }
+        .des {
+          .desTitle {
+            width: 80%;
+            border-bottom: 1px solid $sub-color;
+          }
+        }
+        .desImg {
+          width: 100%;
+          figure {
+            margin: 0;
+            width: 100%;
+            padding: 0px;
+            img {
+              width: 100%;
+              object-fit: contain;
+              object-position: center;
+            }
+          }
+        }
+        .spec {
+          .specTitle {
+            width: 80%;
+            border-bottom: 1px solid $sub-color;
+          }
+          .specContent {
+            white-space: pre-line;
+          }
+        }
+        .comment {
+          @include flexCol(32px);
+          .commentTitle {
+            @include flexRow(12px);
+            width: 80%;
+            border-bottom: 1px solid $sub-color;
+          }
+          .commentBody {
+            @include flexCol(16px);
+            .commentPage {
+              align-self: flex-end;
+              width: 297px;
+              height: 48px;
+              background-color: gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}

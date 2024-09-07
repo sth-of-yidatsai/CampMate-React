@@ -1,0 +1,62 @@
+// ******************************
+// ** -----product_list scss-----
+
+// ## 主要內容
+.mainArea-list-tian {
+  @include flexRow;
+  justify-content: space-between;
+  .sidebar {
+    // position: sticky;
+    // top: 88px;
+    align-self: flex-start;
+  }
+  .main-tian {
+    flex: 0 0 74.375%;
+    @include flexCol(32px);
+    margin-top: 24px;
+    align-items: flex-start;
+  }
+  // ** 商品列表
+  .productList-tian {
+    width: 100%;
+    flex: 0 1 auto;
+    @include flexCol(32px);
+    // ** 商品列表header
+    .listHeader {
+      flex: 0 1 auto;
+      .view {
+        gap: 5px;
+        .gridSwitch {
+          padding: 0;
+          background-color: transparent;
+          @include hoverColor-tian($dark-color, $prompt-color);
+          &.active {
+            @include fill-tian;
+          }
+        }
+        .listSwitch {
+          padding: 0;
+          background-color: transparent;
+          @include hoverColor-tian($dark-color, $prompt-color);
+          &.active {
+            @include fill-tian;
+          }
+        }
+      }
+    }
+    // ** 商品列表body
+
+    .listBody.grid {
+      flex: 0 1 auto;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+    .listBody.list {
+      flex: 0 1 auto;
+      width: 100%;
+      @include flexCol(32px, wrap);
+    }
+  }
+}

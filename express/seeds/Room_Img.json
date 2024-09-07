@@ -1,0 +1,118 @@
+[
+  {
+    "path": "/campground/1/1/room (1).webp",
+    "room_id": 1
+  },
+  {
+    "path": "/campground/1/1/room (2).webp",
+    "room_id": 1
+  },
+  {
+    "path": "/campground/1/1/room (3).webp",
+    "room_id": 1
+  },
+  {
+    "path": "/campground/1/1/room (4).webp",
+    "room_id": 1
+  },
+  {
+    "path": "/campground/1/1/room (5).webp",
+    "room_id": 1
+  },
+  {
+    "path": "/campground/1/1/room (6).webp",
+    "room_id": 1
+  },
+  {
+    "path": "/campground/1/1/room (7).webp",
+    "room_id": 1
+  },
+  {
+    "path": "/campground/1/1/room (8).webp",
+    "room_id": 1
+  },
+  {
+    "path": "/campground/1/2/room (1).jpg",
+    "room_id": 2
+  },
+  {
+    "path": "/campground/1/2/room (2).jpg",
+    "room_id": 2
+  },
+  {
+    "path": "/campground/1/2/room (3).jpg",
+    "room_id": 2
+  },
+  {
+    "path": "/campground/1/2/room (4).jpg",
+    "room_id": 2
+  },
+  {
+    "path": "/campground/1/2/room (5).jpg",
+    "room_id": 2
+  },
+  {
+    "path": "/campground/2/1/room (1).jpg",
+    "room_id": 3
+  },
+  {
+    "path": "/campground/2/1/room (2).jpg",
+    "room_id": 3
+  },
+  {
+    "path": "/campground/2/1/room (3).jpg",
+    "room_id": 3
+  },
+  {
+    "path": "/campground/3/1/room (1).webp",
+    "room_id": 4
+  },
+  {
+    "path": "/campground/3/1/room (2).webp",
+    "room_id": 4
+  },
+  {
+    "path": "/campground/3/1/room (3).webp",
+    "room_id": 4
+  },
+  {
+    "path": "/campground/3/1/room (4).webp",
+    "room_id": 4
+  },
+  {
+    "path": "/campground/4/1/room (1).webp",
+    "room_id": 5
+  },
+  {
+    "path": "/campground/4/1/room (2).webp",
+    "room_id": 5
+  },
+  {
+    "path": "/campground/4/1/room (3).webp",
+    "room_id": 5
+  },
+  {
+    "path": "/campground/4/1/room (4).webp",
+    "room_id": 5
+  },
+  {
+    "path": "/campground/5/1/room (1).jpg",
+    "room_id": 6
+  },
+  {
+    "path": "/campground/5/1/room (2).jpg",
+    "room_id": 6
+  },
+  {
+    "path": "/campground/5/1/room (3).jpg",
+    "room_id": 6
+  },
+  {
+    "path": "/campground/5/1/room (4).jpg",
+    "room_id": 6
+  },
+  {
+    "path": "/campground/5/1/room (5).jpg",
+    "room_id": 6
+  }
+]

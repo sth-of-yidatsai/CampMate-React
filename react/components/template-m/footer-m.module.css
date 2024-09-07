@@ -1,0 +1,110 @@
+.footer {
+    width: 100%;
+    background-color: var(--main-color-dark);
+}
+.footerWrapper {
+display: flex;
+padding-block: 16px;
+padding-inline: 16px;
+display: flex;
+flex-direction: column;
+}
+
+.titleLinksWrapper {
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 16px;
+}
+
+.mainTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 12px;
+    cursor: pointer;
+}
+
+.mainTitle>p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: var(--main-color-bright);
+    margin-bottom: 0px;
+}
+
+.subTitle{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--main-color-bright);
+    margin: 6px;
+}
+
+.arrow{
+    fill: #f5f5f7 ;
+    height: 15px;
+    width: 15px;
+    transform: rotate(-180deg);
+    transition: .5s ease;
+}
+
+.arrow.open{
+    transform: rotate(0deg);
+    transition: .5s ease;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    gap: 4px;
+    
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s max-height ease, 0.5s visibility ease-out, 0.5s opacity ease-out ;
+    overflow: hidden;
+
+}
+
+.footerLinks.open{
+    max-height: 100vh;
+    visibility: visible;
+    opacity: 1;
+    transition: 3s max-height ease, 0.5s visibility ease-in, 0.5s opacity ease-in  ;
+}
+
+
+.whiteLine {
+    background-color: var(--main-color-bright);
+    height: 1px;
+    width: 100%;
+    margin-top: 14px;
+    margin-bottom: 32px;
+}
+
+.footerBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.footerBottom  p{
+    color: var(--main-color-bright);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footerBottomIconGroup {
+    width: 171px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}

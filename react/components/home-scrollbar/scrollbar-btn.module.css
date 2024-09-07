@@ -1,0 +1,42 @@
+.scorollbarBtn {
+  position: relative;
+  width: 20px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: none;
+  margin: -1px 0;
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: rgba(245, 245, 247, 0.8);
+  backdrop-filter: blur(12px);
+  /* border: 2px solid #fff; */
+  border: 1px solid #413c1c;
+  border-radius: 50%;
+}
+
+.scorollbarBtn:hover .dot {
+  background-color: #e49366;
+}
+
+.outline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.active .dot {
+  background-color: #e49366;
+}
+
+.viewed .dot {
+  background-color: #413c1c;
+}

@@ -1,0 +1,12 @@
+.rank-tian {
+  @include flexRow(10px);
+  align-items: center;
+  .commentNum {
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

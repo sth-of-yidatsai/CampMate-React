@@ -1,0 +1,22 @@
+.listTab-tian {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  .nav-item {
+    display: flex;
+    align-items: flex-end;
+    .nav-link {
+      font-size: 14px;
+      width: 107px;
+      padding-block: 2px;
+      margin-inline: 5px;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      &.active {
+        padding-block: 5px;
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}

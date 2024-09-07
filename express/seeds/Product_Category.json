@@ -1,0 +1,162 @@
+[
+  {
+    "cate_id": 1,
+    "cate_name": "帳篷",
+    "parent_icon": "camping"
+  },
+  {
+    "cate_id": 2,
+    "cate_name": "家具",
+    "parent_icon": "chair"
+  },
+  {
+    "cate_id": 3,
+    "cate_name": "照明＆生火",
+    "parent_icon": "local_fire_department"
+  },
+  {
+    "cate_id": 4,
+    "cate_name": "電器",
+    "parent_icon": "power"
+  },
+  {
+    "cate_id": 5,
+    "cate_name": "炊具",
+    "parent_icon": "skillet"
+  },
+  {
+    "cate_id": 6,
+    "cate_name": "寢具",
+    "parent_icon": "bed"
+  },
+  {
+    "cate_id": 7,
+    "cate_name": "配件",
+    "parent_icon": "handyman"
+  },
+  {
+    "cate_id": 8,
+    "cate_name": "單/雙人",
+    "parent_id": 1
+  },
+  {
+    "cate_id": 9,
+    "cate_name": "家庭",
+    "parent_id": 1
+  },
+  {
+    "cate_id": 10,
+    "cate_name": "客廳帳/天幕",
+    "parent_id": 1
+  },
+  {
+    "cate_id": 11,
+    "cate_name": "其它",
+    "parent_id": 1
+  },
+  {
+    "cate_id": 12,
+    "cate_name": "露營椅",
+    "parent_id": 2
+  },
+  {
+    "cate_id": 13,
+    "cate_name": "露營桌",
+    "parent_id": 2
+  },
+  {
+    "cate_id": 14,
+    "cate_name": "燈具",
+    "parent_id": 3
+  },
+  {
+    "cate_id": 15,
+    "cate_name": "火手燈/瓦斯燈",
+    "parent_id": 3
+  },
+  {
+    "cate_id": 16,
+    "cate_name": "焚火台",
+    "parent_id": 3
+  },
+  {
+    "cate_id": 17,
+    "cate_name": "暖爐",
+    "parent_id": 3
+  },
+  {
+    "cate_id": 18,
+    "cate_name": "其它",
+    "parent_id": 3
+  },
+  {
+    "cate_id": 19,
+    "cate_name": "冰箱",
+    "parent_id": 4
+  },
+  {
+    "cate_id": 20,
+    "cate_name": "冷/暖氣",
+    "parent_id": 4
+  },
+  {
+    "cate_id": 21,
+    "cate_name": "儲能",
+    "parent_id": 4
+  },
+  {
+    "cate_id": 22,
+    "cate_name": "電風扇",
+    "parent_id": 4
+  },
+  {
+    "cate_id": 23,
+    "cate_name": "影音",
+    "parent_id": 4
+  },
+  {
+    "cate_id": 24,
+    "cate_name": "鍋具",
+    "parent_id": 5
+  },
+  {
+    "cate_id": 25,
+    "cate_name": "其它",
+    "parent_id": 5
+  },
+  {
+    "cate_id": 26,
+    "cate_name": "睡袋",
+    "parent_id": 6
+  },
+  {
+    "cate_id": 27,
+    "cate_name": "枕頭",
+    "parent_id": 6
+  },
+  {
+    "cate_id": 28,
+    "cate_name": "床墊",
+    "parent_id": 6
+  },
+  {
+    "cate_id": 29,
+    "cate_name": "其它",
+    "parent_id": 6
+  },
+  {
+    "cate_id": 30,
+    "cate_name": "收納",
+    "parent_id": 7
+  },
+  {
+    "cate_id": 31,
+    "cate_name": "延長線",
+    "parent_id": 7
+  },
+  {
+    "cate_id": 32,
+    "cate_name": "推車",
+    "parent_id": 7
+  }
+]

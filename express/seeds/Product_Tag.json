@@ -1,0 +1,262 @@
+[
+  {
+    "tag_id": 1,
+    "tag_name": "brand"
+  },
+  {
+    "tag_id": 2,
+    "tag_name": "ADAMOUTDOOR",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 3,
+    "tag_name": "ALUTEC",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 4,
+    "tag_name": "ARCTIC ICE",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 5,
+    "tag_name": "Atc",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 6,
+    "tag_name": "Barebones",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 7,
+    "tag_name": "CAPTAIN STAG",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 8,
+    "tag_name": "CLAYMORE",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 9,
+    "tag_name": "Dometic 多美達",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 10,
+    "tag_name": "Down power",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 11,
+    "tag_name": "EcoFlow",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 12,
+    "tag_name": "FILTER017®",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 13,
+    "tag_name": "Feuerhand",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 14,
+    "tag_name": "Grand Trunk",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 15,
+    "tag_name": "KZM / KAZMI",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 16,
+    "tag_name": "LOGOS",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 17,
+    "tag_name": "MURACO",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 18,
+    "tag_name": "Monterra",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 19,
+    "tag_name": "NANGA",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 20,
+    "tag_name": "Primus",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 21,
+    "tag_name": "REMEMBER OUTDOOR",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 22,
+    "tag_name": "SANSUI",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 23,
+    "tag_name": "THERM-A-REST",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 24,
+    "tag_name": "TOYOTOMI",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 25,
+    "tag_name": "UNIFLAME",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 26,
+    "tag_name": "日月鐵工所",
+    "parent_id": 1
+  },
+  {
+    "tag_id": 27,
+    "tag_name": "people"
+  },
+  {
+    "tag_id": 28,
+    "tag_name": "1人",
+    "parent_id": 27
+  },
+  {
+    "tag_id": 29,
+    "tag_name": "2人",
+    "parent_id": 27
+  },
+  {
+    "tag_id": 30,
+    "tag_name": "4-8人",
+    "parent_id": 27
+  },
+  {
+    "tag_id": 31,
+    "tag_name": "多人(8人以上）",
+    "parent_id": 27
+  },
+  {
+    "tag_id": 32,
+    "tag_name": "寵物",
+    "parent_id": 27
+  },
+  {
+    "tag_id": 33,
+    "tag_name": "functional"
+  },
+  {
+    "tag_id": 34,
+    "tag_name": "防水",
+    "parent_id": 33
+  },
+  {
+    "tag_id": 35,
+    "tag_name": "輕量",
+    "parent_id": 33
+  },
+  {
+    "tag_id": 36,
+    "tag_name": "快速搭建",
+    "parent_id": 33
+  },
+  {
+    "tag_id": 37,
+    "tag_name": "充氣設計",
+    "parent_id": 33
+  },
+  {
+    "tag_id": 38,
+    "tag_name": "抗風",
+    "parent_id": 33
+  },
+  {
+    "tag_id": 39,
+    "tag_name": "隔熱",
+    "parent_id": 33
+  },
+  {
+    "tag_id": 40,
+    "tag_name": "環保材料",
+    "parent_id": 33
+  },
+  {
+    "tag_id": 41,
+    "tag_name": "折疊設計",
+    "parent_id": 33
+  },
+  {
+    "tag_id": 42,
+    "tag_name": "多燃料",
+    "parent_id": 33
+  },
+  {
+    "tag_id": 43,
+    "tag_name": "便攜",
+    "parent_id": 33
+  },
+  {
+    "tag_id": 44,
+    "tag_name": "material"
+  },
+  {
+    "tag_id": 45,
+    "tag_name": "尼龍",
+    "parent_id": 44
+  },
+  {
+    "tag_id": 46,
+    "tag_name": "聚酯纖維",
+    "parent_id": 44
+  },
+  {
+    "tag_id": 47,
+    "tag_name": "鋁合金",
+    "parent_id": 44
+  },
+  {
+    "tag_id": 48,
+    "tag_name": "不鏽鋼",
+    "parent_id": 44
+  },
+  {
+    "tag_id": 49,
+    "tag_name": "price"
+  },
+  {
+    "tag_id": 50,
+    "tag_name": "低於150元",
+    "parent_id": 49
+  },
+  {
+    "tag_id": 51,
+    "tag_name": "150-200元",
+    "parent_id": 49
+  },
+  {
+    "tag_id": 52,
+    "tag_name": "200-500元",
+    "parent_id": 49
+  },
+  {
+    "tag_id": 53,
+    "tag_name": "500元以上",
+    "parent_id": 49
+  }
+]

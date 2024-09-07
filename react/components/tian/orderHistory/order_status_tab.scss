@@ -1,0 +1,46 @@
+.listTab-tian {
+  width: 100%;
+  @include flexRow;
+  justify-content: flex-start;
+  .nav-item {
+    @include flexRow;
+    align-items: flex-end;
+    .nav-link {
+      @include p1-tc-tian;
+      width: 107px;
+      padding-block: 2px;
+      margin-inline: 5px;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      &.active {
+        padding-block: 5px;
+        border-bottom: 1px solid $light-color;
+      }
+    }
+  }
+}
+
+.order-custer-service {
+  width: 100%;
+  margin-top: 16px;
+  @include flexRow;
+  justify-content: center;
+  .nav-item {
+    @include flexRow;
+    align-items: flex-end;
+    .nav-link {
+      @include p1-tc-tian;
+      width: 107px;
+      padding-block: 2px;
+      margin-inline: 5px;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      &.active {
+        padding-block: 5px;
+        border-bottom: 1px solid $light-color;
+      }
+    }
+  }
+}

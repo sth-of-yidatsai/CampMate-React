@@ -1,0 +1,150 @@
+.listBody.show .listCard {
+  @include flexRow;
+  justify-content: space-between;
+  align-items: center;
+  height: 147px;
+  padding-inline: 20px;
+  background-color: $light-color;
+  .image {
+    flex: 0 1 auto;
+    width: 130px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+    .imgBox {
+      width: 110px;
+      height: 110px;
+      img {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+  .product {
+    flex: 1 1 auto;
+    height: 100%;
+    padding-block: 19px;
+    @include flexCol;
+    justify-content: space-between;
+    align-items: flex-start;
+    .productTitle {
+      @include flexCol(10px);
+      flex: 0 1 auto;
+      width: 70%;
+      & :nth-child(1) {
+        @include hideText-tian(2);
+      }
+      & :nth-child(2) {
+        display: block;
+      }
+    }
+    .productStyle {
+      flex: 0 1 auto;
+      width: 25%;
+    }
+  }
+  .date {
+    display: none;
+  }
+  .day {
+    flex: 0 1 auto;
+    width: 70px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .count {
+    flex: 0 1 auto;
+    width: 70px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .amount {
+    flex: 0 1 auto;
+    width: 70px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.listBody .listCard {
+  @include flexRow;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding-inline: 20px;
+  background-color: $light-color;
+  .image {
+    flex: 0 1 auto;
+    width: 66px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+    .imgBox {
+      width: 50px;
+      height: 50px;
+      img {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+  .product {
+    flex: 1 1 auto;
+    height: 100%;
+    padding-block: 19px;
+    @include flexRow;
+    justify-content: space-between;
+    align-items: center;
+    .productTitle {
+      flex: 0 1 auto;
+      width: 70%;
+      & :nth-child(1) {
+        @include hideText-tian(2);
+      }
+      & :nth-child(2) {
+        display: none;
+      }
+    }
+    .productStyle {
+      flex: 0 1 auto;
+      width: 25%;
+    }
+  }
+  .date {
+    flex: 0 1 auto;
+    width: 215px;
+  }
+  .day {
+    flex: 0 1 auto;
+    width: 70px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .count {
+    flex: 0 1 auto;
+    width: 70px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .amount {
+    flex: 0 1 auto;
+    width: 70px;
+    height: 100%;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

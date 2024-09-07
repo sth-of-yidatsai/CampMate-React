@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+		"
+		/>
+		<!-- googlefonts icon -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<!-- googlefonts Montserrat -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- styles -->
+		<link rel="stylesheet" href="../template/header.css" />
+		<link rel="stylesheet" href="../template/footer.css" />
+		<link rel="stylesheet" href="../globle-styles.css" />
+		<link rel="stylesheet" href="./my-event-detail.css" />
+		<title>我的團露/團露詳細頁</title>
+	</head>
+
+	<body>
+		<div id="header-placeholder"></div>
+
+		<main class="main">
+			<aside class="aside">
+				會員中心
+				<ul>
+					<li>帳戶資訊</li>
+					<li>收藏清單</li>
+					<li>訂單紀錄</li>
+					<li>團露紀錄</li>
+					<li>優惠券</li>
+					<li>客服中心</li>
+				</ul>
+			</aside>
+			<div class="page-content">
+				<div class="title">
+					<div class="breadcrumb">
+						<a class="p2-en" href="/group-camping/fake-pages/fake-home.html">HOME</a> \
+						<a href="/group-camping/fake-pages/fake-customer-center.html">會員中心</a> \
+						<a href="/group-camping/my-event/my-event.html">我的團露</a>\
+						<span>團露詳情</span>
+					</div>
+					<p class="h5-tc">團露詳情。</p>
+				</div>
+				<div class="event-detail">
+					<div class="intro">
+						<div class="card-info">
+							<img src="../images/event_card.jpg" alt="" />
+							<p class="title h6-tc">《柳杉,隧道,舊鐵道橋》眠月線 兩天一夜</p>
+						</div>
+						<div class="event-date">
+							<div class="date date-start">
+								<p class="text-gray">開始日期</p>
+								<p class="h3-en">7</p>
+								<p class="text-gray"><span class="p1-en">7</span>月</p>
+								<p class="text-gray">星期五</p>
+							</div>
+							<hr />
+							<div class="date date-end">
+								<p class="text-gray">結束日期</p>
+								<p class="h3-en">10</p>
+								<p class="text-gray"><span class="p1-en">7</span>月</p>
+								<p class="text-gray">星期日</p>
+							</div>
+						</div>
+					</div>
+					<div class="detail description">
+						<p class="h6-tc">團露介紹</p>
+						<hr />
+						<p class="p1-tc">
+							早期眠月線的開發是日本政府為了運送山下砍伐的巨木而建造，後為了發展觀光，在民國<span class="p1-en">72</span
+							>年時開始使用古老的蒸汽火車載客，當時在國內外，都造成了鐵路迷的大轟動。而眠月線是阿里山鐵道支線之一，起於阿里山新站，止於石猴站，全長「<span
+								class="p1-en"
+								>9.2</span
+							>公里」，沿途共經過「<span class="p1-en">24</span>個橋樑與<span class="p1-en">12</span>個隧道」。
+							<br /><br />
+							<span class="p1-en">1999</span>年因為<span class="p1-en">921</span
+							>大地震，鐵路坍方而停駛，而後經過一番修復曾經短暫恢復通車，不料<span class="p1-en">2008</span
+							>年又遭遇八八風災再度損毀，至今未再復駛。因為沿途的景色優美，且擁有森林、鐵道、車站、高空鐵橋等多重景觀，且坡度平緩，行走難度平易近人，如今已經成為了深受遊客喜愛的健走路線。
+						</p>
+					</div>
+					<div class="detail location">
+						<p class="title h6-tc">地點</p>
+						<hr />
+						<p class="text">
+							<span class="material-symbols-outlined"> location_on </span>
+							嘉義縣梅山鄉瑞里村瑞里<span class="p1-en">75</span>號
+							<a target="_blank" href="https://maps.app.goo.gl/Jj647Ab99GnacBXR6">查看地圖</a>
+						</p>
+						<div id="map"></div>
+					</div>
+					<div class="detail member-list">
+						<p class="h6-tc">參加名單</p>
+						<hr />
+						<div class="member-bottom">
+							<div class="members">
+								<div class="member organizer h6-tc">
+									<div class="tag tag-organizer">組長</div>
+									宋庭毓
+								</div>
+								<div class="member participants h6-tc">
+									<div class="tag tag-participant">組員</div>
+									<div class="participant">簡珩宇 | 陳哲偉 | 蔡易達 | 賴聖儒 | 田承鎬</div>
+								</div>
+							</div>
+							<button class="btn-cancel">
+								<span class="material-symbols-outlined"> logout </span>
+								<span class="p2-tc">退出團露</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="modal-cancel d-none1">
+			<div class="modal-content">
+				<div class="head h6-tc">系統提醒!!</div>
+				<div class="content aside-main-tc">
+					<div class="title h6-tc">確定要退出團露嗎?</div>
+				</div>
+				<div class="btns">
+					<button type="submit" class="btn-confirm btn-cancel-yes p2-tc">退出</button>
+					<button class="btn-confirm btn-cancel-no p2-tc">取消</button>
+				</div>
+			</div>
+			<div class="close"><span class="material-symbols-outlined"> close </span></div>
+		</div>
+
+		<div id="footer-placeholder"></div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+			integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			// 使用 AJAX 載入 header 和 footer
+			fetch("../template/header.html")
+				.then(response => response.text())
+				.then(data => (document.getElementById("header-placeholder").innerHTML = data));
+
+			fetch("../template/footer.html")
+				.then(response => response.text())
+				.then(data => (document.getElementById("footer-placeholder").innerHTML = data));
+
+			// 初始化地圖
+			function initMap() {
+				var map = new google.maps.Map(document.getElementById("map"), {
+					center: { lat: 23.5, lng: 120.5 },
+					zoom: 8,
+				});
+			}
+		</script>
+		<script src="./my-event-detail.js"></script>
+		<!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> -->
+	</body>
+</html>

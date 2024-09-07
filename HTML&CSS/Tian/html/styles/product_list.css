@@ -1,0 +1,888 @@
+.primary-text-tian {
+  color: #413c1c;
+}
+
+.secondary-text-tian {
+  color: #574426;
+}
+
+.success-text-tian {
+  color: #e5e4cf;
+}
+
+.prompt-text-tian {
+  color: #e49366;
+}
+
+.error-text-tian {
+  color: #de3e3e;
+}
+
+.light-text-tian {
+  color: #f5f5f7;
+}
+
+.dark-text-tian {
+  color: #2d2d2d;
+}
+
+.sub-text-tian {
+  color: #8f8e93;
+}
+
+.primary-bg-tian {
+  background-color: #413c1c;
+}
+
+.secondary-bg-tian {
+  background-color: #574426;
+}
+
+.success-bg-tian {
+  background-color: #e5e4cf;
+}
+
+.prompt-bg-tian {
+  background-color: #e49366;
+}
+
+.error-bg-tian {
+  background-color: #de3e3e;
+}
+
+.light-bg-tian {
+  background-color: #f5f5f7;
+}
+
+.dark-bg-tian {
+  background-color: #2d2d2d;
+}
+
+.sub-bg-tian {
+  background-color: #8f8e93;
+}
+
+.primary-border-tian {
+  border-color: #413c1c !important;
+}
+
+.secondary-border-tian {
+  border-color: #574426 !important;
+}
+
+.success-border-tian {
+  border-color: #e5e4cf !important;
+}
+
+.prompt-border-tian {
+  border-color: #e49366 !important;
+}
+
+.error-border-tian {
+  border-color: #de3e3e !important;
+}
+
+.light-border-tian {
+  border-color: #f5f5f7 !important;
+}
+
+.dark-border-tian {
+  border-color: #2d2d2d !important;
+}
+
+.sub-border-tian {
+  border-color: #8f8e93 !important;
+}
+
+.none-btn-tian {
+  border: 0px solid transparent;
+}
+
+.primary-btn-tian {
+  color: #f5f5f7;
+  background-color: #413c1c;
+  border: 1px solid #413c1c;
+}
+.primary-btn-tian:hover {
+  color: #413c1c;
+  background-color: #f5f5f7;
+  border: 1px solid #413c1c;
+}
+
+.primary2-btn-tian {
+  color: #e5e4cf;
+  background-color: #413c1c;
+  border: 1px solid #413c1c;
+}
+.primary2-btn-tian:hover {
+  color: #413c1c;
+  background-color: #e5e4cf;
+  border: 1px solid #413c1c;
+}
+
+.secondary-btn-tian {
+  color: #f5f5f7;
+  background-color: #574426;
+  border: 1px solid #574426;
+}
+.secondary-btn-tian:hover {
+  color: #574426;
+  background-color: #f5f5f7;
+  border: 1px solid #574426;
+}
+
+.secondary-btn-tian {
+  color: #e5e4cf;
+  background-color: #574426;
+  border: 1px solid #574426;
+}
+.secondary-btn-tian:hover {
+  color: #574426;
+  background-color: #e5e4cf;
+  border: 1px solid #574426;
+}
+
+.success-btn-tian {
+  color: #574426;
+  background-color: #e5e4cf;
+  border: 1px solid #e5e4cf;
+}
+.success-btn-tian:hover {
+  color: #e5e4cf;
+  background-color: #574426;
+  border: 1px solid #e5e4cf;
+}
+
+.success2-btn-tian {
+  color: #413c1c;
+  background-color: #e5e4cf;
+  border: 1px solid #e5e4cf;
+}
+.success2-btn-tian:hover {
+  color: #e5e4cf;
+  background-color: #413c1c;
+  border: 1px solid #e5e4cf;
+}
+
+.prompt-btn-tian {
+  color: #f5f5f7;
+  background-color: #e49366;
+  border: 1px solid #e49366;
+}
+.prompt-btn-tian:hover {
+  color: #e49366;
+  background-color: #f5f5f7;
+  border: 1px solid #e49366;
+}
+
+.prompt2-btn-tian {
+  color: #e5e4cf;
+  background-color: #e49366;
+  border: 1px solid #e49366;
+}
+.prompt2-btn-tian:hover {
+  color: #e49366;
+  background-color: #e5e4cf;
+  border: 1px solid #e49366;
+}
+
+.error-btn-tian {
+  color: #f5f5f7;
+  background-color: #de3e3e;
+  border: 1px solid #de3e3e;
+}
+.error-btn-tian:hover {
+  color: #de3e3e;
+  background-color: #f5f5f7;
+  border: 1px solid #de3e3e;
+}
+
+.error2-btn-tian {
+  color: #f5f5f7;
+  background-color: #de3e3e;
+  border: 1px solid #de3e3e;
+}
+.error2-btn-tian:hover {
+  color: #e49366;
+  background-color: #de3e3e;
+  border: 1px solid #de3e3e;
+}
+
+.dark-btn-tian {
+  color: #f5f5f7;
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+}
+.dark-btn-tian:hover {
+  color: #2d2d2d;
+  background-color: #f5f5f7;
+  border: 1px solid #2d2d2d;
+}
+
+.sub-btn-tian {
+  color: #f5f5f7;
+  background-color: #8f8e93;
+  border: 1px solid #8f8e93;
+}
+.sub-btn-tian:hover {
+  color: #8f8e93;
+  background-color: #f5f5f7;
+  border: 1px solid #8f8e93;
+}
+
+.primary-outline-btn-tian {
+  color: #413c1c;
+  background-color: #f5f5f7;
+  border: 1px solid #413c1c;
+}
+.primary-outline-btn-tian:hover {
+  color: #f5f5f7;
+  background-color: #413c1c;
+  border: 1px solid #413c1c;
+}
+
+.primary2-outline-btn-tian {
+  color: #413c1c;
+  background-color: #e5e4cf;
+  border: 1px solid #413c1c;
+}
+.primary2-outline-btn-tian:hover {
+  color: #e5e4cf;
+  background-color: #413c1c;
+  border: 1px solid #413c1c;
+}
+
+.secondary-outline-btn-tian {
+  color: #574426;
+  background-color: #f5f5f7;
+  border: 1px solid #574426;
+}
+.secondary-outline-btn-tian:hover {
+  color: #f5f5f7;
+  background-color: #574426;
+  border: 1px solid #574426;
+}
+
+.secondary2-outline-btn-tian {
+  color: #574426;
+  background-color: #e5e4cf;
+  border: 1px solid #574426;
+}
+.secondary2-outline-btn-tian:hover {
+  color: #e5e4cf;
+  background-color: #574426;
+  border: 1px solid #574426;
+}
+
+.success-outline-btn-tian {
+  color: #e5e4cf;
+  background-color: #574426;
+  border: 1px solid #e5e4cf;
+}
+.success-outline-btn-tian:hover {
+  color: #574426;
+  background-color: #e5e4cf;
+  border: 1px solid #e5e4cf;
+}
+
+.success2-outline-btn-tian {
+  color: #e5e4cf;
+  background-color: #413c1c;
+  border: 1px solid #e5e4cf;
+}
+.success2-outline-btn-tian:hover {
+  color: #413c1c;
+  background-color: #e5e4cf;
+  border: 1px solid #e5e4cf;
+}
+
+.prompt-outline-btn-tian {
+  color: #e49366;
+  background-color: #f5f5f7;
+  border: 1px solid #e49366;
+}
+.prompt-outline-btn-tian:hover {
+  color: #f5f5f7;
+  background-color: #e49366;
+  border: 1px solid #e49366;
+}
+
+.prompt2-outline-btn-tian {
+  color: #e49366;
+  background-color: #e5e4cf;
+  border: 1px solid #e49366;
+}
+.prompt2-outline-btn-tian:hover {
+  color: #e5e4cf;
+  background-color: #e49366;
+  border: 1px solid #e49366;
+}
+
+.error-outline-btn-tian {
+  color: #de3e3e;
+  background-color: #f5f5f7;
+  border: 1px solid #de3e3e;
+}
+.error-outline-btn-tian:hover {
+  color: #f5f5f7;
+  background-color: #de3e3e;
+  border: 1px solid #de3e3e;
+}
+
+.dark-outline-btn-tian {
+  color: #2d2d2d;
+  background-color: #f5f5f7;
+  border: 1px solid #2d2d2d;
+}
+.dark-outline-btn-tian:hover {
+  color: #f5f5f7;
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+}
+
+.sub-outline-btn-tian {
+  color: #8f8e93;
+  background-color: #f5f5f7;
+  border: 1px solid #8f8e93;
+}
+.sub-outline-btn-tian:hover {
+  color: #f5f5f7;
+  background-color: #8f8e93;
+  border: 1px solid #8f8e93;
+}
+
+.title-ds-tian {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  letter-spacing: 3.84 px;
+}
+
+.aside-main-tc-tian {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.56 px;
+}
+
+.h1-tc-tian {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  letter-spacing: 2.56 px;
+}
+
+.h2-tc-tian {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  letter-spacing: 2.08 px;
+}
+
+.h3-tc-tian {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 1.68 px;
+}
+
+.h4-tc-tian {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 1.44 px;
+}
+
+.h5-tc-tian {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.96 px;
+}
+
+.h6-tc-tian {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.8 px;
+}
+
+.p1-tc-tian {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.32 px;
+}
+
+.p2-tc-tian {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.28 px;
+}
+
+.p3-tc-tian {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.24 px;
+}
+
+.header-en-tian {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.7 px;
+}
+
+.h1-en-tian {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 66px;
+}
+
+.h2-en-tian {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+}
+
+.h3-en-tian {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.h4-en-tian {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.h5-en-tian {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.h6-en-tian {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.p1-en-tian {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.p2-en-tian {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.p3-en-tian {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+body {
+  background-color: #f5f5f7;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+header {
+  height: 64px;
+  width: 100vw;
+  background-color: gray;
+}
+
+footer {
+  width: 100vw;
+  height: 436.07px;
+  background-color: #413c1c;
+}
+
+.mainArea-tian {
+  position: relative;
+  max-width: 1440px;
+  padding-top: 24px;
+  padding-bottom: 80px;
+  padding-inline: 80px;
+  margin: auto;
+}
+
+.sidebar {
+  flex: 0 0 186px;
+  width: 186px;
+  height: 1023px;
+  background-color: gray;
+}
+
+.mainArea-tian {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.main-tian {
+  flex: 0 1 952px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-wrap: nowrap;
+  align-items: start;
+}
+.main-tian .bread {
+  flex: 0 1 auto;
+}
+.main-tian .bread:first-child {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.main-tian .search {
+  width: 514px;
+  height: 30px;
+  border-radius: 12px;
+  background-color: gray;
+  flex: 0 1 auto;
+}
+.main-tian .ad {
+  width: 100%;
+  height: 248px;
+  border-radius: 18px;
+  background-color: gray;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex: 0 1 auto;
+}
+
+.productList-tian {
+  width: 100%;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-wrap: nowrap;
+}
+.productList-tian .listHeader {
+  flex: 0 1 auto;
+}
+.productList-tian .listHeader .pageTitle {
+  gap: 15px;
+}
+.productList-tian .listHeader .view {
+  gap: 5px;
+}
+.productList-tian .listHeader .view .grid {
+  padding: 0;
+  background-color: transparent;
+}
+.productList-tian .listHeader .view .grid {
+  color: #2d2d2d;
+}
+.productList-tian .listHeader .view .grid:hover {
+  color: #e49366;
+}
+.productList-tian .listHeader .view .grid.active {
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.productList-tian .listHeader .view .list {
+  padding: 0;
+  background-color: transparent;
+}
+.productList-tian .listHeader .view .list {
+  color: #2d2d2d;
+}
+.productList-tian .listHeader .view .list:hover {
+  color: #e49366;
+}
+.productList-tian .listHeader .view .list.active {
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.productList-tian .listBodyGrid {
+  flex: 0 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.productList-tian .listBodyGrid .productCard {
+  position: relative;
+  width: 296px;
+  border-radius: 18px;
+  background-color: #e5e4cf;
+  overflow: hidden;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+.productList-tian .listBodyGrid .productCard img {
+  transition: transform 0.4s;
+  transform-origin: center;
+}
+.productList-tian .listBodyGrid .productCard:hover img {
+  transform: scale(1.05);
+}
+.productList-tian .listBodyGrid .productCard .addLike {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.productList-tian .listBodyGrid .productCard .addLike {
+  color: #2d2d2d;
+}
+.productList-tian .listBodyGrid .productCard .addLike:hover {
+  color: #e49366;
+}
+.productList-tian .listBodyGrid .productCard .productImg {
+  flex: 0 1 auto;
+  width: 100%;
+  height: 296px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.productList-tian .listBodyGrid .productCard .productImg img {
+  flex: 0 1 auto;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.productList-tian .listBodyGrid .productCard .info {
+  flex: 1 1 auto;
+  width: 100%;
+  height: 150px;
+  padding-inline: 20px;
+  padding-block: 12px;
+  border-inline-end: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.productList-tian .listBodyGrid .productCard .info .infoHeader {
+  gap: 5px;
+}
+.productList-tian .listBodyGrid .productCard .info .infoHeader .infoTitle {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.28 px;
+}
+.productList-tian .listBodyGrid .productCard .info .infoTag {
+  gap: 6px;
+}
+.productList-tian .listBodyGrid .productCard .info .infoTag .tag {
+  border-radius: 16px;
+  padding-inline: 5px;
+  padding-block: 2px;
+}
+.productList-tian .listBodyGrid .productCard .info .infoBody {
+  display: none;
+}
+.productList-tian .listBodyGrid .productCard .info .infoBody p {
+  display: none;
+  white-space: pre-line;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.productList-tian .listBodyGrid .productCard .info .addCart {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.productList-tian .listBodyGrid .productCard .info .addCart {
+  color: #2d2d2d;
+}
+.productList-tian .listBodyGrid .productCard .info .addCart:hover {
+  color: #e49366;
+}
+.productList-tian .listBodyList {
+  flex: 0 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.productList-tian .listBodyList .productCard {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  border-radius: 18px;
+  background-color: #e5e4cf;
+  overflow: hidden;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+.productList-tian .listBodyList .productCard {
+  transition: transform 0.4s;
+  transform-origin: center;
+}
+.productList-tian .listBodyList .productCard:hover {
+  transform: scale(1.02);
+}
+.productList-tian .listBodyList .productCard .addLike {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 99;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.productList-tian .listBodyList .productCard .addLike {
+  color: #2d2d2d;
+}
+.productList-tian .listBodyList .productCard .addLike:hover {
+  color: #e49366;
+}
+.productList-tian .listBodyList .productCard .productImg {
+  flex: 0 1 auto;
+  width: 184px;
+  height: 184px;
+  border-radius: 18px;
+  background-color: #fff;
+  overflow: hidden;
+  align-items: center;
+}
+.productList-tian .listBodyList .productCard .productImg img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.productList-tian .listBodyList .productCard .info {
+  flex: 1 1 auto;
+  height: 100%;
+  border-inline-end: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.productList-tian .listBodyList .productCard .info .infoHeader {
+  gap: 5px;
+}
+.productList-tian .listBodyList .productCard .info .infoHeader .infoTitle {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.8 px;
+}
+.productList-tian .listBodyList .productCard .info .infoTag {
+  gap: 6px;
+}
+.productList-tian .listBodyList .productCard .info .infoTag .tag {
+  border-radius: 16px;
+  padding-inline: 5px;
+  padding-block: 2px;
+}
+.productList-tian .listBodyList .productCard .info .infoBody p {
+  white-space: pre-line;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.productList-tian .listBodyList .productCard .info .addCart {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.productList-tian .listBodyList .productCard .info .addCart {
+  color: #2d2d2d;
+}
+.productList-tian .listBodyList .productCard .info .addCart:hover {
+  color: #e49366;
+}
+.productList-tian .pageTab {
+  align-self: flex-end;
+  width: 297px;
+  height: 48px;
+  background-color: gray;
+}
+
+.topBtn-tian {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+  color: #f5f5f7;
+  background-color: #413c1c;
+  border: 1px solid #413c1c;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.topBtn-tian:hover {
+  color: #f5f5f7;
+  background-color: #574426;
+  border: 1px solid #574426;
+}/*# sourceMappingURL=product_list.css.map */

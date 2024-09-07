@@ -1,0 +1,111 @@
+// ******************************
+// ** -----product_home scss-----
+
+// ## 主要內容
+.mainArea-home-tian {
+  @include flexRow;
+  justify-content: space-between;
+  .main-tian {
+    flex: 0 1 74.375%;
+    // width: 952px;
+    @include flexCol(32px);
+    // ?? 調整
+    margin-top: 24px;
+    align-items: flex-start;
+    // .ad {
+    //   width: 100%;
+    //   height: 248px;
+    //   border-radius: 18px;
+    //   background-color: gray;
+    //   object-fit: cover;
+    //   flex: 0 1 auto;
+    // }
+  }
+
+  // ** 商品列表
+  .productList-tian {
+    width: 100%;
+    flex: 0 1 auto;
+    @include flexCol(32px);
+    // ** 商品列表header
+    .listHeader {
+      flex: 0 1 auto;
+    }
+    // ** 商品列表body
+    .listBody {
+      flex: 0 1 auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // ## 主要內容
+  .mainArea-home-tian {
+    @include flexCol;
+    .main-tian {
+      @include flexCol(32px);
+      margin-top: 24px;
+      margin-inline: auto;
+      padding-inline: 20px;
+      align-items: center;
+    }
+
+    // ** 商品列表
+    .productList-tian {
+      width: 100%;
+      flex: 0 1 auto;
+      @include flexCol(32px);
+      // ** 商品列表header
+      .listHeader {
+        flex: 0 1 auto;
+      }
+      // ** 商品列表body
+      .listBody {
+        flex: 0 1 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 16px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  // ## 主要內容
+  .mainArea-home-tian {
+    @include flexCol;
+    .main-tian {
+      @include flexCol(16px);
+      margin-top: 12px;
+      margin-inline: auto;
+      padding-inline: 20px;
+      align-items: flex-start;
+    }
+
+    // ** 商品列表
+    .productList-tian {
+      width: 100%;
+      flex: 0 1 auto;
+      @include flexCol(16px);
+      // ** 商品列表header
+      .listHeader {
+        flex: 0 1 auto;
+      }
+      // ** 商品列表body
+      .listBody {
+        flex: 0 1 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 16px;
+      }
+    }
+  }
+}

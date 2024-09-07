@@ -1,0 +1,191 @@
+// 定義顏色
+$color-primary: #413c1c;
+$color-secondary: #574426;
+$color-success: #e5e4cf;
+$color-hint: #e49366;
+$color-error: #de3e3e;
+$color-light: #f5f5f7;
+$color-dark: #2d2d2d;
+$color-sub: #8f8e93;
+
+// 全局樣式
+.globe {
+  color: $color-dark;
+  p {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  hr {
+    margin: 0;
+  }
+
+  /* default p1Tc */
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+
+  .h1Tc {
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 2.56px;
+  }
+
+  .h1En {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 66px;
+    font-weight: 700;
+  }
+
+  .h2Tc {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 2.08px;
+  }
+
+  .h2En {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 54px;
+    font-weight: 600;
+  }
+
+  .h3Tc {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.68px;
+  }
+
+  .h3En {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 44px;
+    font-weight: 600;
+  }
+
+  .h4Tc {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.44px;
+  }
+
+  .h4En {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 38px;
+    font-weight: 600;
+  }
+
+  .h5Tc {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.96px;
+  }
+
+  .h5En {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .h6Tc {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+  }
+
+  .h6En {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .p1Tc {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+  }
+
+  .p1En {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .p2Tc {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+  }
+
+  .p2En {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .p3Tc {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.24px;
+  }
+
+  .p3En {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .asideMainTc {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.56px;
+  }
+
+  .headerEn {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+  }
+
+  /* text color */
+  .textHint {
+    color: $color-hint;
+  }
+
+  .textGray {
+    color: $color-sub;
+  }
+
+  .textError {
+    color: $color-error;
+  }
+}
+
+.main {
+  width: 1280px;
+  margin: 24px auto;
+}

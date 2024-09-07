@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <title>product detail</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- google font CDN 字型要搭配這個 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google icon CDN icon要搭配這個-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /> -->
+
+    <link rel="stylesheet" href="./styles/custom.css" />
+
+    <!-- 引入頁面對應的SCSS -->
+    <link rel="stylesheet" href="./styles/product_detail.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!--?? ↓↓↓↓ header ↓↓↓↓ -->
+      <header class="h3-en-tian" id="header">Header</header>
+      <section class="mainArea-tian">
+        <!--## ↓↓↓↓ 麵包屑導覽 ↓↓↓↓ -->
+        <div class="bread d-flex justify-content-center">
+          <span class="material-symbols-outlined sub-text-tian">
+            home_pin
+          </span>
+          <span
+            ><span class="p2-en-tian sub-text-tian">HOME</span
+            ><span class="p2-en-tian sub-text-tian"> \ </span>
+            <span class="p2-en-tian sub-text-tian">RENT</span
+            ><span class="p2-en-tian sub-text-tian"> \ </span>
+            <span class="p2-tc-tian sub-text-tian">帳篷</span
+            ><span class="p2-en-tian sub-text-tian"> \ </span>
+            <span class="p2-tc-tian sub-text-tian">家庭</span>
+          </span>
+        </div>
+
+        <div class="main-tian">
+          <section class="mainHeader">
+            <!-- ↓↓↓↓ 產品照片光箱 ↓↓↓↓ -->
+            <div class="lightBox"></div>
+            <!-- ↑↑↑↑ 產品照片光箱 ↑↑↑↑ -->
+
+            <div class="option">
+              <!--## ↓↓↓↓ 產品標題資訊 ↓↓↓↓ -->
+              <div class="optionHeader">
+                <h2 class="brandName header-en-tian primary-text-tian">
+                  Dometic 多美達
+                </h2>
+                <div class="title_like d-flex align-items-baseline gap-4">
+                  <h1 class="productName h4-tc-tian">
+                    Dometic多美達-Reunion FTG 充氣5人氣柱帳篷
+                  </h1>
+                  <div class="material-symbols-outlined addLike">favorite</div>
+                </div>
+                <div class="rank"></div>
+              </div>
+
+              <!--## ↓↓↓↓ 商品重要規格 ↓↓↓↓ -->
+              <!-- prettier-ignore -->
+              <div class="brief p1-tc-tian">容納人數：5人
+                                        內帳尺寸：D285*W285*H160(cm)
+                                        收納尺吋：D130*W37*H37(cm)
+                                        重量：13.16kg
+              </div>
+
+              <!--## ↓↓↓↓ 商品樣式 ↓↓↓↓ -->
+              <div class="style">
+                <div class="styleTitle p2-tc-tian">樣式</div>
+                <div class="styleOption">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+
+              <!--## ↓↓↓↓ 商品尺寸大小 ↓↓↓↓ -->
+              <div class="size">
+                <div class="sizeTitle p2-tc-tian">尺寸</div>
+                <select class="form-select p1-tc-tian sizeOption" name="" id="">
+                  <option value="">請選擇尺寸</option>
+                </select>
+              </div>
+
+              <!--## ↓↓↓↓ 商品數量 ↓↓↓↓ -->
+              <div class="count">
+                <div class="countTitle p2-tc-tian">數量</div>
+                <div class="countOption">
+                  <button class="reduce btn none-btn-tian">
+                    <span class="material-symbols-outlined">remove</span>
+                  </button>
+                  <div class="h6-en-tian countNum">1</div>
+                  <button class="plus btn none-btn-tian">
+                    <span class="material-symbols-outlined">add</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="time_shop">
+                <!--## ↓↓↓↓ 租賃時段 ↓↓↓↓ -->
+                <div class="time">
+                  <div class="timeTitle p2-tc-tian">租借時段</div>
+                  <input
+                    class="form-control p2-tc-tian timeOption"
+                    type="date"
+                  />
+                </div>
+
+                <!--## ↓↓↓↓ 取件門市 ↓↓↓↓ -->
+                <div class="shop">
+                  <div class="shopTitle p2-tc-tian">取件門市</div>
+                  <select
+                    class="form-select p2-tc-tian shopOption"
+                    name=""
+                    id=""
+                  >
+                    <option value="">請選擇門市</option>
+                  </select>
+                </div>
+              </div>
+
+              <!--## ↓↓↓↓ 商品價格 ↓↓↓↓ -->
+              <div class="price d-flex align-items-baseline gap-1">
+                <span class="h3-en-tian">$ 1500</span>
+                <span class="h5-en-tian">/ Day</span>
+              </div>
+
+              <!--## ↓↓↓↓ 商品購買操作＆領取優惠券 ↓↓↓↓ -->
+              <div class="optionBtn">
+                <button type="button" class="btn book">
+                  <span class="material-symbols-outlined"
+                    >shopping_cart_checkout</span
+                  >
+                  <span class="header-en-tian">直接預定</span>
+                </button>
+                <button type="button" class="header-en-tian btn addCart">
+                  <span class="material-symbols-outlined"
+                    >add_shopping_cart</span
+                  >
+                  加入購物車
+                </button>
+                <button type="button" class="header-en-tian btn getCoupon">
+                  <span class="material-symbols-outlined"
+                    >confirmation_number</span
+                  >
+                  領取優惠券
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="mainInfo" id="main">
+            <!--## ↓↓↓↓ 商品資訊導引標籤 ↓↓↓↓ -->
+            <div class="infoTab">
+              <!-- !! bootstrap tab -->
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#des"
+                    >詳細資訊</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#spec">尺寸規格</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#comment">商品評論</a>
+                </li>
+              </ul>
+            </div>
+            <div class="infoBody">
+              <!--## ↓↓↓↓ 商品詳細資訊 ↓↓↓↓ -->
+              <div class="des" id="des">
+                <p class="h6-tc-tian desTitle dark-text-tian">詳細資訊</p>
+                <p class="p2-tc-tian desContent dark-text-tian ps-3">
+                  Dometic Reunion FTG 5 人帳篷設計緊湊，可快速搭建，可為最多 5
+                  人提供快速有效的庇護所。帳篷採用輕Weathershield REDUX
+                  聚酯製成，由回收塑膠瓶製成的紗線製成。它提供高性能和可靠的保護。Reunion
+                  FTG
+                  採用全方位防蟲設計，具有出色的氣流，即使在溫暖的氣候下也能讓您保持涼爽。如果下雨，只需夾上外帳即可繼續您的冒險。
+                </p>
+              </div>
+
+              <!--## ↓↓↓↓ 商品詳細資訊 圖片 ↓↓↓↓ -->
+              <div class="desImg">
+                <figure>
+                  <img src="./images/tent_01-d1.jpg" alt="" />
+                </figure>
+                <figure>
+                  <img src="./images/tent_01-d2.jpg" alt="" />
+                </figure>
+                <figure>
+                  <img src="./images/tent_01-d3.jpg" alt="" />
+                </figure>
+                <figure>
+                  <img src="./images/tent_01-d4.jpg" alt="" />
+                </figure>
+                <figure>
+                  <img src="./images/tent_01-d5.jpg" alt="" />
+                </figure>
+              </div>
+
+              <!--## ↓↓↓↓ 商品詳細規格 ↓↓↓↓ -->
+              <div class="spec" id="spec">
+                <p class="h6-tc-tian specTitle dark-text-tian">詳細資訊</p>
+                <!-- prettier-ignore -->
+                <p class="p2-tc-tian specContent dark-text-tian ps-3">容納人數：5人
+                                                內帳尺寸：D285*W285*H160(cm)
+                                                收納尺吋：D130*W37*H37(cm)
+                                                重量：13.16kg
+                </p>
+              </div>
+
+              <!--## ↓↓↓↓ 商品評價 ↓↓↓↓ -->
+              <div class="comment" id="comment">
+                <div class="commentTitle">
+                  <p class="h6-tc-tian dark-text-tian m-0">評價</p>
+
+                  <!-- ↓↓↓↓ 評價星等標題形式（看能否套用組件） ↓↓↓↓ -->
+                  <div class="rank"></div>
+                  <!-- ↑↑↑↑ 評價星等標題形式 ↑↑↑↑ -->
+                </div>
+
+                <!-- ↓↓↓↓ 評價星等數量比例圖表（看能否套用組件來改） ↓↓↓↓ -->
+                <div class="rankChart"></div>
+                <!-- ↑↑↑↑ 評價星等數量比例圖表 ↑↑↑↑ -->
+
+                <div class="commentBody">
+                  <!--## ↓↓↓↓ 評價卡片 ↓↓↓↓ -->
+                  <div class="commentItem">
+                    <div class="title">
+                      <div class="user">
+                        <div class="userImg">
+                          <img
+                            src="https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt=""
+                          />
+                        </div>
+                        <div class="username">煞氣ㄟ咖啡濃濃</div>
+                        <div class="star"></div>
+                      </div>
+                    </div>
+                    <!-- prettier-ignore -->
+                    <div class="content">
+                      帳篷的品質不錯，配件都相當實用，雖然價格偏高，但是整體來說是值得的。
+                    </div>
+                  </div>
+                  <div class="commentItem">
+                    <div class="title">
+                      <div class="user">
+                        <div class="userImg">
+                          <img
+                            src="https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt=""
+                          />
+                        </div>
+                        <div class="username">煞氣ㄟ咖啡濃濃</div>
+                        <div class="star"></div>
+                      </div>
+                    </div>
+                    <!-- prettier-ignore -->
+                    <div class="content">
+                      帳篷的品質不錯，配件都相當實用，雖然價格偏高，但是整體來說是值得的。
+                    </div>
+                  </div>
+                  <div class="commentItem">
+                    <div class="title">
+                      <div class="user">
+                        <div class="userImg">
+                          <img
+                            src="https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt=""
+                          />
+                        </div>
+                        <div class="username">煞氣ㄟ咖啡濃濃</div>
+                        <div class="star"></div>
+                      </div>
+                    </div>
+                    <!-- prettier-ignore -->
+                    <div class="content">
+                      帳篷的品質不錯，配件都相當實用，雖然價格偏高，但是整體來說是值得的。
+                    </div>
+                  </div>
+                  <div class="commentItem">
+                    <div class="title">
+                      <div class="user">
+                        <div class="userImg">
+                          <img
+                            src="https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt=""
+                          />
+                        </div>
+                        <div class="username">煞氣ㄟ咖啡濃濃</div>
+                        <div class="star"></div>
+                      </div>
+                    </div>
+                    <!-- prettier-ignore -->
+                    <div class="content">
+                      帳篷的品質不錯，配件都相當實用，雖然價格偏高，但是整體來說是值得的。
+                    </div>
+                  </div>
+                  <div class="commentItem">
+                    <div class="title">
+                      <div class="user">
+                        <div class="userImg">
+                          <img
+                            src="https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt=""
+                          />
+                        </div>
+                        <div class="username">煞氣ㄟ咖啡濃濃</div>
+                        <div class="star"></div>
+                      </div>
+                    </div>
+                    <!-- prettier-ignore -->
+                    <div class="content">
+                      帳篷的品質不錯，配件都相當實用，雖然價格偏高，但是整體來說是值得的。
+                    </div>
+                  </div>
+                  <div class="commentPage"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ↓↓↓↓ 回到頂部按鈕 ↓↓↓↓ -->
+        <button type="button" class="topBtn material-symbols-outlined">
+          keyboard_arrow_up
+        </button>
+        <!-- ↑↑↑↑ 回到頂部按鈕 ↑↑↑↑ -->
+      </section>
+
+      <!--?? ↓↓↓↓ footer ↓↓↓↓ -->
+      <footer class="h3-en-tian">Footer</footer>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+// 檔案位置: styles/global.scss
+
+// google Noto Sans TC 字體
+@import 'https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap';
+
+// google icon 導入
+@import 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200';
+
+// fixed for __next root div
+// #__next {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100%;
+// }
+
+main > .container {
+  padding: 60px 15px 0;
+}
+
+// 讓回到最上方的滾動平滑
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f7 !important;
+  font-family: 'Noto Sans TC Regular', Helvetica, Arial, 'PingFang TC',
+    '苹方-繁', 'Heiti TC', '黑體-繁', 'Microsoft JhengHei', '微軟正黑體',
+    // Cross-platform generic font family (default user interface font)
+    system-ui,
+    // Safari for macOS and iOS (San Francisco)
+    -apple-system,
+    // Windows
+    'Segoe UI',
+    // Android
+    Roboto,
+    // Basic web fallback
+    'Helvetica Neue',
+    Arial,
+    // Linux
+    'Noto Sans',
+    'Liberation Sans',
+    // Sans serif fallback
+    sans-serif,
+    // Emoji fonts
+    'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.form-member {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+
+/* 滾動條 */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(65, 60, 28, 0.8);
+  border-radius: 7px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f7;
+  border-radius: 7px;
+}
+
+// below is test only

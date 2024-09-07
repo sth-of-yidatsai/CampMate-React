@@ -1,0 +1,173 @@
+.commentModal-tian {
+  position: fixed;
+  z-index: 1000;
+  top: 40%;
+  left: 50%;
+  @include formRadius-tian;
+  @include flexCol;
+  justify-content: space-between;
+  width: 620px;
+  height: 620px;
+  transform: translate(-50%, -50%);
+  border: 1px solid $secondary-color;
+  .header {
+    @include flexRow;
+    justify-content: center;
+    align-items: center;
+    @include formHeader-tian;
+    width: 100%;
+    height: 45px;
+    background-color: $secondary-color;
+    .close span {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  .body {
+    height: 100%;
+    @include flexCol(16px);
+    margin-top: 45px;
+    padding-block: 16px;
+    padding-inline: 30px;
+    overflow-y: auto;
+    background-color: $light-color;
+    .bodyHeader {
+      @include flexRow(16px);
+      align-items: center;
+    }
+    .content {
+      @include flexCol(16px);
+      .commentCard {
+        @include flexCol(15px);
+        height: 147px;
+        padding-block: 15px;
+        padding-inline: 20px;
+        background-color: $light-color;
+        .productInfo {
+          @include flexRow(16px);
+          justify-content: space-between;
+          align-items: center;
+
+          .image {
+            flex: 0 1 auto;
+            width: 126px;
+            height: 100%;
+            @include flexRow;
+            justify-content: flex-start;
+            align-items: center;
+            .imgBox {
+              width: 110px;
+              height: 110px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+              }
+            }
+          }
+          .product {
+            height: 100%;
+            @include flexCol;
+            justify-content: space-between;
+            .titleCount,
+            .styleComment {
+              @include flexRow;
+              justify-content: space-between;
+            }
+            .titleCount {
+              .productTitle {
+                .productName {
+                  @include hideText-tian(2);
+                }
+              }
+              .count {
+                @include flexRow;
+                align-items: flex-start;
+                .material-symbols-outlined {
+                  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0,
+                    'opsz' 16;
+                }
+              }
+            }
+            .styleComment {
+              align-items: flex-end;
+              .commentBtn {
+                .fix {
+                  display: none;
+                  @include outline-tian;
+                }
+                .comment {
+                  display: block;
+                  @include outline-tian;
+                }
+                button {
+                  @include btn-color($prompt-color, $success-color);
+                  &:hover {
+                    @include btn-outline-color($prompt-color, $success-color);
+                  }
+                  padding-inline: 20px;
+                  padding-block: 4px;
+                  border-radius: 40px;
+                  @include flexRow(10px);
+                }
+              }
+            }
+          }
+        }
+        .commentBlock {
+          display: none;
+          width: 100%;
+          padding-block: 10px;
+          padding-inline: 16px;
+          border-radius: 20px;
+          background-color: $success-color;
+          border: 2px solid $prompt-color;
+          .star {
+            width: 112px;
+            height: 20px;
+            background-color: gray;
+          }
+        }
+        .cardLine {
+          width: 100%;
+          border-bottom: 0.5px solid $sub-color;
+        }
+        &.show {
+          .commentBlock {
+            display: block;
+          }
+          .productInfo .product .styleComment .commentBtn {
+            button {
+              @include btn-outline-color($prompt-color, $success-color);
+              &:hover {
+                @include btn-color($prompt-color, $success-color);
+              }
+            }
+            .fix {
+              display: block;
+            }
+            .comment {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    @include flexRow;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    padding-inline: 35px;
+    background-color: $success-color;
+    div {
+      @include flexRow(10px);
+      button {
+        padding-inline: 48px;
+        border-radius: 30px;
+      }
+    }
+  }
+}

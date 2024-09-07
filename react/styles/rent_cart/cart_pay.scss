@@ -1,0 +1,214 @@
+// ******************************
+// ** -----cart_pay scss-----
+
+.mainArea-pay-tian {
+  @include flexCol(32px);
+  padding-top: 24px;
+  .cartTitle {
+    @include flexCol(16px);
+    align-items: flex-start;
+  }
+  .cartList {
+    @include flexCol(16px);
+    @include formRadius-tian;
+    align-items: center;
+    padding-bottom: 16px;
+    border: 1px solid $primary-color;
+    .listTitle {
+      @include flexRow;
+      justify-content: flex-start;
+      align-items: center;
+      padding-inline: 35px;
+      width: 100%;
+      height: 45px;
+      background-color: $primary-color;
+    }
+    .list {
+      @include flexCol;
+      @include formRadius-tian(20px);
+      width: 98%;
+      border: 1px solid $success-color;
+      .listHeader {
+        @include flexRow;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        padding-inline: 35px;
+        background-color: $success-color;
+      }
+      .listBody {
+        width: 100%;
+        background-color: $light-color;
+        .cardHeader {
+          @include flexRow;
+          justify-content: space-between;
+          align-items: center;
+          height: 30px;
+          margin-inline: 35px;
+          border-bottom: 0.5px solid $sub-color;
+          background-color: $light-color;
+          .image {
+            flex: 0 1 auto;
+            width: 66px;
+            height: 100%;
+          }
+          .product {
+            flex: 1 1 auto;
+          }
+          .date {
+            flex: 0 1 auto;
+            width: 215px;
+          }
+          .day {
+            flex: 0 1 auto;
+            width: 70px;
+          }
+          .count {
+            flex: 0 1 auto;
+            width: 70px;
+          }
+          .amount {
+            flex: 0 1 auto;
+            width: 70px;
+          }
+        }
+      }
+      .listForm {
+        @include flexCol;
+        margin-inline: 35px;
+        padding-right: 45px;
+        border-top: 0.5px solid $sub-color;
+        .pickup {
+          @include flexRow(32px);
+          justify-content: space-between;
+          align-items: center;
+          padding-block: 16px;
+          .pickupTitle {
+            flex: 0 1 8%;
+            @include flexRow;
+            justify-content: flex-end;
+          }
+          .pickupBody {
+            @include flexRow(16px);
+            flex: 1 1 auto;
+            .change {
+              cursor: pointer;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .note {
+          @include flexRow(32px);
+          justify-content: space-between;
+          align-items: center;
+          padding-block: 16px;
+          .noteTitle {
+            flex: 0 1 8%;
+            @include flexRow;
+            justify-content: flex-end;
+          }
+          input {
+            flex: 1 1 auto;
+            padding-block: 5px;
+            padding-inline: 12px;
+            border: 1px solid $sub-color;
+            border-radius: 10px;
+          }
+        }
+      }
+      .listFooter {
+        @include flexRow;
+        justify-content: flex-end;
+        align-items: center;
+        margin-inline: 35px;
+        height: 50px;
+        border-top: 0.5px solid $sub-color;
+        background-color: $light-color;
+        button {
+          background-color: transparent;
+          span {
+            @include outline-tian;
+          }
+        }
+        .total {
+          @include flexRow(10px);
+        }
+      }
+    }
+  }
+  .payment {
+    width: 100%;
+    @include formRadius-tian;
+    border: 1px solid $primary-color;
+    background-color: $light-color;
+    .paymentHeader {
+      @include formHeader-tian;
+      background-color: $primary-color;
+    }
+    .paymentBody {
+      padding-inline: 35px;
+      width: 100%;
+    }
+  }
+  .cartCheck {
+    @include flexCol;
+    @include formRadius-tian;
+    .checkHeader {
+      @include formHeader-tian;
+      background-color: $primary-color;
+      .addCoupon {
+        @include flexRow(10px);
+        align-items: center;
+        color: $prompt-color;
+        background-color: transparent;
+        &:hover {
+          color: $light-color;
+        }
+        .material-symbols-outlined {
+          @include outline-tian;
+        }
+      }
+    }
+    .checkBody {
+      @include flexRow;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: $success-color;
+      padding-block: 20px;
+      padding-inline: 35px;
+      .pay {
+        @include flexRow(32px);
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        .clac {
+          @include flexCol(5px);
+          .originPrice,
+          .coupon,
+          .total {
+            width: 156px;
+            @include flexRow;
+            justify-content: space-between;
+          }
+          .couponTitle {
+            @include flexRow(5px);
+            align-items: center;
+          }
+          .clacLine {
+            width: 100%;
+            height: 1px;
+            background-color: $dark-color;
+          }
+        }
+        button {
+          padding-block: 6px;
+          padding-inline: 47px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}

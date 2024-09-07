@@ -1,0 +1,133 @@
+.container {
+  width: 1440px;
+  padding: 0 80px;
+  font-family: 'Montserrat', 'Noto Sans TC';
+  margin-top: 140px;
+}
+
+.containerFluid {
+  padding: 0 80px;
+  width: 100%;
+}
+
+.wrapArea{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 48px;
+}
+
+.couponList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.pagination{
+  display: flex;
+  justify-content: end;
+}
+
+.pageTitle {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  font-size: 24px;
+  color: #8f8e93;
+}
+
+.pageTitle .h2 {
+  color: #2d2d2d;
+}
+
+/* 彈出視窗 */
+.tdn {
+  text-decoration: none;
+}
+
+.couponModal {
+  font-family: 'Montserrat', 'Noto Sans TC';
+}
+
+.modalHead {
+  display: flex;
+  padding: 12px 0px;
+  justify-content: center;
+  align-items: center;
+  background: #413c1c;
+  border-radius: 18px 18px 0 0;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  color: #f5f5f7;
+}
+
+.modalInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px 48px;
+  align-self: stretch;
+  background: #f5f5f7;
+  border-radius: 0 0 18px 18px;
+  overflow: hidden;
+}
+
+.modalInfo .col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  color: #2d2d2d;
+  text-wrap: wrap;
+}
+
+.modalInfo .col .th {
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  color: #8f8e93;
+}
+
+.modalInfo .line {
+  height: 0.5px;
+  background: #8f8e93;
+}
+
+.modalInfo .logIn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #413c1c;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.28px;
+}
+
+.modalInfo .logIn .logInIcon {
+  font-size: 32px;
+  color: #413c1c;
+}
+
+.arrow2 {
+  color: #f5f5f7;
+  background-color: #413c1c;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  transform-origin: top right; /* 將縮放基準點設置為右上角 */
+  transition: all 0.4s ease;
+}
+
+.modalInfo:hover .arrow2 {
+  transform: scale(1.2);
+}

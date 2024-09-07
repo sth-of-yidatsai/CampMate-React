@@ -1,0 +1,43 @@
+.mainArea {
+  width: 1440px;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.wrap {
+  width: 952px;
+  margin-top: 24px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 1440px;
+  padding: 0 80px;
+}
+
+.containerFluid {
+  width: 100%;
+  overflow: hidden;
+}
+
+.aside {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 187px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px){
+  .mainArea{
+    width: 100%;
+    padding: 0;
+  }
+  .aside{
+    display: none;
+  }
+}
