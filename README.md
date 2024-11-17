@@ -5,9 +5,6 @@
 在專案中，我負責 **UI視覺設計** 、 **首頁** 、 **領取優惠券專區** 與 **會員中心-我的優惠券** 的切板以及功能開發。
 
 
-> 📗 [專案企劃書](https://drive.google.com/file/d/1sqAZcScASQUh2yqY7l3FZ_9Hb-LwnwXU/view?usp=drive_link) | 全站詳細介紹
-
-
 ※ 此專案僅供資策會前端工程師就業養成班大專展示使用。
 
 ---
